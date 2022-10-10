@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Format Text</title>
+    <link rel="icon" type="image/png" href="image/flixdz.png" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+      <script src="js/copypaste.js"></script>
+        <!-- AOS PLUGIN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  <body>
+   <nav class="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="image/flixdz.png" width="80"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="fa fa-mortar-board" style="font-size: 25px;"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Belajar HTML
+            </a>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item" href="basic.html">Basic HTML</a></li>
+              <li><a class="dropdown-item active" href="#">Format Text</a></li>
+              <li>
+            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projek
+            </a>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item" href="https://nurispedia.relaxstand.repl.co">Nurispedia</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+            </ul>
+          <li class="nav-item">
+            Login menggunakan akun <a href="https://github.com">GitHub</a> Anda
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+   <div class="container p-3 mb-2 text-dark">
+    <center data-aos="fade-up">
+    <img src="image/html5.png" width="100">
+    <br><small>Belajar HTML5</small>
+    </center>
+    
+    <div class="container col-12 col-md-12" data-aos="zoom-in">
+      <hr>
+      <h3><i class='fa fa-mortar-board'></i> Pendahuluan</h3>
+      <p>
+        Kalian mau format text didalam html tapi masih ga ngerti sama tag-nya? Oke oke tenang, kali ini aku bakal buat tutorialnya.
+        <br>Ayo Langsung ke tutorialnya!
+      </p>
+    </div>
+    <div class="container col-12 col-md-12" data-aos="zoom-in">
+      <hr>
+      <h3><i class='fa fa-question-circle'></i>Basic Format</h3>
+      <p>
+        Kalian Mau format text kayak gimana?, mau memformat bold, italic, underline, dan masih banyak lagi!
+      </p>
+    </div>
+      <div class="container" data-aos="fade-up">
+      <hr>
+      <h3>Format Text</h3>
+      <p>Pertama yang harus kalian lakuin itu adalah mengingat tag di ini ya!
+      <br><code>&lt;b&gt;</code> Untuk bold
+      <br><code>&lt;i&gt;</code> Untuk Italic
+      <br><code>&lt;del&gt;</code> Untuk membuat teks menjadi dicoret atau diberi garis
+      <br><code>&lt;u&gt;</code> Untuk Underline atau garis bawah
+      <br><code>&lt;mark&gt;</code> Untuk menambahkan tanda pada teks
+      <br><code>&lt;strong&gt;</code> Untuk menambahkan efek bold yang berisi hal penting
+      <br><code>&lt;em&gt;</code> Untuk membuat teks menjadi lebih ditekan
+      <br><code>&lt;ins&gt;</code> untuk menandai suatu text disisipkan pada suatu kalimat
+      <br><code>&lt;small&gt;</code> Untuk membuat teks menjadi kecil
+      <br><code>&lt;sub&gt;</code> Untuk membuat teks menjadi kecil dan berada dibawah.
+      <br><code>&lt;sup&gt;</code> Untuk membuat teks menjadi kecil dan berada diatas.
+      <br>Kalian bisa melihat hasilnya melalui compiler dibawah ini :
+      </p>
+      <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right"><span>Kode :<button class="btn btn-outline-secondary btn-sm fa fa-copy float-end" onclick="jscopy('formatteks')"></button></span>
+   <br><code id="formatteks">
+&lt;!DOCTYPE html&gt;
+    <br>&lt;html lang=&quot;en&quot;&gt;
+        <br>&lt;head&gt;
+          <br>&lt;meta charset=&quot;UTF-8&quot; /&gt;
+          <br>&lt;meta http-equiv=&quot;X-UA-Compatible&quot;
+          content=&quot;IE=edge&quot; /&gt;
+          <br>&lt;meta name=&quot;viewport&quot; 
+          content=&quot;width=device-width, 
+          initial-scale=1&quot; /&gt;
+          <br>&lt;title&gt;Document&lt;/title&gt;
+        <br>&lt;/head&gt;
+        <br>&lt;body&gt;
+          <br>&lt;p&gt;
+            <br>&lt;br&gt;Ini adalah &lt;b&gt;teks Bold&lt;/b&gt;
+            <br>&lt;br&gt;Ini adalah &lt;i&gt;teks Italic&lt;/i&gt;
+            <br>&lt;br&gt;Ini adalah &lt;u&gt;teks underline&lt;/u&gt;
+            <br>&lt;br&gt;Ini adalah &lt;mark&gt;teks mark&lt;/mark&gt;
+            <br>&lt;br&gt;Ini adalah &lt;strong&gt;teks strong&lt;/strong&gt;
+            <br>&lt;br&gt;Ini adalah &lt;em&gt;teks em&lt;/em&gt;
+            <br>&lt;br&gt;Ini adalah &lt;ins&gt;teks ins&lt;/ins&gt;
+            <br>&lt;br&gt;Ini adalah &lt;small&gt;teks small&lt;/small&gt;
+            <br>&lt;br&gt;Ini adalah &lt;sup&gt;teks sup&lt;/sup&gt;
+            <br>&lt;br&gt;Ini adalah &lt;sub&gt;teks sub&lt;/sub&gt;
+          <br>&lt;/p&gt;
+        <br>&lt;/body&gt;
+    <br>&lt;/html&gt;
+    </code>
+    </div>
+    <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right">Hasil :
+         <p>
+            <br>Ini adalah <b>teks Bold</b>
+            <br>Ini adalah <i>teks Italic</i>
+            <br>Ini adalah <u>teks underline</u>
+            <br>Ini adalah <mark>teks mark</mark>
+            <br>Ini adalah <strong>teks strong</strong>
+            <br>Ini adalah <em>teks em</em>
+            <br>Ini adalah <ins>teks ins</ins>
+            <br>Ini adalah <small>teks small</small>
+            <br>Ini adalah <sup>teks sup</sup>
+            <br>Ini adalah <sub>teks sub</sub>
+          </p>
+    </div>
+    <p>Mungkin sekian dari saya, saya pamit undur diri, semoga bermanfaat bagi kalian yang mau belajar HTML!
+    <br>Jika anda ingin berkolaborasi atau memeriksa kode yang salah, kalian bisa email saya ke :
+    <br>frezzcraft109@gmail.com
+    </p>
+   </div>
+   
+   
+</div>
+
+      <footer class="p-3 mb-2 mt-2">
+    <p>Flixdz ft @flixpseal
+      <br> Copyright <b class="fa fa-copyright"></b> 2022
+      <br>Theme by <a href="dev.html"><img src="image/flixdz.png" width="60px"></a>
+      <br>Made in ♥️ Indonesia
+    </p>
+  </footer>
+   <!--JAVA SCRIPT FOR AOS-->
+   <script>
+    AOS.init();
+  </script>
+  </body>
+</html>

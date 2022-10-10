@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Beranda</title>
+    <title>Basic HTML</title>
     <link rel="icon" type="image/png" href="image/flixdz.png" />
     <!-- CSS only -->
     <link
@@ -19,6 +19,7 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+      <script src="js/copypaste.js"></script>
         <!-- AOS PLUGIN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -50,7 +51,7 @@
             </a>
             <ul class="dropdown-menu text-center">
               <li><a class="dropdown-item active" href="#">Basic HTML</a></li>
-              <li><a class="dropdown-item" href="#">Membuat Teks Berjalan</a></li>
+              <li><a class="dropdown-item" href="format-text.html">Format Text</a></li>
               <li>
             </ul>
           <li class="nav-item dropdown">
@@ -74,13 +75,13 @@
 
    <div class="container p-3 mb-2 text-dark">
     <center data-aos="fade-up">
-    <img src="image/flixdz.png" width="120">
-    <br><small>GitHub Page <i class="fa fa-github"></i></small>
+    <img src="image/html5.png" width="100">
+    <br><small>Belajar HTML5</small>
     </center>
     
     <div class="container col-12 col-md-12" data-aos="zoom-in">
       <hr>
-      <h3><i class='fa fa-question-circle'></i> Pendahuluan</h3>
+      <h3><i class='fa fa-mortar-board'></i> Pendahuluan</h3>
       <p>
         Kalian mau <i>Ngoding</i> tapi masih ngga ngerti konsepnya?
         <br>Tenang aja! kali ini aku bakal ajarin kalian cara ngoding html.
@@ -101,8 +102,9 @@
       <hr>
       <h3>Tag html</h3>
       <p>Pertama yang harus kalian lakuin itu adalah ketik kode html5 (khusus Visual Studio) dan nanti kalian akan mendapatkan syntax seperti ini :
-      <br>
-   <code>
+      </p>
+      <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right"><span>Kode :<button class="btn btn-outline-secondary btn-sm fa fa-copy float-end" onclick="jscopy('kodetag')"></button></span>
+   <br><code id="kodetag">
 &lt;!DOCTYPE html&gt;
     <br>&lt;html lang=&quot;en&quot;&gt;
         <br>&lt;head&gt;
@@ -118,26 +120,76 @@
         <br>&lt;/body&gt;
     <br>&lt;/html&gt;
     </code>
-    <br>
-    <br>Kalo kalian ngga ada kayak gitu, kalian copy aja kode diatas.
+    </div>
+    <p>Kalo kalian ngga ada kayak gitu, kalian bisa copy kode diatas.
+    </p>
    </div>
+   
+      <div class="container" data-aos="fade-up">
+        <hr>
+        <h3>Membuat Paragraf</h3>
+        <p>Didalam HTML kalian bisa membuat tulisan dengan banyak perintah, seperti membuat heading bisa menggunakan tag <code>&lt;h1&gt;</code> sampai <code>&lt;h6&gt;</code>, membuat paragraf kalian bisa menggunakan tag <code>&lt;p&gt;</code>, membuat baris baru menggunakan <code>&lt;br&gt;</code>.
+        <br>Disini saya akan membuat Teks Hello World! dengan heading dan juga paragraf disertai break rule atau garis baru.
+        </p>
+        </div>
+        <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right">
+          <span>Kode :
+          <button class="btn btn-outline-secondary btn-sm fa fa-copy float-end" onclick="jscopy('awalantag')"></button></span>
+        <br>
+        <code id="awalantag">
+          <br>&lt;!DOCTYPE html&gt;
+    <br>&lt;html lang=&quot;en&quot;&gt;
+        <br>&lt;head&gt;
+          <br>&lt;meta charset=&quot;UTF-8&quot; /&gt;
+          <br>&lt;meta http-equiv=&quot;X-UA-Compatible&quot;
+          content=&quot;IE=edge&quot; /&gt;
+          <br>&lt;meta name=&quot;viewport&quot; 
+          content=&quot;width=device-width, 
+          initial-scale=1&quot; /&gt;
+          <br>&lt;title&gt;Document&lt;/title&gt;
+        <br>&lt;/head&gt;
+        <br>&lt;body&gt;
+          <br>&lt;h1&gt;Ini heading 1&lt;/h1&gt;
+          <br>&lt;h6&gt;Ini heading 6&lt;/h6&gt;
+          <br>&lt;p&gt;Ini Paragraf
+            <br>&lt;br&gt;Dan ini Break Rule atau garis baru.
+          <br>&lt;/p&gt;
+        <br>&lt;/body&gt;
+    <br>&lt;/html&gt;
+        </code>
+        <br>
+        <br> Hasil :
+        <h1>Ini heading 1</h1>
+        <h6>Ini heading 6</h6>
+        <p>Ini Paragraf
+          <br>Dan ini break rule atau garis baru.
+        </p>
+        </div>
+
       <div class="container" data-aos="fade-up">
       <hr>
-      <h3>Memasukkan Gambar pada HTML</h3>
+      <h3>Memasukkan Gambar</h3>
       <p>Cara memasukkannya adalah yang pertama kalian harus tau dahulu gambar yang ingin kalian taruh di html.
       <br>Caranya kalian harus menggunakan tag <code>&lt;img&gt;</code>, dan kemudian kalian search gambar yang ingin kalian masukkan, sebagai contoh,
       <br><code>&lt;img src=&quot;contohgambar.png&quot;&gt;</code>
       <br>Kode diatas memperintahkan untuk mencari gambar "contohgambar" yang berformat PNG.
       <br>Untuk mengatur gambar, kalian bisa menambahkan width setelah tanda petik dua dan berikan spasi, atau bisa menggunakan kode ini :
       <br><code>
-        &lt;img src=&quot;flixdz.png&quot; width=&quot;40&quot;&gt;
+        &lt;img src=&quot;flixdz.png&quot; width=&quot;130&quot;&gt;
       </code>
-      <br>Kode diatas adalah untuk mengatur panjang dan lebar dari gambar, karena saya atur width 40, maka gambar yang muncul akan seperti ini.
-     <p class="bg-dark text-white p-3 mb-2">Kode :
-      <br><code>&lt;img src=&quot;flixdz.png&quot; width=&quot;40&quot;&gt;</code>
+      <br>Kode diatas adalah untuk mengatur panjang dan lebar dari gambar, karena saya atur width 130, maka gambar yang muncul akan seperti ini.
+     <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right">Kode :
+      <br><code>&lt;img src=&quot;flixdz.png&quot; width=&quot;130&quot;&gt;</code>
       <br>Hasil :
-      <br><img src="image/flixdz.png" width="40">
-      </p>
+      <br><img src="image/flixdz.png" width="130">
+      </div>
+      <p> Bagaimana jika gambar tidak mau keluar atau ada error?
+      <br>Kalian bisa menambahkan attribute <code>alt</code> fungsinya adalah menggantikan gambar yang tidak muncul menjadi teks pada tag yang kalian pilih.
+     <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right">Kode :
+      <br><code>&lt;img src=&quot;flixdz.png&quot; width=&quot;130&quot; alt=&quot;Gambar tidak akan muncul&quot;&gt;</code>
+      <br>Hasil :
+      <br><img src="flixdz.png" width="130" alt="Gambar tidak akan muncul">
+      </div>
    </div>
       <div class="container" data-aos="fade-up">
       <hr>
@@ -152,16 +204,21 @@
       <br>Mengatur warna font menggunakan <code>"color: (warna);"</code>
       <br>Mengatur ukuran font menggunakan <code>"font-size: (ukuran);"</code>
       <br>Mengatur jenis font menggunakan <code>"font-family: (jenis font);"</code>
-      <br>Contoh disini saya akan membuat font dengan jenis font 'Poppins', membuat ukuran 24 pixel, dan juga mewarnainya dengan warna biru muda.
+      <br>Contoh disini saya akan membuat font dengan jenis font 'Times New Roman', membuat ukuran 24 pixel, dan juga mewarnainya dengan warna biru muda.
       </p>
-      <p class="bg-dark text-white p-3 mb-2">Kode :
-      <br><code>&lt;p style=&quot;font-family: &#039;Poppins&#039;, sans-serif; font-size: 24px; color: lightblue;&quot;&gt;</code>
+      <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right">Kode :
+      <br><code>&lt;p style=&quot;font-family: &#039;Times New Roman&#039;, sans-serif; font-size: 24px; color: lightblue;&quot;&gt;</code>
       <br>Hasil :
-      <br><tes style="font-family: 'Poppins', sans-serif; font-size: 24px; color: lightblue;">Halo</tes>
-      </p>
+      <br><tes style="font-family: 'Times New Roman', sans-serif; font-size: 24px; color: lightblue;">Halo</tes>
+      </div>
    </div>
-   
+  <div class="container" data-aos="fade-right">
+   <p> Lihat Lainnya   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="btn btn-outline-primary">disini</span>
+    </button>
+  </div>
 </div>
+
       <footer class="p-3 mb-2 mt-2">
     <p>Flixdz ft @flixpseal
       <br> Copyright <b class="fa fa-copyright"></b> 2022
