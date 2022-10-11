@@ -17,6 +17,3 @@ function cp(jc) {
    document.body.removeChild(el);  
    paste();
   }
-async function paste() {
-  const pastetext = await navigator.clipboard.readText();
-}  
