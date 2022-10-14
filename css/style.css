@@ -22,24 +22,35 @@ hr {
   margin: 0 auto;
 }
 footer {
-  background: linear-gradient(90deg, #ff4e4e , white);
+  background: linear-gradient(-120deg, red , white);
   background-size: 400% 400%;
   animation: animasiulang 5s ease infinite alternate;
   text-align: center;
+}
+img {
+  pointer-events: none;
 }
 
 @keyframes animasiulang {
 	0% {
 		background-position: left;
-		color: white;
-		font-weight: 1px;
+		color: black;
 	}
-	50% {
+	25% {
+	  color: black;
+	}
+	40% {
+	  color: black;
+	}
+	60% {
 	  color: white;
-	  font-weight: 10px;
+	}
+	75% {
+	  color: white;
 	}
 	100% {
 		background-position: right;
+		color: white;
 	}
 }
 @keyframes animate {
