@@ -60,8 +60,6 @@
             </a>
             <ul class="dropdown-menu text-center">
               <li><a class="dropdown-item" href="https://nurispedia.relaxstand.repl.co">Nurispedia</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
             </ul>
           <li class="nav-item">
             Login menggunakan akun <a href="https://github.com">GitHub</a> Anda
@@ -111,9 +109,9 @@
       <br><code>&lt;sup&gt;</code> Untuk membuat teks menjadi kecil dan berada diatas.
       <br>Kalian bisa melihat hasilnya melalui compiler dibawah ini :
       </p>
-      <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right"><span>Kode :<button class="btn btn-outline-secondary btn-sm fa fa-copy float-end" onclick="jscopy('formatteks')"></button></span>
+      <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right"><span>Kode :<button class="btn btn-outline-secondary btn-sm fa fa-copy float-end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Dicopy!" onclick="jscopy('formatteks')"></button></span>
    <br><code id="formatteks">
-&lt;!DOCTYPE html&gt;
+<br>&lt;!DOCTYPE html&gt;
     <br>&lt;html lang=&quot;en&quot;&gt;
         <br>&lt;head&gt;
           <br>&lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -166,10 +164,10 @@
       <br>Contoh cara kerja ol dan ul ada pada command dibawah ini:
        <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right">
           <span>Kode :
-          <button class="btn btn-outline-secondary btn-sm fa fa-copy float-end" onclick="jscopy('olulli')"></button></span>
+          <button class="btn btn-outline-secondary btn-sm fa fa-copy float-end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Dicopy!" onclick="jscopy('olulli')"></button></span>
         <br>
       <code id="olulli">
-&lt;!DOCTYPE html&gt;
+<br>&lt;!DOCTYPE html&gt;
     <br>&lt;html lang=&quot;en&quot;&gt;
         <br>&lt;head&gt;
           <br>&lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -220,6 +218,12 @@
       <br>Made in ♥️ Indonesia
     </p>
   </footer>
+  
+  <script>
+   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+   </script>
+  
    <!--JAVA SCRIPT FOR AOS-->
    <script>
     AOS.init();
