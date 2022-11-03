@@ -18,6 +18,15 @@ body {
   background-size: 180px;
   background-repeat: no-repeat;
   width: 180px;
-  border-radius: 10px;
+  border-radius: 50px;
   color: white;
+}
+#carouselExampleIndicators {
+  width: 1300px;
+  margin: 0 auto;
+}
+@media (max-width: 800px){
+  #carouselExampleIndicators {
+    width: 350px;
+  }
 }
