@@ -22,13 +22,7 @@ hr {
   margin: 0 auto;
 }
 #sosmed img {
-  transition: width 3s, margin-right 3s;
-  width: 40px;
-  margin-right: 0px;
-}
-#sosmed img:hover {
-  width: 60px;
-  margin-right: 50px;
+  width: 45px;
 }
 footer {
   background: linear-gradient(-120deg, red , white);
