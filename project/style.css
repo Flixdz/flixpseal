@@ -1,0 +1,43 @@
+/*TERKADANG*/
+/*HAHAHAHAHAHAHAHAHAHAHAHAHAHA*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  font-family: 'Poppins', Sans-Serif;
+}
+#kepsek {
+  background: url('https://smknurulislam.sch.id/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-12-at-21.01.48.jpeg');
+  background-size: 180px;
+  background-repeat: no-repeat;
+  width: 180px;
+  border-radius: 50px;
+  color: white;
+}
+#pagar {
+  transition: font-size 3s;
+  font-size: 10px;
+}
+#pagar:hover {
+  font-size: 40px;
+}
+#carouselExampleIndicators {
+  width: 80%;
+  margin: 0 auto;
+}
+footer {
+  text-align: center;
+}
+.fa {
+  color: green;
+}
+@media (max-width: 800px){
+  #carouselExampleIndicators {
+    width: 350px;
+  }
+  footer {
+    text-align: left;
+  }
+}
+@media (prefers-color-scheme: dark) {
+}
