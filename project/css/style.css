@@ -1,87 +1,43 @@
+/*TERKADANG*/
+/*HAHAHAHAHAHAHAHAHAHAHAHAHAHA*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(-120deg, lightblue, white, red);
-  background-size: 400% 400%;
-  width: 100%;
-  animation: animate 25s ease infinite;
+  font-family: 'Poppins', Sans-Serif;
 }
-h3 {
-  text-align: center;
+#kepsek {
+  background: url('https://smknurulislam.sch.id/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-12-at-21.01.48.jpeg');
+  background-size: 180px;
+  background-repeat: no-repeat;
+  width: 180px;
+  border-radius: 50px;
+  color: white;
 }
-h5 {
-  text-align: center;
+#pagar {
+  transition: font-size 3s;
+  font-size: 10px;
 }
-p {
-  text-align: center;
+#pagar:hover {
+  font-size: 40px;
 }
-hr {
-  width: 200px;
+#carouselExampleIndicators {
+  width: 80%;
   margin: 0 auto;
 }
-#sosmed img {
-  width: 45px;
-}
 footer {
-  background: linear-gradient(-120deg, red , white);
-  background-size: 400% 400%;
-  animation: animasiulang 5s ease infinite alternate;
   text-align: center;
 }
-img {
-  pointer-events: none;
+.fa {
+  color: green;
 }
-
-@keyframes animasiulang {
-	0% {
-		background-position: left;
-		color: black;
-	}
-	25% {
-	  color: black;
-	}
-	50% {
-	  color: black;
-	}
-	60% {
-	  color: white;
-	}
-	75% {
-	  color: white;
-	}
-	100% {
-		background-position: right;
-		color: white;
-	}
-}
-@keyframes animate {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 @media (max-width: 800px){
-  p {
-    text-align: left;
-  }
-  h3 {
-    text-align: left;
-  }
-  h5 {
-    text-align: left;
-  }
-  hr {
-  width: 100%;
+  #carouselExampleIndicators {
+    width: 350px;
   }
   footer {
     text-align: left;
   }
+}
+@media (prefers-color-scheme: dark) {
 }
