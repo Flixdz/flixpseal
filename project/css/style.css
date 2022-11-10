@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-120deg, lightblue, white, red);
+  background-size: 400% 400%;
+  width: 100%;
+  animation: animate 25s ease infinite;
+}
+h3 {
+  text-align: center;
+}
+h5 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+hr {
+  width: 200px;
+  margin: 0 auto;
+}
+#sosmed img {
+  width: 45px;
+}
+footer {
+  background: linear-gradient(-120deg, red , white);
+  background-size: 400% 400%;
+  animation: animasiulang 5s ease infinite alternate;
+  text-align: center;
+}
+img {
+  pointer-events: none;
+}
+
+@keyframes animasiulang {
+	0% {
+		background-position: left;
+		color: black;
+	}
+	25% {
+	  color: black;
+	}
+	50% {
+	  color: black;
+	}
+	60% {
+	  color: white;
+	}
+	75% {
+	  color: white;
+	}
+	100% {
+		background-position: right;
+		color: white;
+	}
+}
+@keyframes animate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media (max-width: 800px){
+  p {
+    text-align: left;
+  }
+  h3 {
+    text-align: left;
+  }
+  h5 {
+    text-align: left;
+  }
+  hr {
+  width: 100%;
+  }
+  footer {
+    text-align: left;
+  }
+}
