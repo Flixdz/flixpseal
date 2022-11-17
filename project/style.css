@@ -23,7 +23,8 @@ body {
   opacity: 100%;
 }
 #carouselExampleIndicators {
-  width: 900px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 footer {
@@ -33,9 +34,6 @@ footer {
   color: green;
 }
 @media (max-width: 800px){
-  #carouselExampleIndicators {
-    width: 350px;
-  }
   footer {
     text-align: left;
   }
