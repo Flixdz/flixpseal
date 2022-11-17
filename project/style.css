@@ -14,15 +14,16 @@ body {
   border-radius: 50px;
   color: white;
 }
-#pagar {
-  transition: font-size 3s;
+#trigger {
+  transition: font-size 3s, opacity 3s;
   font-size: 10px;
 }
-#pagar:hover {
+#trigger:hover {
   font-size: 40px;
+  opacity: 100%;
 }
 #carouselExampleIndicators {
-  width: 80%;
+  width: 900px;
   margin: 0 auto;
 }
 footer {

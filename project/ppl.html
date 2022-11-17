@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beranda</title>
+  <title>Pengembangan Perangkat</title>
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -20,11 +20,36 @@
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="style.css" rel="stylesheet">
+  <style>
+    #daftard {
+      transition: color 1s, background-color 1s;
+      color: green;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: white;
+      border-radius: 3px;
+    }
+    #daftard:hover {
+      color: white;
+      background-color: green;
+    }
+    #gmbr {
+      max-width: 80%;
+      height: auto;
+      border-radius: 5px;
+    }
+    @media (max-width: 800px){
+
+  footer {
+    text-align: left;
+  }
+}
+  </style>
 </head>
 
 <body>
   <!--Navbar-->
-  <nav class="navbar shadow-sm sticky-top navbar-light navbar-expand-lg bg-light">
+  <nav class="navbar shadow-sm navbar-light navbar-expand-lg bg-light">
     <div class="container">
       <img class="navbar-brand" src="nuris.png" width="150">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -37,11 +62,11 @@
             <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Tentang Kami
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item active" href="#">Profil</a></li>
+            <ul class="dropdown-menu dropdown-menu-light">
+              <li><a class="dropdown-item" href="#">Profil</a></li>
               <li><a class="dropdown-item" href="#">Daftar Guru</a></li>
               <li>
                 <a class="dropdown-item" href="#">dsb</a>
@@ -49,12 +74,12 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Bidang Keahlian
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark" style="font-size: 13px;">
+            <ul class="dropdown-menu dropdown-menu-light" style="font-size: 13px;">
               <li>
-                <a class="dropdown-item" href="ppl.html">Pengembangan Perangkat Lunak</a>
+                <a class="dropdown-item active" href="#" onclick="alert('kamu sudah dalam halaman ini')">Pengembangan Perangkat Lunak</a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">Akutansi Keuangan Lembaga</a>
@@ -68,7 +93,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Blog
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark" style="font-size: 12px;">
+            <ul class="dropdown-menu dropdown-menu-light" style="font-size: 12px;">
               <li>
                 <a class="dropdown-item" href="#">Acara Terbaru</a>
               </li>
@@ -84,7 +109,7 @@
       </div>
     </div>
   </nav>
-
+  
   <div class="container">
     <div class="row">
       <div class="col-md text-center" id="tampil">
@@ -95,25 +120,63 @@
     </div>
   </div>
   <div class="container">
-    <h3 style="color: green; font-weight: bold;">Visi</h3>
-    <p>“Sekolah Menengah Kejuruan Bertaraf Nasional untuk Menghasilkan Lulusan yang Berakhlak Mulia Berkarakter Bangsa
-      dan Berkompeten”</p>
-    <h3 style="color: green; font-weight: bold;">Misi</h3>
-    <ol>
-      <li>Meningkatkan Keimanan & Ketaqwaan Kepada Allah SWT</li>
-      <li>Mengembangkan Kreativitas Peserta Didik melalui kegiatan Ekstrakurikuler yang Berkarakter.</li>
-      <li>Meningkatkan Penguasaan Peserta Didik Terhadap Ilmu Pengetahuan & Teknologi.</li>
-      <li>Menyiapkan Tenaga Kerja terampil untuk mengisi kebutuhan dunia kerja melalui kegiatan praktek kerja industri
-        secara berkala.</li>
-      <li>Memiliki sikap interaktif positif antara siswa, guru, sekolah dan orang tua.</li>
-    </ol>
-    <h3 style="color: green; font-weight: bold;">Motto</h3>
-    Siap Kerja, Cerdas dan Kompotetif
-  </div>
-
-
-  <div class="container" style="padding-top: 2rem">
+    <h2 style="color: green; font-weight: bold;">Pengembangan Perangkat Lunak</h2>
+    <div class="container icon-fix">
+      <a href="https://instagram.com/smk_nurulislam_jakarta"><img
+          src="https://www.aesthetx.com/wp-content/uploads/2021/01/1200px-Instagram_logo_2016.svg-1-min.png"
+          width="35"></a>
+      <a href="https://instagram.com/smk_nurulislam_jakarta"><img
+          src="https://www.newsfolo.com/wp-content/uploads/2017/08/youtube.jpg" width="35"></a>
+      <a href="https://instagram.com/smk_nurulislam_jakarta"><img
+          src="https://th.bing.com/th/id/R.5d6ea38a769498dfc19fe6389d14db39?rik=y4T0zkZdxhJr6g&riu=http%3a%2f%2fwww.vhv.rs%2ffile%2fmax%2f19%2f199530_facebook-logo-png.png&ehk=lMPCDnRAWWHq06V44On1108fm3Oavl4PZDBFTN4iz44%3d&risl=&pid=ImgRaw&r=0"
+          width="35"></a>
+    </div>
+    <h4 class="mt-2" style="color: green; font-weight: bold;">Apa itu PPL?</h4>
     <div class="container text-center">
+      <img src="anak_coding.png" id="gmbr">
+    </div>
+    <p>PPL adalah singkatan dari Pengembangan Perangkat Lunak (atau yang sebelumnya disebut dengan Rekayasa Perangkat
+      Lunak atau RPL) dan merupakan sebuah jurusan yang ada di Sekolah Menengah
+      Kejuruan (SMK).
+      PPL adalah sebuah jurusan yang mempelajari dan mendalami semua cara-cara pengembangan perangkat lunak termasuk
+      pembuatan, pemeliharaan, manajemen, organisasi pengembangan perangkat lunak dan manajemen kualitas. Bukan hanya
+      itu PPL juga berkaitan dengan software komputer mulai dari pembuatan website, aplikasi, game dan semua yang
+      berkaitan dengan pemograman dengan menguasai bahasa pemograman tersebut.
+      Intinya PPL tidak akan jauh-jauh dari tiga hal yaitu coding,
+      Desain dan Algoritma yang akan menjadi kunci keberhasilan rekayasa perangkat lunak tersebut.</p>
+    <h4 style="color: green; font-weight: bold;">Yang akan dipelajari?</h4>
+    <p>Yang akan dipelajari pada jurusan ini meliputi :
+    <ol>
+      <li><a href="#coding" id="daftard">Coding</a></li>
+      <li><a href="#desain" id="daftard">Desain</a></li>
+      <li><a href="#algoritma" id="daftard">Algoritma</a></li>
+    </ol>
+    </p>
+    <div id="coding">
+      <h5>Coding meliputi bahasa pemrograman : </h5>
+      <p>Pemograman Bahasa Pascal, Pemograman Bahasa C, Pemograman Bahasa C++,
+        Pemograman Bahasa Java, Pemograman Bahasa Python,
+        Pemograman Bahasa Delphi, Pemograman PHP & Mysql, Pemograman JavaScript, Pemograman AJAX,
+        Pemograman Web Server, Pemograman HTML, Pemograman CSS, Dan masih banyak lagi</p>
+    </div>
+    <div id="desain">
+      <h5>Desain meliputi software : </h5>
+      <p>Adobe Photoshop, Corel Draw, Adobe Premier Pro, Web Design, Adobe After Effect, dan masih banyak lagi</p>
+    </div>
+    <div id="algoritma">
+      <h5>Algoritma meliputi : </h5>
+      <p>Algoritma Dasar, Algoritma tingkat Lanjut, Microsoft Access, Gerbang Logika, Basis Data, DFD (Data Flow Diagram), Dan masih banyak lagi</p>
+    </div>
+  </div>
+  <div class="container">
+    <p>Biasanya selain itu jurusan PPL juga mempelajari tentang Perakitan Komputer, 
+      Jaringan Dasar dan masih banyak lagi. Kenapa selalu ada masih banyak lagi? 
+      Karena jurusan PPL ini bersinggungan dengan teknologi sehingga perkembanganya mengikuti. 
+      Jadi, kesimpulannya PPL (Pengembangan Perangkat Lunak) itu tidak sekedar Membuat Program (Software) dan Membuat Web saja.
+      PPL (Pengembangan Perangkat Lunak) Itu Luas.</p>
+  </div>
+  <div class="container" style="padding-top: 2rem">
+    <div class="container card text-center">
       <h3><b>SMK Nurul Islam Jakarta</b></h3>
       Jl. Mawar Merah No.1, RT.12/RW.12, Malaka Jaya, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota
       Jakarta 13460.
@@ -156,19 +219,6 @@
     </div>
   </div>
   <!-- Footer -->
-  <div class="container-fluid text-center">
-    <h3>Sosial Media</h3>
-  </div>
-  <div class="container text-center">
-    <a href="https://instagram.com/smk_nurulislam_jakarta"><img
-        src="https://www.aesthetx.com/wp-content/uploads/2021/01/1200px-Instagram_logo_2016.svg-1-min.png"
-        width="40"></a>
-    <a href="https://instagram.com/smk_nurulislam_jakarta"><img
-        src="https://www.newsfolo.com/wp-content/uploads/2017/08/youtube.jpg" width="45"></a>
-    <a href="https://instagram.com/smk_nurulislam_jakarta"><img
-        src="https://th.bing.com/th/id/R.5d6ea38a769498dfc19fe6389d14db39?rik=y4T0zkZdxhJr6g&riu=http%3a%2f%2fwww.vhv.rs%2ffile%2fmax%2f19%2f199530_facebook-logo-png.png&ehk=lMPCDnRAWWHq06V44On1108fm3Oavl4PZDBFTN4iz44%3d&risl=&pid=ImgRaw&r=0"
-        width="40"></a>
-  </div>
   <footer class="footer p-5 bg-success text-white">
     <h3><b>SMK Nurul Islam</b></h3>
     <small>Address : Jl. Mawar Merah No 1 Perumnas Klender Jakarta Timur</small>
