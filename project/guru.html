@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Guru</title>
+  <link rel="icon" type="image/png" href="logo_nuris.png" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <!-- AOS PLUGIN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card-img-top {
+            height: 280px;
+        }
+
+        body {
+            background: hsl(0, 0, 94%);
+        }
+    </style>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar sticky-top navbar-light navbar-expand-lg bg-light">
+    <div class="container">
+      <img class="navbar-brand" src="nuris.png" width="150">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" baria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars" style="font-size: 24px"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tentang Kami
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="profil.html">Profil</a></li>
+              <li><a class="dropdown-item" href="#">Daftar Guru</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bidang Keahlian
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li>
+                <a class="dropdown-item" href="ppl.html">Pengembangan Perangkat Lunak</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="akl.html">Akutansi Keuangan Lembaga</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mp.html">Manajemen Perkantoran</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li>
+                <a class="dropdown-item" href="#">Acara Terbaru</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Ekstrakulikuler Unggulan</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Agenda Kegiatan</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md text-center" id="tampil">
+      </div>
+      <div class="col-md-9">
+        <marquee>Guru guru dibawah ini adalah guru yang terlatih dan pasti berpengalaman untuk mengajar murid di SMK Nurul Islam</marquee>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    
+  </div>
+  
+  <!-- new Carousel-->
+    <div class="container-fluid my-5">
+        <h1 class="text-center fw-bold display-1 mb-5">Guru <span class="text-success">Keren</span></h1>
+        <div class="row">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                    <div class="item mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="https://smknurulislam.sch.id/wp-content/uploads/2022/03/31.-Ahmad-Suradi-17-300x400.jpg" alt="Ahmad Suradi" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Ahmad Suradi S.T</h4>
+                                    <div class="card-text">
+                                      Produktif PPL
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://smknurulislam.sch.id/wp-content/uploads/2022/03/32.-Arijuddin-Saputra-18-300x400.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Arijuddin Saputra S.Pd</h4>
+                                </div>
+                                <div class="card-text text-center">
+                                  IPAS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://smknurulislam.sch.id/wp-content/uploads/2022/03/18-Dawati-Spd-10-300x400.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Da'wati S.Pdi</h4>
+                                </div>
+                                <div class="card-text text-center">
+                                  Pendidikan Agama Islam
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="5.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Owl Carousel</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="6.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Owl Carousel</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="7.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                              <div class="card-title text-center">
+                                  <h4>Owl Carousel</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer p-5 bg-success text-white">
+      <h3><b>SMK Nurul Islam</b></h3>
+      <small>Address : Jl. Mawar Merah No 1 Perumnas Klender Jakarta Timur</small>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+          <!-- Script -->
+  <script>
+    var date = new Date();
+    var tahun = date.getFullYear();
+    var bulan = date.getMonth();
+    var tanggal = date.getDate();
+    var hari = date.getDay();
+    var jam = date.getHours();
+    var menit = date.getMinutes();
+    var detik = date.getSeconds();
+    switch (hari) {
+      case 0:
+        hari = "Minggu";
+        break;
+      case 1:
+        hari = "Senin";
+        break;
+      case 2:
+        hari = "Selasa";
+        break;
+      case 3:
+        hari = "Rabu";
+        break;
+      case 4:
+        hari = "Kamis";
+        break;
+      case 5:
+        hari = "Jum'at";
+        break;
+      case 6:
+        hari = "Sabtu";
+        break;
+    }
+    //dibagian switch bisa kalian ganti juga jadi nama bulan atau nama apa kek :v
+    switch (bulan) {
+      case 0:
+        bulan = "1";
+        break;
+      case 1:
+        bulan = "2";
+        break;
+      case 2:
+        bulan = "3";
+        break;
+      case 3:
+        bulan = "4";
+        break;
+      case 4:
+        bulan = "7";
+        break;
+      case 5:
+        bulan = "6";
+        break;
+      case 6:
+        bulan = "7";
+        break;
+      case 7:
+        bulan = "8";
+        break;
+      case 8:
+        bulan = "9";
+        break;
+      case 9:
+        bulan = "10";
+        break;
+      case 10:
+        bulan = "11";
+        break;
+      case 11:
+        bulan = "12";
+        break;
+    }
+    //nampilin tgl, bisa antum ubah sesuai keinginan
+    var tampilTanggal = hari + ", " + tanggal + "/" + bulan + "/" + tahun;
+
+    document.getElementById("tampil").innerHTML = tampilTanggal;
+  </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

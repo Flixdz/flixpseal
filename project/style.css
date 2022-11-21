@@ -11,8 +11,19 @@ body {
   background-size: 180px;
   background-repeat: no-repeat;
   width: 180px;
+  height: 230px;
   border-radius: 50px;
   color: white;
+}
+#share {
+  transition: background-color 1s, color 1s;
+  color: white; 
+  background: green;
+  font-size: 25px; 
+}
+#share:hover {
+  color: green;
+  background-color: #e8e8e8;
 }
 #trigger {
   transition: font-size 3s, opacity 3s;
@@ -33,8 +44,14 @@ footer {
 .fa {
   color: green;
 }
+.tengah-flex {
+  text-align: center;
+}
 @media (max-width: 800px){
   footer {
+    text-align: left;
+  }
+  .tengah-flex {
     text-align: left;
   }
 }
