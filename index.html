@@ -85,10 +85,11 @@
           <div id="waktu"></div>
         </div>
         </div>
+        
    <div class="container p-3 mb-2 text-dark">
     <center>
     <img src="image/dev.png" width="120">
-    <br><small class="user-select-none">GitHub Page <i class="fa fa-github"></i></small>
+    <br><small class="user-select-none"><a href="https://www.github.com/flixdz" class="link-none" onclick="return confirm('Website ini dibuat dengan GitHub Repositories, ingin mengunjungi Halaman web GitHub saya?')">GitHub Page <i class="fa fa-github"></i></a></small>
     </center>
     
     <div class="container col-12 col-md-12" data-aos="zoom-in">
@@ -98,7 +99,6 @@
         Halo! Perkenalkan nama saya Muhammad Fachri Al Husein, saya adalah mahasiswa dari Sekolah Menengah Kejuruan Nurul Islam Jakarta.
       </p>
     </div>
-    
     <div class="container col-12 col-md-12" data-aos="zoom-in">
       <hr>
       <h3><i class='fa fa-mortar-board'></i> Pendidikan</h3>
@@ -144,7 +144,7 @@
 <hr>
     <h3>Website</h3>
     <p>
-    <a href="https://nurispedia.relaxstand.repl.co" class="btn btn-primary">Nurispedia</a> dan <a class="btn btn-outline-primary" href="#">Website ini</a>
+    <a href="https://nurispedia.relaxstand.repl.co" class="btn btn-primary">Nurispedia</a> dan <a class="btn btn-outline-primary" href="project/index.html">Project Review</a>
     </p>
     </div>
     
@@ -159,21 +159,25 @@
     </div>
     <div class="container" data-aos="fade-up">
     <hr>
-      <h3>Framework by</h3>
-      <h5 data-aos="fade-right">CSS & JS > <a class="btn btn-outline-primary" href="https://getbootstrap.com">Bootstrap 5</a></h5>
-      <h5 data-aos="fade-right">CSS & JS > <a class="btn btn-outline-primary" href="https://michalsnik.github.io/aos/"> Animate On Scroll Library</a></h5>
+      <h3 style="font-family: manrope, sans-serif;">Framework by</h3>
+      <h5 data-aos="fade-right">CSS & JS > <a class="btn btn-outline-primary btn-sm" href="https://getbootstrap.com">Bootstrap 5</a></h5>
+      <h5 data-aos="fade-right">CSS & JS > <a class="btn btn-outline-primary btn-sm" href="https://michalsnik.github.io/aos/"> Animate On Scroll Library</a></h5>
       <div class="text-center">
-      <small>Terakhir diperbarui pada 7 November 2022 17.36</small>
+      <small>Terakhir diperbarui pada 03 Desember 2022 Pukul 07.42</small>
       </div>
     </div>
     </div>
-    <footer class="p-3">
+    
+    <!-- Footer Start -->
+    <div class="p-3 footer-index">
     <p>Flixdz ft @flixpseal
       <br> Copyright <b class="fa fa-copyright"></b> 2022
-      <br>Theme by <a href="#"><img src="image/flixdz.png" width="60px"></a>
+      <br>Theme by <a href="https://instagram.com/flixpseal" onclick="return confirm('Mau ngunjungin instagram?')"><img src="image/flixdz.png" width="60px"></a>
       <br>Made in ♥️ Indonesia
     </p>
-    </footer>
+    </div>
+    <!-- Footer End -->
+    <!-- End Of Body HTML -->
    <!-- JavaScript for functional features this cool website-->
 <script>
 var date = new Date();
@@ -212,23 +216,27 @@ var tampilTanggal = hari + ", " + tanggal + " " + bulan + " " + tahun;
     document.getElementById("tampil").innerHTML = tampilTanggal;
     </script>
     
-<script>
+  <script>
+  // fungsi satuaku adalah membuat angka 0 menjadi 00
   var satuaku = n => {
 				return ('0' + n).slice(-2);
 			}
 			
-setInterval(() => {
-        var date = new Date();
-var jam = satuaku(date.getHours());
-var menit = satuaku(date.getMinutes());
-var detik = satuaku(date.getSeconds());
-var tampilWaktu = jam + ":" + menit + ":" + detik;
+  setInterval(() => {
+  var date = new Date();
+  var jam = satuaku(date.getHours());
+  var menit = satuaku(date.getMinutes());
+  var detik = satuaku(date.getSeconds());
+  var tampilWaktu = jam + ":" + menit + ":" + detik;
  
-    document.getElementById("waktu").innerHTML = tampilWaktu;
-}, 1000);
-    </script>
-   <script>
+  document.getElementById("waktu").innerHTML = tampilWaktu;
+  }, 1000);
+  </script>
+  
+  <!-- Script Untuk AOS -->
+  <script>
     AOS.init();
   </script>
+  <!-- End Script -->
   </body>
 </html>
