@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Manrope&display=swap');
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -30,10 +31,18 @@ footer {
   animation: animasiulang 5s ease infinite alternate;
   text-align: center;
 }
+.footer-index {
+  animation: animasiulang-index 25s ease infinite alternate;
+  text-align: center;
+}
 img {
   pointer-events: none;
 }
-
+/* Functional Features added */
+.link-none {
+  text-decoration: none;
+  color: black;
+}
 @keyframes animasiulang {
 	0% {
 		background-position: left;
@@ -53,6 +62,21 @@ img {
 	}
 	100% {
 		background-position: right;
+		color: white;
+	}
+}
+
+@keyframes animasiulang-index {
+	0% {
+		background-position: 0% 50%;
+		color: #00ace4;
+	}
+	50% {
+		background-position: 100% 50%;
+		color: red;
+	}
+	100% {
+		background-position: 0% 50%;
 		color: white;
 	}
 }
