@@ -25,6 +25,7 @@
     <!-- CUSTOM CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </head>
   
   <body>
@@ -77,103 +78,138 @@
   </div>
 </nav>
 
-       <div class="text-center">
-        <div class="col">
+     <div class="text-center">
+       <div class="col">
           <div id="tampil"></div>
         </div>
         <div class="col">
           <div id="waktu"></div>
-        </div>
-        </div>
-        
+       </div>
+      </div>
+      
+      <!-- Tombol ke atas -->
+        <button type="button" class="btn btn-outline-primary btn-floating rounded-5" id="btn-back-to-top"><iconify-icon inline icon="grommet-icons:up"></iconify-icon>
+        </button>
+
    <div class="container p-3 mb-2 text-dark">
     <center>
     <img src="image/dev.png" width="120">
     <br><small class="user-select-none"><a href="https://www.github.com/flixdz" class="link-none" onclick="return confirm('Website ini dibuat dengan GitHub Repositories, ingin mengunjungi Halaman web GitHub saya?')">GitHub Page <i class="fa fa-github"></i></a></small>
     </center>
     
-    <div class="container col-12 col-md-12" data-aos="zoom-in">
-      <hr>
-      <h3><i class='fa fa-user-circle-o'></i> Perkenalan</h3>
-      <p>
-        Halo! Perkenalkan nama saya Muhammad Fachri Al Husein, saya adalah mahasiswa dari Sekolah Menengah Kejuruan Nurul Islam Jakarta.
-      </p>
-    </div>
-    <div class="container col-12 col-md-12" data-aos="zoom-in">
-      <hr>
-      <h3><i class='fa fa-mortar-board'></i> Pendidikan</h3>
-      <p>
-        Saya mengambil Jurusan Rekayasa Perangkat Lunak atau sekarang lebih dikenal dengan Pengembangan Perangkat Lunak, dan saya yakin saya bisa mempelajari semua yang ada didalam jurusan ini.
-      </p>
-    </div>
-    
-    <div class="container col-12 col-md-11" data-aos="fade-up">
-      <hr>
-      <h3><i class='fa fa-info-circle'></i> Biodata</h3>
-      <p>
-        Saya lahir di Bekasi pada tanggal 12 Juli 2007, dan dibesarkan di Jakarta serta menempuh pendidikan di Jakarta. Saya sangat senang dengan Mengoprasikan Perangkat Lunak, dan juga berfikir bagaimana perangkat lunak tersebut bekerja. Kalian masih bisa mengeksplor <a class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">Website</a> ini, banyak fitur menarik didalamnya!
-      </p>
-    </div>
-    <div class="container" data-aos="fade-up">
-    <hr>
-    <h3><i class="fa fa-at"></i> Sosial Media</h3>
-    <p id="sosmed">
-    <a href="https://instagram.com/flixpseal"><img src="image/instagram.png"></a>
-    <a href="https://www.facebook.com/profile.php?id=100044505125193"><img src="image/facebook.png"></a>
-    <a href="https://www.tiktok.com/@flixpseal"><img src="image/tiktok.png"></a>
-    <a href="https://youtube.com/channel/UCzU0mlmLis0p2XOvRL1r0-Q"><img src="image/youtube.png"></a>
-    <a href="https://github.com/Flixdz"><img src="image/github.png"></a>
-    </p>
-    </div>
-    
-   <div class="container" data-aos="fade-up">
-    <hr>
-    <h3><i class='fa fa-question-circle'></i> Cita-Cita?</h3>
-    <div class="container col-12 col-md-6">
-      <ol>
-        <li>Software Engineer/Programmer</li>
-        <li>Android Developer</li>
-        <li>Software Tester</li>
-        <li>Masinis</li>
-        <li>Pilot</li>
-        <li>Agent 47 (Fiksi)</li>
-      </ol>
-    </div>
-   </div>
-    <div class="container" data-aos="fade-up">
-<hr>
-    <h3>Website</h3>
-    <p>
-    <a href="https://nurispedia.relaxstand.repl.co" class="btn btn-primary">Nurispedia</a> dan <a class="btn btn-outline-primary" href="project/index.html">Project Review</a>
-    </p>
-    </div>
-    
-    <div class="container" data-aos="fade-up">
-    <hr>
-      <h3>Kolaborasi</h3>
-      <p>Jika kalian ingin mengembangkan website ini atau berkolaborasi dengan projek lain, silahkan kirim pesan melalui sosial media saya atau bisa kirim email ke :
-      <br><i class="fa fa-envelope" style="color: #0077be;"></i> <small><a href="mailto:frezzcraft109@gmail.com" style="text-decoration: none; color: green;">frezzcraft109@gmail.com</a></small>
-      <br>atau langsung menuju <a class="btn btn-outline-secondary btn-sm" href="https://github.com/flixdz"><i class="fa fa-github"></i> GitHub</a>
-      </p>
-      
-    </div>
-    <div class="container" data-aos="fade-up">
-    <hr>
-      <h3 style="font-family: manrope, sans-serif;">Framework by</h3>
-      <h5 data-aos="fade-right">CSS & JS > <a class="btn btn-outline-primary btn-sm" href="https://getbootstrap.com">Bootstrap 5</a></h5>
-      <h5 data-aos="fade-right">CSS & JS > <a class="btn btn-outline-primary btn-sm" href="https://michalsnik.github.io/aos/"> Animate On Scroll Library</a></h5>
-      <div class="text-center">
-      <small>Terakhir diperbarui pada 03 Desember 2022 Pukul 07.42</small>
+    <div class="container">
+      <div class="row">
+        <div class="container col-md-6" data-aos="zoom-in">
+          <hr>
+          <h3><i class='fa fa-user-circle-o'></i> Perkenalan</h3>
+          <p>
+            Halo! Perkenalkan nama saya Muhammad Fachri Al Husein, saya adalah mahasiswa dari Sekolah Menengah Kejuruan Nurul Islam Jakarta.
+          </p>
+        </div>
+        
+        <div class="container col-md-6" data-aos="zoom-in">
+          <hr>
+          <h3><i class='fa fa-mortar-board'></i> Pendidikan</h3>
+          <p>
+            Saya mengambil Jurusan Rekayasa Perangkat Lunak atau sekarang lebih dikenal dengan Pengembangan Perangkat Lunak, dan saya yakin saya bisa mempelajari semua yang ada didalam jurusan ini.
+          </p>
+        </div>
       </div>
     </div>
+    
+    <!-- New Container karena gamuat :v -->
+    <div class="container">
+      <div class="row">
+        <div class="container col-md-6" data-aos="fade-up">
+          <hr>
+          <h3><i class='fa fa-info-circle'></i> Biodata</h3>
+          <p>
+            Saya lahir di Bekasi pada tanggal 12 Juli 2007, dan dibesarkan di Jakarta serta menempuh pendidikan di Jakarta. Saya sangat senang dengan Mengoprasikan Perangkat Lunak, dan juga berfikir bagaimana perangkat lunak tersebut bekerja. Kalian masih bisa mengeksplor <a class="btn btn-outline-primary btn-sm rounded-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">Website</a> ini, banyak fitur menarik didalamnya!
+          </p>
+        </div>
+        
+       <div class="container col-md-6" data-aos="fade-up">
+        <hr>
+        <h3><iconify-icon inline icon="ic:baseline-lightbulb"></iconify-icon> Cita-Cita?</h3>
+          <ol>
+            <li>Software Engineer/Programmer</li>
+            <li>Android Developer</li>
+            <li>Software Tester</li>
+            <li>Masinis</li>
+            <li>Pilot</li>
+            <li>Menjadi orang</li>
+          </ol>
+        </div>
+       </div>
+      </div>
+    </div>
+   
+     <div class="container">
+       <hr>
+       <h3 class="text-center p-3"><iconify-icon inline icon="jam:task-list-f"></iconify-icon> Lainnya</h3>
     </div>
     
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mt-2">
+          <div class="text-center" data-aos="fade-in">
+            <h3 class="text-center"><iconify-icon inline icon="ic:baseline-donut-large"></iconify-icon> Sosial Media</h3>
+            <a href="https://instagram.com/flixpseal" style="padding: 5px; padding-right: 16px; margin-right: -16px; border-radius: 15px" id="share"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100044505125193" style="padding: 5px; margin-right: -5px; margin-left: -2px;" id="share"><i class="fa fa-facebook"></i></a>
+            <a href="https://github.com/Flixdz" style="padding: 5px; margin-right: -5px; margin-left: -7;" id="share"><i class="fa fa-github"></i></a>
+            <a href="https://www.tiktok.com/@flixpseal" style="padding: 5px; margin-right: -5px; margin-left: -7;" id="share"><iconify-icon inline icon="ic:baseline-tiktok"></iconify-icon></a>
+            <a href="https://youtube.com/channel/UCzU0mlmLis0p2XOvRL1r0-Q" style="padding: 5px; padding-right: 14px; margin-left: -5px;" id="share"><iconify-icon inline icon="mdi:youtube"></iconify-icon></a>
+            <a href="https://twitter.com/flixpseal" style="padding: 5px; margin-left: -17px; border-radius: 15px" id="share"><iconify-icon inline icon="iconoir:twitter"></iconify-icon></a>
+       </div>
+      </div>
+      
+      <div class="col-md-6 mt-2">
+        <div class="container" data-aos="fade-up">
+          
+          <h3 class="text-center"><iconify-icon inline icon="ic:outline-web"></iconify-icon> Website</h3>
+          <p class="text-center">
+            <a href="https://nurispedia.relaxstand.repl.co" class="btn btn-primary rounded-5 shadow-sm">Nurispedia</a> dan <a class="btn btn-outline-primary rounded-5 shadow-sm" href="project/index.html">Project Review</a>
+          </p>
+        </div>
+      </div>
+     </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-center" data-aos="fade-up"><iconify-icon inline icon="flat-color-icons:collaboration"></iconify-icon> Kolaborasi</h3>
+          <p class="text-center" data-aos="fade-right">Jika kalian ingin mengembangkan website ini atau berkolaborasi dengan projek lain, silahkan kirim pesan melalui sosial media saya atau bisa kirim email ke :
+          <br><i class="fa fa-envelope" style="color: #0077be;"></i> <small><a href="mailto:frezzcraft109@gmail.com" style="text-decoration: none; color: green;">frezzcraft109@gmail.com</a></small>
+          <br>atau langsung menuju <a class="btn btn-outline-secondary btn-sm rounded-5" href="https://github.com/flixdz"><i class="fa fa-github"></i> GitHub</a>
+          </p>
+      </div>
+      
+      <div class="col-md-6" data-aos="fade-up">
+        <h3 class="text-center" style="font-family: manrope, sans-serif;"><iconify-icon inline icon="ion:cube"></iconify-icon> Framework by</h3>
+        <h5 data-aos="fade-right" class="text-center">CSS & JS > <a class="btn btn-outline-primary btn-sm rounded-5" href="https://getbootstrap.com">Bootstrap 5</a></h5>
+        <h5 data-aos="fade-right" class="text-center">CSS & JS > <a class="btn btn-outline-primary btn-sm rounded-5" href="https://michalsnik.github.io/aos/"> AOS Library</a></h5>
+        <h5 data-aos="fade-right" class="text-center">JS > <a class="btn btn-outline-primary btn-sm rounded-5" href="https://icon-sets.iconify.design"> Iconify</a></h5>
+      </div>
+     </div>
+    </div>
+    <div class="container text-center" data-aos="zoom-in">
+      <button class="btn btn-primary rounded-5 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abut" aria-expanded="false" aria-controls="abut">Selengkapnya</button>
+    <div class="collapse" id="abut">
+        <div class="text-center container" style="font-family: manrope, sans-serif;">
+          <small>Website ini terinspirasi dari "Material You Design" Google.
+          <br>Website Ini menggunakan elemen dari HTML, CSS, dan JavaScript.
+          <br>Dibuat sepenuh hati untuk kalian yang berkunjung pada website ini, terimakasih untuk waktunya! Maaf ya jika website saya masih berantakan, karena saya juga masih belajar hal baru :)
+          <br>Terakhir diperbarui pada 26 Desember 2022 Pukul 20.00</small>
+        </div>
+    </div>
+   </div>
     <!-- Footer Start -->
     <div class="p-3 footer-index">
-    <p>Flixdz ft @flixpseal
+    <p class="text-center">Flixdz ft @flixpseal
       <br> Copyright <b class="fa fa-copyright"></b> 2022
       <br>Theme by <a href="https://instagram.com/flixpseal" onclick="return confirm('Mau ngunjungin instagram?')"><img src="image/flixdz.png" width="60px"></a>
-      <br>Made in ♥️ Indonesia
+      <br>Made with ♥️ for you
     </p>
     </div>
     <!-- Footer End -->
@@ -237,6 +273,8 @@ var tampilTanggal = hari + ", " + tanggal + " " + bulan + " " + tahun;
   <script>
     AOS.init();
   </script>
+  
+  <script src="js/button_top.js"></script>
   <!-- End Script -->
   </body>
 </html>
