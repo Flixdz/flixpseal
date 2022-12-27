@@ -41,22 +41,22 @@
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/nav.css">
-  <script>
-  // fungsi satuaku adalah membuat angka 0 menjadi 00
-  var satuaku = n => {
-				return ('0' + n).slice(-2);
-			}
-			
-  setInterval(() => {
-  var date = new Date();
-  var jam = satuaku(date.getHours());
-  var menit = satuaku(date.getMinutes());
-  var detik = satuaku(date.getSeconds());
-  var tampilWaktu = jam + ":" + menit + ":" + detik;
- 
-  document.getElementById("waktu").innerHTML = tampilWaktu;
-  }, 1000);
-  </script>
+    <script>
+    // fungsi zerome adalah membuat angka 0 menjadi 00
+    var zerome = n => {
+  				return ('0' + n).slice(-2);
+  			}
+  			
+    setInterval(() => {
+    var date = new Date();
+    var jam = zerome(date.getHours());
+    var menit = zerome(date.getMinutes());
+    var detik = zerome(date.getSeconds());
+    var tampilWaktu = jam + ":" + menit + ":" + detik;
+   
+    document.getElementById("clock").innerHTML = tampilWaktu;
+    }, 1000);
+    </script>
   </head>
   
   <body>

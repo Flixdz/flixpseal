@@ -59,6 +59,7 @@
             </a>
             <ul class="dropdown-menu text-center">
               <li><a class="dropdown-item" href="https://nurispedia.relaxstand.repl.co">Nurispedia</a></li>
+              <li><a class="dropdown-item" href="project/index.html">Project Review</a></li>
             </ul>
             </li>
           <li class="nav-item dropdown">
@@ -74,16 +75,20 @@
         </div>
       </div>
     </nav>
-
-     <div class="text-center">
-       <div class="col">
+    
+    <div class="container">
+     <div class="row text-center">
+       <div class="col-md-4">
+          <div id="lblGreetings"></div>
+        </div>
+       <div class="col-md-4">
           <div id="tampil"></div>
         </div>
-        <div class="col">
+        <div class="col-md-4">
           <div id="waktu"></div>
        </div>
       </div>
-      
+     </div>
  
    <div class="container p-3 mb-2 text-dark" data-aos="fade-up">
     <center>
@@ -194,7 +199,7 @@
           <small>Website ini terinspirasi dari "Material You Design" Google.
           <br>Website Ini menggunakan elemen dari HTML, CSS, dan JavaScript.
           <br>Dibuat sepenuh hati untuk kalian yang berkunjung pada website ini, terimakasih untuk waktunya! Maaf ya jika website saya masih berantakan, karena saya juga masih belajar hal baru :)
-          <br>Terakhir diperbarui pada 26 Desember 2022 Pukul 20.00</small>
+          <br>Terakhir diperbarui pada 27 Desember 2022 Pukul 12.59</small>
         </div>
     </div>
    </div>
@@ -206,6 +211,7 @@
       <br>Theme by <a href="https://instagram.com/flixpseal" onclick="return confirm('Mau ngunjungin instagram?')"><img src="image/flixdz.png" width="60px"></a>
       <br>Made with ♥️ for you
     </p>
+    
     </div>
        <!-- Tombol ke atas -->
         <button type="button" class="btn btn-outline-primary btn-floating rounded-5 btn-lg" id="btn-back-to-top"><iconify-icon inline icon="grommet-icons:up"></iconify-icon>
@@ -250,6 +256,25 @@ var tampilTanggal = hari + ", " + tanggal + " " + bulan + " " + tahun;
     document.getElementById("tampil").innerHTML = tampilTanggal;
     </script>
     
+<script>
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Selamat pagi';
+    else if (hrs >= 12 && hrs <= 15)
+        greet = 'Selamat siang';
+    else if (hrs >= 15 && hrs <= 18)
+        greet = 'Selamat sore';
+    else if (hrs >= 18 && hrs <= 03)
+        greet = 'Selamat malam';
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<b>' + greet + '</b>';
+</script> 
+  
   <script>
   // fungsi satuaku adalah membuat angka 0 menjadi 00
   var satuaku = n => {
