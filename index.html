@@ -24,24 +24,23 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- CUSTOM CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </head>
   
   <body>
-  <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <img class="navbar-brand" src="image/flixdz.png" width="80">
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="fa fa-superpowers" style="font-size: 25px;"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+    <nav class="navbar navbar-expand-lg" id="NavBar">
+      <div class="container-fluid">
+        <a href="#"><img class="navbar-brand" src="image/flixdz.png" width="80"></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto text-center">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Beranda</a>
           </li>
@@ -60,7 +59,6 @@
             </a>
             <ul class="dropdown-menu text-center">
               <li><a class="dropdown-item" href="https://nurispedia.relaxstand.repl.co">Nurispedia</a></li>
-              <li><a class="dropdown-item" href="project/index.html">Projek Review</a></li>
             </ul>
             </li>
           <li class="nav-item dropdown">
@@ -69,14 +67,13 @@
             </a>
             <ul class="dropdown-menu text-center">
               <li><a class="dropdown-item" href="access.html">Teman</a></li>
-              <li><a class="dropdown-item" href="https://www.canva.com/design/DAFQ9hOEFPI/sqYPcQzdYJ4Y9fM3mjNxMw/edit?utm_content=DAFQ9hOEFPI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Sistem Operasi (Informatika)</a></li>
+              <li><a class="dropdown-item" href="https://bit.ly/3GlSOJO">Sistem Operasi</a></li>
             </ul>
             </li>
-        </ul>
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
      <div class="text-center">
        <div class="col">
@@ -87,11 +84,8 @@
        </div>
       </div>
       
-      <!-- Tombol ke atas -->
-        <button type="button" class="btn btn-outline-primary btn-floating rounded-5" id="btn-back-to-top"><iconify-icon inline icon="grommet-icons:up"></iconify-icon>
-        </button>
-
-   <div class="container p-3 mb-2 text-dark">
+ 
+   <div class="container p-3 mb-2 text-dark" data-aos="fade-up">
     <center>
     <img src="image/dev.png" width="120">
     <br><small class="user-select-none"><a href="https://www.github.com/flixdz" class="link-none" onclick="return confirm('Website ini dibuat dengan GitHub Repositories, ingin mengunjungi Halaman web GitHub saya?')">GitHub Page <i class="fa fa-github"></i></a></small>
@@ -103,7 +97,7 @@
           <hr>
           <h3><i class='fa fa-user-circle-o'></i> Perkenalan</h3>
           <p>
-            Halo! Perkenalkan nama saya Muhammad Fachri Al Husein, saya adalah mahasiswa dari Sekolah Menengah Kejuruan Nurul Islam Jakarta.
+            <font class="h4">Halo!</font> Perkenalkan nama saya Muhammad Fachri Al Husein, saya adalah mahasiswa dari Sekolah Menengah Kejuruan Nurul Islam Jakarta.
           </p>
         </div>
         
@@ -204,14 +198,18 @@
         </div>
     </div>
    </div>
+   
     <!-- Footer Start -->
     <div class="p-3 footer-index">
     <p class="text-center">Flixdz ft @flixpseal
-      <br> Copyright <b class="fa fa-copyright"></b> 2022
+      <br> Copyright <b class="fa fa-copyright"></b> 2023
       <br>Theme by <a href="https://instagram.com/flixpseal" onclick="return confirm('Mau ngunjungin instagram?')"><img src="image/flixdz.png" width="60px"></a>
       <br>Made with ♥️ for you
     </p>
     </div>
+       <!-- Tombol ke atas -->
+        <button type="button" class="btn btn-outline-primary btn-floating rounded-5 btn-lg" id="btn-back-to-top"><iconify-icon inline icon="grommet-icons:up"></iconify-icon>
+        </button>
     <!-- Footer End -->
     <!-- End Of Body HTML -->
    <!-- JavaScript for functional features this cool website-->

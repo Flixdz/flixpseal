@@ -19,29 +19,46 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-      <script src="js/copypaste.js"></script>
         <!-- AOS PLUGIN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/prism.js"></script>
+    <link href="css/prism.css" rel="stylesheet">
     <!-- CUSTOM CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <style>
+    #hypercontoh {
+      text-decoration: none;
+      color: green;
+      background: white;
+      padding: 3px;
+      border-radius: 8px;
+      transition: color 2s, background 2s, border-radius 3s, padding 3s;
+    }
+    #hypercontoh:hover {
+      color: white;
+      padding: 7px;
+      background: green;
+      border-radius: 15px;
+    }
+    </style>
   </head>
   
   <body>
-  <nav class="navbar">
-  <div class="container-fluid">
-    <img class="navbar-brand" src="image/flixdz.png" width="80">
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="fa fa-superpowers" style="font-size: 25px;"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+    <nav class="navbar navbar-expand-lg" id="NavBar">
+      <div class="container-fluid">
+        <a href="index.html"><img class="navbar-brand" src="image/flixdz.png" width="80"></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto text-center">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
           </li>
@@ -60,6 +77,7 @@
             </a>
             <ul class="dropdown-menu text-center">
               <li><a class="dropdown-item" href="https://nurispedia.relaxstand.repl.co">Nurispedia</a></li>
+              <li><a class="dropdown-item" href="project/index.html">Project Review</a></li>
             </ul>
             </li>
           <li class="nav-item dropdown">
@@ -68,16 +86,13 @@
             </a>
             <ul class="dropdown-menu text-center">
               <li><a class="dropdown-item" href="access.html">Teman</a></li>
+              <li><a class="dropdown-item" href="https://bit.ly/3GlSOJO">Sistem Operasi</a></li>
             </ul>
             </li>
-          <li class="nav-item">
-            Login menggunakan akun <a href="https://github.com">GitHub</a> Anda
-          </li>
-        </ul>
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
 
    <div class="container p-3 mb-2 text-dark">
@@ -94,6 +109,17 @@
         <br>Ayo Langsung ke tutorialnya!
       </p>
     </div>
+    
+    <div class="container" data-aos="zoom-in">
+      <div class="container">
+        <p><font class="h4">Isi halaman web</font>
+          <br><a href="#format" id="daftard">Format Text</a>
+          <br><a href="#buatlist" id="daftard">Membuat List</a>
+          <br><a href="#hypeabis" id="daftard">Membuat Hyperlink</a>
+        </p>
+      </div>
+    </div>
+    
     <div class="container col-12 col-md-12" data-aos="zoom-in">
       <hr>
       <h3><i class='fa fa-question-circle'></i>Basic Format</h3>
@@ -101,7 +127,7 @@
         Kalian Mau format text kayak gimana?, mau memformat bold, italic, underline, dan masih banyak lagi!
       </p>
     </div>
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" id="format">
       <hr>
       <h3>Format Text</h3>
       <p>Pertama yang harus kalian lakuin itu adalah mengingat tag di ini ya!
@@ -118,9 +144,8 @@
       <br><code>&lt;sup&gt;</code> Untuk membuat teks menjadi kecil dan berada diatas.
       <br>Kalian bisa melihat hasilnya melalui compiler dibawah ini :
       </p>
-      <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right"><span>Kode :<button class="btn btn-outline-secondary btn-sm fa fa-copy float-end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Salin Teks" onclick="jscopy('formatteks')"></button></span>
-   <br><code id="formatteks">
-<br>&lt;!DOCTYPE html&gt;
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
     <br>&lt;html lang=&quot;en&quot;&gt;
         <br>&lt;head&gt;
           <br>&lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -145,10 +170,9 @@
             <br>&lt;br&gt;Ini adalah &lt;sub&gt;teks sub&lt;/sub&gt;
           <br>&lt;/p&gt;
         <br>&lt;/body&gt;
-    <br>&lt;/html&gt;
-    </code>
-    </div>
-    <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right">Hasil :
+    <br>&lt;/html&gt;</code></pre>
+    
+    <div class="bg-code text-white p-2 mt-2 mb-2 rounded-2" data-aos="fade-right">Hasil :
          <p>
             <br>Ini adalah <b>teks Bold</b>
             <br>Ini adalah <i>teks Italic</i>
@@ -163,7 +187,7 @@
           </p>
     </div>
     </div>
-    <div class="container" data-aos="fade-right">
+    <div class="container" data-aos="fade-right" id="buatlist">
       <hr>
       <h3>Membuat List</h3>
       <p>Membuat List Pada HTML bisa menggunakan tag <code>&lt;ul&gt;</code> atau unordered list yang fungsinya mengurutkan daftar dengan menggunakan simbol tertentu pada HTML. Sedangkan  <code>&lt;ol&gt;</code> fungsinya adalah mengurutkan dengan menggunakan huruf, angka, angka romawi, dan lainnya.
@@ -171,36 +195,33 @@
       <br>Jangan lupa untuk menambahkan  <code>&lt;li&gt;</code> atau list item untuk menambahkan list pada tag  <code>&lt;ul&gt;</code> maupun  <code>&lt;ol&gt;</code>
       <br>
       <br>Contoh cara kerja ol dan ul ada pada command dibawah ini:
-       <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right">
-          <span>Kode :
-          <button class="btn btn-outline-secondary btn-sm fa fa-copy float-end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Salin Teks" onclick="jscopy('olulli')"></button></span>
-        <br>
-      <code id="olulli">
-<br>&lt;!DOCTYPE html&gt;
-    <br>&lt;html lang=&quot;en&quot;&gt;
-        <br>&lt;head&gt;
-          <br>&lt;meta charset=&quot;UTF-8&quot;&gt;
-          <br>&lt;meta http-equiv=&quot;X-UA-Compatible&quot;
+      
+     <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+        &lt;head&gt;
+          &lt;meta charset=&quot;UTF-8&quot;&gt;
+          &lt;meta http-equiv=&quot;X-UA-Compatible&quot;
           content=&quot;IE=edge&quot;&gt;
-          <br>&lt;meta name=&quot;viewport&quot; 
+          &lt;meta name=&quot;viewport&quot; 
           content=&quot;width=device-width, 
           initial-scale=1&quot;&gt;
-          <br>&lt;title&gt;Document&lt;/title&gt;
-        <br>&lt;/head&gt;
-        <br>&lt;body&gt;
-          <br>&lt;ul&gt;
-            <br>&lt;li&gt;ini adalah list item dari ul &lt;/li&gt;
-            <br>&lt;li&gt;ini adalah list item dari ul &lt;/li&gt;
-          <br>&lt;/ul&gt;
-          <br>&lt;ol&gt;
-            <br>&lt;li&gt;ini adalah list item dari ol &lt;/li&gt;
-            <br>&lt;li&gt;ini adalah list item dari ol &lt;/li&gt;
-          <br>&lt;/ol&gt;
-        <br>&lt;/body&gt;
-    <br>&lt;/html&gt;
-    </code>
-    </div>
-    <div class="bg-dark text-white p-2 mt-2 mb-2 rounded-3" data-aos="fade-right">Hasil :
+          &lt;title&gt;Document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;ul&gt;
+            &lt;li&gt;ini adalah list item dari ul &lt;/li&gt;
+            &lt;li&gt;ini adalah list item dari ul &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;ol&gt;
+            &lt;li&gt;ini adalah list item dari ol &lt;/li&gt;
+            &lt;li&gt;ini adalah list item dari ol &lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+    
+    Hasil yang didapat adalah :
+
+    <div class="rounded-2 text-white p-2" data-aos="fade-right" style="background-color: #272822;">
           <ul>
             <li>ini adalah list item dari ul</li>
             <li>ini adalah list item dari ul</li>
@@ -209,33 +230,85 @@
             <li>ini adalah list item dari ol </li>
             <li>ini adalah list item dari ol </li>
           </ol>
+      </div>
     </div>
-    <p>Mungkin sekian dari saya, saya pamit undur diri, semoga bermanfaat bagi kalian yang mau belajar HTML!
-    <br>Jika anda ingin berkolaborasi atau memeriksa kode yang salah, kalian bisa email saya ke :
-    <br>frezzcraft109@gmail.com
-    </p>
     
-    
-   </div>
+    <div class="container pt-2" data-aos="fade-up" id="hypeabis">
+      <hr>
+      <h3>Membuat <i>Hyperlink</i></h3>
+      <p>HHyperlink? Apa itu hyperlink?
+      <br>Pernahkah kalian menekan sebuah tulisan dan tulisan itu mengarah ke browser?, ya! itu adalah hyperlink!
+      <br>Hyperlink adalah suatu cara untuk menghubungkan suatu bagian tertentu di dalam slide, file dokumen, program, atau halaman website.
+      <br>Contohnya?
+      <br>Coba tekan tombol dibawah ini:
+      <br><a href="#" class="btn btn-primary btn-sm rounded-5" onclick="alert('Ini adalah contoh hyperlink yang mengarahkan kamu ke halaman lain')">Kesini</a>
+      <br>Contohnya ada dibawah ini :
+      </p>
+      <pre data-aos="fade-right"><code class="language-html">&lt;a href=&quot;https://flixdz.github.io/flixpseal&quot;&gt;Website&lt;/a&gt;</code></pre>
+      <div class="bg-code text-white rounded-2 p-2">
+        <a href="https://flixdz.github.io/flixpseal">Website</a>
+      </div>
+        <p>Link diatas mengarahkan kamu ke website ini halaman beranda tetapi memakai url bukan document seperti :
+        </p>
+      <pre data-aos="fade-right"><code class="language-html">&lt;a href=&quot;index.html&quot;&gt;Website&lt;/a&gt;</code></pre>
+      <div class="bg-code text-white rounded-2 p-2">
+        <a href="index.html">Website</a>
+      </div>
+      <p> Sekilas si sama saja ya? tetapi ini berbeda, satu memakai url (https) dan satu lagi menggunakan <code>.html</code>
+      <br>oh iya!, tulisannya juga bisa kalian sesuaikan dengan keinginan kalian, tapi memakai css ya!
+      <br>nih aku kasih contohnya!
+      </p>
+      <br>Pertama kalian buat dulu CSS nya
+      <pre><code class="language-css">/* contohnya yaa */
+a {
+  text-decoration: none;
+  color: green;
+  background: white;
+  padding: 3px;
+  border-radius: 8px;
+  /* Ketika kalian mengarahkan mouse diatasnya, warna background dan font akan berubah */
+  transition: color 2s, background 2s, border-radius 3s;
+}
+a:hover {
+  color: white;
+  background: green;
+  border-radius: 15px;
+}</code></pre>
+    <br>Lalu kalian buat hyperlink-nya<pre data-aos="fade-right"><code class="language-html">&lt;a href=&quot;index.html&quot;&gt;Website&lt;/a&gt;</code></pre>
+    hasilnya?
+    <div class="bg-code text-white rounded-2 p-2">
+        <a href="index.html" id="hypercontoh">Website</a>
+      </div>
+      <p>Sekarang coba kalian arahkan mouse atau jika kalian di hp tahan teks tersebut tapi jangan di tekan, dan kalian bisa melihat perbedaanya, jadi lebih keren bukan?😎
+      </p>
+      Oiya ada satu lagi hyperlink lagi nihh, yaitu adalah <i>anchor hyperlink</i>, yang berfungsi mengarahkan kalian ke bawah / ke atas sesuai dengan perintah dengan memanfaatkan fungsi <code class="language-html">id</code> dan tanda <code class="language-html">#</code> jika kita gabung akan menjadi seperti ini 
+      <br><code class="language-html">&lt;a href=&quot;#contoh&quot;&gt;</code>
+      <br>Contohnya seperti ini ya :
+      <pre><code class="language-html">&lt;a href=&quot;#buatlist&quot;&gt;Website&lt;/a&gt;</code></pre>
+    <div class="bg-code text-white rounded-2 p-2">
+        <a href="#buatlist">Kembali</a>
+      </div>
+      Tag diatas akan membawa kalian kembali ke atas yaitu bagian "Membuat List"
+      </div>
    </div>
    
 
-      <footer class="p-3 mb-2 mt-2">
+      <footer class="p-3 mt-2">
     <p>Flixdz ft @flixpseal
-      <br> Copyright <b class="fa fa-copyright"></b> 2022
+      <br> Copyright <b class="fa fa-copyright"></b> 2023
       <br>Theme by <a href="index.html"><img src="image/flixdz.png" width="60px"></a>
       <br>Made in ♥️ Indonesia
     </p>
   </footer>
   
-  <script>
-   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-   </script>
+ <!-- Tombol ke atas -->
+  <button type="button" class="btn btn-primary btn-floating rounded-5" id="btn-back-to-top"><iconify-icon inline icon="grommet-icons:up"></iconify-icon></button>
+  <!-- End of HTML -->
   
    <!--JAVA SCRIPT FOR AOS-->
    <script>
     AOS.init();
   </script>
+  <script src="js/button_top.js"></script>
   </body>
 </html>
