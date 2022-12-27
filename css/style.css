@@ -22,6 +22,9 @@ hr {
   width: 200px;
   margin: 0 auto;
 }
+.bg-code {
+  background-color: #272822;
+}
 #sosmed img {
   width: 45px;
 }
@@ -53,6 +56,17 @@ img {
 	 color: #0d6efd;
 	 background-color: #e8e8e8;
 }
+#daftard {
+      transition: color 1s, background-color 1s;
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 3px;
+ }
+#daftard:hover {
+      color: white;
+      background-color: #0d6efd;
+}
 hr {
   opacity: 0;
 }
@@ -62,7 +76,6 @@ bottom: 20px;
 right: 20px;
 display: none;
 }
-
 /* BUAT ANIMASI */
 @keyframes animasiulang {
 	0% {
