@@ -79,10 +79,10 @@
     <div class="container">
      <div class="row text-center">
        <div class="col-md-4">
-          <div id="lblGreetings"></div>
+          <div id="tampil"></div>
         </div>
        <div class="col-md-4">
-          <div id="tampil"></div>
+          <div id="lblGreetings"></div>
         </div>
         <div class="col-md-4">
           <div id="waktu"></div>
@@ -218,8 +218,10 @@
         </button>
     <!-- Footer End -->
     <!-- End Of Body HTML -->
+    </body>
    <!-- JavaScript for functional features this cool website-->
 <script>
+setInterval(() => {
 var date = new Date();
 var tahun = date.getFullYear();
 var bulan = date.getMonth();
@@ -253,26 +255,29 @@ switch(bulan) {
 }
 var tampilTanggal = hari + ", " + tanggal + " " + bulan + " " + tahun;
  
-    document.getElementById("tampil").innerHTML = tampilTanggal;
+    document.getElementById("tampil").innerHTML = tampilTanggal;}, 1000);
     </script>
     
 <script>
+    setInterval(() => {
     var myDate = new Date();
     var hrs = myDate.getHours();
 
     var greet;
 
-    if (hrs < 12)
+    if (hrs < 03)
+        greet = 'Selamat malam';
+    else if (hrs >= 03 && hrs <= 10)
         greet = 'Selamat pagi';
-    else if (hrs >= 12 && hrs <= 15)
+    else if (hrs >= 10 && hrs <= 15)
         greet = 'Selamat siang';
     else if (hrs >= 15 && hrs <= 18)
         greet = 'Selamat sore';
-    else if (hrs >= 18 && hrs <= 03)
+    else if (hrs >= 18 && hrs <= 24)
         greet = 'Selamat malam';
 
     document.getElementById('lblGreetings').innerHTML =
-        '<b>' + greet + '</b>';
+        greet;}, 1000);
 </script> 
   
   <script>
@@ -299,5 +304,5 @@ var tampilTanggal = hari + ", " + tanggal + " " + bulan + " " + tahun;
   
   <script src="js/button_top.js"></script>
   <!-- End Script -->
-  </body>
+
 </html>
