@@ -13,6 +13,8 @@
     <!-- Prism JS -->
     <link rel="stylesheet" href="css/prism.css">
     <script src="js/prism.js"></script>
+    <!-- Dark Mode -->
+    <link rel="stylesheet" href="css/dark-mode.css">
     <!-- AOS PLUGIN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -36,7 +38,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto text-center">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+            <a class="nav-link" aria-current="page" href="#">Beranda</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,9 +71,13 @@
         </div>
       </div>
     </nav>
-
-
-   <div class="container p-3 mb-2 text-dark">
+    
+    <div class="container text-end" data-aos="fade-up">
+          <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
+          <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch"><iconify-icon id="darkmode"></iconify-icon></label>
+        </div>
+    
+   <div class="container p-3 mb-2">
     <center data-aos="fade-up">
     <img src="image/html5.png" width="100">
     <br><small>Belajar HTML5</small>
@@ -94,6 +100,7 @@
           <br><a href="#taghtml" id="daftard">Tag HTML</a>
           <br><a href="#buatpara" id="daftard">Membuat Paragraf</a>
           <br><a href="#masukgambar" id="daftard">Memasukkan Gambar</a>
+          <br><a href="#aturfont" id="daftard">Mengatur Font</a>
         </p>
       </div>
     </div>
@@ -200,12 +207,11 @@
    </div>
    
    
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" id="aturfont">
       <hr>
-      <h3>Mengatur Font dengan CSS</h3>
-      <p>Karena cara ini menurut saya lumayan simpel daripada menggunakan tag html, maka saya akan memberikan materinya, yaitu cara mengatur font di html kalian.
-      <br>Pertama siapkan dulu teks mana yang ingin kalian atur seusai selera kalian.
-      <br>disini saya akan menggunakan <code>&lt;p&gt;</code> yaitu untuk membuat paragraf.
+      <h3>Mengatur Font</h3>
+      <p>Pertama siapkan dulu teks mana yang ingin kalian atur seusai selera kalian.
+      <br>disini saya akan menggunakan <code class="language-html">&lt;p&gt;</code> yaitu untuk membuat paragraf.
       <br>oke langsung ke caranya
       <br>
       <br>Jika kalian sudah membuat teks dan ingin mengatur sesuka kalian, maka yang harus kalian lakukan adalah menambahkan CSS inline, yaitu berada dalam tag html tersebut.
@@ -216,10 +222,11 @@
       <br>Contoh disini saya akan membuat font dengan jenis font 'Times New Roman', membuat ukuran 24 pixel, dan juga mewarnainya dengan warna biru muda.
       </p>
       Kode :
-<pre><code class="language-html">&lt;p style=&quot;font-family: &#039;Times New Roman&#039;, sans-serif; font-size: 24px; color: lightblue;&quot;&gt;</code></pre>
+      <pre><code class="language-html">&lt;p style=&quot;font-family: &#039;Times New Roman&#039;, sans-serif; font-size: 24px; color: lightblue;&quot;&gt;</code></pre>
       Hasil :
       <div class="bg-code text-white p-2 mt-2 mb-2 rounded-2" data-aos="fade-right"><font style="font-family: 'Times New Roman', sans-serif; font-size: 24px; color: lightblue;">Halo</font>
       </div>
+      <br>Kalian juga bisa menggantinya dengan font sesuai dengan keinginan kalian, jika kalian ingin mengganti/memilih font silahkan menuju ke <a href="https://fonts.google.com">Google Fonts</a> atau website lain yang menyediakan font.
    </div>
 </div>
 
@@ -238,5 +245,6 @@
     AOS.init();
   </script>
   <script src="js/button_top.js"></script>
+  <script src="js/dark-mode-switch.js"></script>
   </body>
 </html>

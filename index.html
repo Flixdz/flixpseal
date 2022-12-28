@@ -19,7 +19,7 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-        <!-- AOS PLUGIN -->
+    <!-- AOS PLUGIN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- CUSTOM CSS -->
@@ -27,6 +27,8 @@
     <link href="css/nav.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="css/dark-mode.css">
+
   </head>
   
   <body>
@@ -77,25 +79,58 @@
     </nav>
     
     <div class="container">
-     <div class="row text-center">
-       <div class="col-md-4">
+     <div class="row text-center" data-aos="fade-up" data-aos-duration="3000">
+       <div class="col-md-3" data-aos="zoom-in" data-aos-duration="2000">
           <div id="tampil"></div>
         </div>
-       <div class="col-md-4">
+       <div class="col-md-3" data-aos="zoom-in" data-aos-duration="3000">
           <div id="lblGreetings"></div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="4000">
           <div id="waktu"></div>
+       </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="5000">
+          <div class="container" data-aos="fade-up">
+          <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
+          <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch"><iconify-icon inline icon="line-md:sunny-filled-loop-to-moon-alt-filled-loop-transition" width="26">d</iconify-icon></label>
+        </div>
        </div>
       </div>
      </div>
  
-   <div class="container p-3 mb-2 text-dark" data-aos="fade-up">
+   <div class="container p-3 mb-2" data-aos="fade-up">
     <center>
-    <img src="image/dev.png" width="120">
-    <br><small class="user-select-none"><a href="https://www.github.com/flixdz" class="link-none" onclick="return confirm('Website ini dibuat dengan GitHub Repositories, ingin mengunjungi Halaman web GitHub saya?')">GitHub Page <i class="fa fa-github"></i></a></small>
+      <div id="carouselgmbr" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/animation.gif" width="120">
+    </div>
+    <div class="carousel-item">
+      <img src="image/carousel/carousel(2).png" width="120">
+    </div>
+    <div class="carousel-item">
+      <img src="image/carousel/carousel(3).png" width="120">
+    </div>
+    <div class="carousel-item">
+      <img src="image/carousel/carousel(4).png" width="120">
+    </div>
+    <div class="carousel-item">
+      <img src="image/carousel/carousel(4).png" width="120">
+    </div>
+    <div class="carousel-item">
+      <img src="image/carousel/carousel(5).png" width="120">
+    </div>
+    <div class="carousel-item">
+      <img src="image/carousel/carousel(6).png" width="120">
+    </div>
+    <div class="carousel-item">
+      <img src="image/carousel/carousel(7).png" width="120">
+    </div>
+  </div>
+    <small class="user-select-none"><a href="https://www.github.com/flixdz" class="link-none" onclick="return confirm('Website ini dibuat dengan GitHub Repositories, ingin mengunjungi Halaman web GitHub saya?')">GitHub Page <i class="fa fa-github"></i></a></small>
+</div>
     </center>
-    
+   
     <div class="container">
       <div class="row">
         <div class="container col-md-6" data-aos="zoom-in">
@@ -136,7 +171,7 @@
             <li>Software Tester</li>
             <li>Masinis</li>
             <li>Pilot</li>
-            <li>Menjadi orang biasa</li>
+            <li>Menjadi orang</li>
           </ol>
         </div>
        </div>
@@ -301,8 +336,9 @@ var tampilTanggal = hari + ", " + tanggal + " " + bulan + " " + tahun;
   <script>
     AOS.init();
   </script>
-  
+
   <script src="js/button_top.js"></script>
+  <script src="js/dark-mode-switch.js"></script>
   <!-- End Script -->
 
 </html>

@@ -29,6 +29,8 @@
     <link href="css/nav.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="css/dark-mode.css">
     <style>
     #hypercontoh {
       text-decoration: none;
@@ -93,9 +95,13 @@
         </div>
       </div>
     </nav>
-
-
-   <div class="container p-3 mb-2 text-dark">
+    
+    <div class="container text-end" data-aos="fade-up">
+          <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
+          <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch"><iconify-icon inline icon="line-md:sunny-filled-loop-to-moon-alt-filled-loop-transition" width="26"></iconify-icon></label>
+        </div>
+    
+   <div class="container p-3 mb-2">
     <center data-aos="fade-up">
     <img src="image/html5.png" width="100">
     <br><small>Belajar HTML5</small>
@@ -122,14 +128,14 @@
     
     <div class="container col-12 col-md-12" data-aos="zoom-in">
       <hr>
-      <h3><i class='fa fa-question-circle'></i>Basic Format</h3>
+      <h3><i class='fa fa-question-circle'></i> Basic Format</h3>
       <p>
         Kalian Mau format text kayak gimana?, mau memformat bold, italic, underline, dan masih banyak lagi!
       </p>
     </div>
       <div class="container" data-aos="fade-up" id="format">
       <hr>
-      <h3>Format Text</h3>
+      <h3><iconify-icon inline icon="line-md:text-box-to-text-box-multiple-transition"></iconify-icon> Format Text</h3>
       <p>Pertama yang harus kalian lakuin itu adalah mengingat tag di ini ya!
       <br><code>&lt;b&gt;</code> Untuk bold
       <br><code>&lt;i&gt;</code> Untuk Italic
@@ -221,7 +227,7 @@
     
     Hasil yang didapat adalah :
 
-    <div class="rounded-2 text-white p-2" data-aos="fade-right" style="background-color: #272822;">
+    <div class="rounded-2 bg-code text-white p-2" data-aos="fade-right">
           <ul>
             <li>ini adalah list item dari ul</li>
             <li>ini adalah list item dari ul</li>
@@ -310,5 +316,7 @@ a:hover {
     AOS.init();
   </script>
   <script src="js/button_top.js"></script>
+  <script src="js/date-time.js"></script>
+  <script src="js/dark-mode-switch.min.js"></script>
   </body>
 </html>
