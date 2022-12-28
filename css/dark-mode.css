@@ -1,0 +1,86 @@
+/*!
+ * Dark Mode Switch v1.0.1 (https://github.com/coliff/dark-mode-switch)
+ * Copyright 2021 C.Oliff
+ * Licensed under MIT (https://github.com/coliff/dark-mode-switch/blob/main/LICENSE)
+ */
+
+[data-theme="dark"] {
+  background-color: #212529 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #fff !important;
+}
+
+[data-theme="dark"] .bg-dark {
+  background-color: #eee !important;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #222 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+}
+
+[data-theme="dark"] .nav-link {
+  color: #eee !important;
+}
+
+[data-theme="dark"] .navbar-toggler span {
+  background-color: #eee !important;
+}
+
+[data-theme="dark"] .navbar-toggler {
+  color: #eee !important;
+  border-color: #eee !important;
+}
+[data-theme="dark"] pre {
+  background-color: #171717 !important;
+}
+[data-theme="dark"] .bg-code {
+  background-color: #171717 !important;
+}
+[data-theme="dark"] .link-none {
+  color: #eee !important;
+}
+[data-theme="dark"] .dropdown-menu {
+  background: #212529 !important;
+  color: #eee !important;
+  border-color: #eee;
+}
+[data-theme="dark"] .dropdown-item {
+  color: #eee !important;
+}
+[data-theme="dark"] .dropdown-item:hover {
+  color: #212529 !important;
+}
+
+/* Label / tombol untuk darkmode */
+label {
+  background: #eee !important;
+  color: #212529 !important;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+[data-theme="dark"] label {
+  background: #212529 !important;
+  color: #eee !important;
+  border-color: #eee !important;
+}
+
+
+
+[data-theme="dark"] .text-white {
+  color: #212529 !important;
+}
+
+[data-theme="dark"] #darkmode {
+  color: #212529 !important;
+  content: url('https://api.iconify.design/line-md/sunny-filled-loop-to-moon-alt-filled-loop-transition.svg?color=%23eee&width=27&height=27');
+}
+
+#darkmode {
+  content: url('https://api.iconify.design/line-md/moon-to-sunny-outline-loop-transition.svg?color=%23212529&width=27&height=27');
+}

@@ -4,10 +4,6 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(-120deg, lightblue, white, red);
-  background-size: 400% 400%;
-  width: 100%;
-  animation: animate 25s ease infinite;
 }
 h3 {
   text-align: center;
@@ -27,12 +23,6 @@ hr {
 }
 #sosmed img {
   width: 45px;
-}
-footer {
-  background: linear-gradient(-120deg, red , white);
-  background-size: 400% 400%;
-  animation: animasiulang 5s ease infinite alternate;
-  text-align: center;
 }
 .footer-index {
   animation: animasiulang-index 25s ease infinite alternate;
@@ -111,7 +101,7 @@ display: none;
 	}
 	100% {
 		background-position: 0% 50%;
-		color: white;
+		color: grey;
 	}
 }
 @keyframes animate {
