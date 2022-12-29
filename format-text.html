@@ -96,9 +96,10 @@
       </div>
     </nav>
     
-    <div class="container text-end" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
           <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
-          <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch"><iconify-icon inline icon="line-md:sunny-filled-loop-to-moon-alt-filled-loop-transition" width="26"></iconify-icon></label>
+          <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch"><iconify-icon id="darkmode"></iconify-icon></label>
+          <font id="tema"></font>
         </div>
     
    <div class="container p-3 mb-2">
@@ -118,7 +119,7 @@
     
     <div class="container" data-aos="zoom-in">
       <div class="container">
-        <p><font class="h4">Isi halaman web</font>
+        <p><iconify-icon inline icon="line-md:align-right"></iconify-icon> <font class="h4">Isi halaman web</font>
           <br><a href="#format" id="daftard">Format Text</a>
           <br><a href="#buatlist" id="daftard">Membuat List</a>
           <br><a href="#hypeabis" id="daftard">Membuat Hyperlink</a>
@@ -133,23 +134,66 @@
         Kalian Mau format text kayak gimana?, mau memformat bold, italic, underline, dan masih banyak lagi!
       </p>
     </div>
+    
+    
       <div class="container" data-aos="fade-up" id="format">
       <hr>
       <h3><iconify-icon inline icon="line-md:text-box-to-text-box-multiple-transition"></iconify-icon> Format Text</h3>
-      <p>Pertama yang harus kalian lakuin itu adalah mengingat tag di ini ya!
-      <br><code>&lt;b&gt;</code> Untuk bold
-      <br><code>&lt;i&gt;</code> Untuk Italic
-      <br><code>&lt;del&gt;</code> Untuk membuat teks menjadi dicoret atau diberi garis
-      <br><code>&lt;u&gt;</code> Untuk Underline atau garis bawah
-      <br><code>&lt;mark&gt;</code> Untuk menambahkan tanda pada teks
-      <br><code>&lt;strong&gt;</code> Untuk menambahkan efek bold yang berisi hal penting
-      <br><code>&lt;em&gt;</code> Untuk membuat teks menjadi lebih ditekan
-      <br><code>&lt;ins&gt;</code> untuk menandai suatu text disisipkan pada suatu kalimat
-      <br><code>&lt;small&gt;</code> Untuk membuat teks menjadi kecil
-      <br><code>&lt;sub&gt;</code> Untuk membuat teks menjadi kecil dan berada dibawah.
-      <br><code>&lt;sup&gt;</code> Untuk membuat teks menjadi kecil dan berada diatas.
-      <br>Kalian bisa melihat hasilnya melalui compiler dibawah ini :
-      </p>
+      <p>Pertama yang harus kalian lakuin itu adalah mengingat tag di dibawah ini ya!</p>
+      <table class="table table-bordered" style="font-family: manrope;">
+        <thead>
+          <tr>
+            <th scope="col">Tag</th>
+            <th scope="col">Fungsi</th>
+         </tr>
+      </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><code>&lt;b&gt;</code></th>
+      <td>Untuk memberikan efek <b>bold</b> atau menebalkan teks.</td>
+    </tr>
+    <tr>
+      <th><code>&lt;i&gt;</code></th>
+      <td>Untuk memberikan efek <i>italic</i> atau memiringkan teks.</td>
+    </tr>
+    <tr>
+      <th><code>&lt;del&gt;</code></th>
+      <td>Untuk untuk menunjukkan konten yang telah dihapus / <del>(delete)</del> dari dokumen.</td>
+    </tr>
+    <tr>
+      <th><code>&lt;u&gt;</code></th>
+      <td>Untuk untuk memberikan efek <u>underline</u> atau garis miring.</td>
+    </tr>
+    <tr>
+      <th><code>&lt;mark&gt;</code></th>
+      <td>Untuk untuk memberikan efek <mark>highlight</mark> atau tanda pada teks.</td>
+    </tr>
+    <tr>
+      <th><code>&lt;strong&gt;</code></th>
+      <td>Untuk untuk memberikan efek <strong>bold</strong> yang menyatakan hal penting.</td>
+    </tr>
+    <tr>
+      <th><code>&lt;em&gt;</code></th>
+      <td>Untuk menandai teks yang memiliki stress emphasis atau <i>Italic</i> seperti tadi</td>
+    </tr>
+    <tr>
+      <th><code>&lt;ins&gt;</code></th>
+      <td>untuk menandai suatu <ins>Text</ins> disisipkan pada suatu kalimat</td>
+    </tr>
+    <tr>
+      <th><code>&lt;small&gt;</code></th>
+      <td>untuk membuat teks kalian menjadi <small>small</small> atau kecil</td>
+    </tr>
+    <tr>
+      <th><code>&lt;sup&gt;</code></th>
+      <td>Untuk membuat teks menjadi kecil dan berada <sup>diatas</sup></td>
+    </tr>
+    <tr>
+      <th><code>&lt;sub&gt;</code></th>
+      <td>Untuk membuat teks menjadi kecil dan berada <sub>dibawah</sub></td>
+    </tr>
+   </tbody>
+</table>
 
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
     <br>&lt;html lang=&quot;en&quot;&gt;
@@ -178,7 +222,7 @@
         <br>&lt;/body&gt;
     <br>&lt;/html&gt;</code></pre>
     
-    <div class="bg-code text-white p-2 mt-2 mb-2 rounded-2" data-aos="fade-right">Hasil :
+    <div class="bg-code p-2 mt-2 mb-2 rounded-2" data-aos="fade-right">Hasil :
          <p>
             <br>Ini adalah <b>teks Bold</b>
             <br>Ini adalah <i>teks Italic</i>
@@ -193,7 +237,7 @@
           </p>
     </div>
     </div>
-    <div class="container" data-aos="fade-right" id="buatlist">
+    <div class="container" data-aos="fade-up" id="buatlist">
       <hr>
       <h3>Membuat List</h3>
       <p>Membuat List Pada HTML bisa menggunakan tag <code>&lt;ul&gt;</code> atau unordered list yang fungsinya mengurutkan daftar dengan menggunakan simbol tertentu pada HTML. Sedangkan  <code>&lt;ol&gt;</code> fungsinya adalah mengurutkan dengan menggunakan huruf, angka, angka romawi, dan lainnya.
@@ -227,7 +271,7 @@
     
     Hasil yang didapat adalah :
 
-    <div class="rounded-2 bg-code text-white p-2" data-aos="fade-right">
+    <div class="rounded-2 bg-code p-2" data-aos="fade-right">
           <ul>
             <li>ini adalah list item dari ul</li>
             <li>ini adalah list item dari ul</li>
@@ -241,13 +285,13 @@
     
     <div class="container pt-2" data-aos="fade-up" id="hypeabis">
       <hr>
-      <h3>Membuat <i>Hyperlink</i></h3>
-      <p>HHyperlink? Apa itu hyperlink?
+      <h3>Membuat Anchor<i> (Hyperlink)</i></h3>
+      <p>Hyperlink? Apa itu hyperlink?
       <br>Pernahkah kalian menekan sebuah tulisan dan tulisan itu mengarah ke browser?, ya! itu adalah hyperlink!
       <br>Hyperlink adalah suatu cara untuk menghubungkan suatu bagian tertentu di dalam slide, file dokumen, program, atau halaman website.
       <br>Contohnya?
       <br>Coba tekan tombol dibawah ini:
-      <br><a href="#" class="btn btn-primary btn-sm rounded-5" onclick="alert('Ini adalah contoh hyperlink yang mengarahkan kamu ke halaman lain')">Kesini</a>
+      <br><a href="https://www.instagram.com/flixpseal" class="btn btn-primary btn-sm rounded-5" onclick="return confirm('Ingin mengunjungi Instagram?')">Kesini</a>
       <br>Contohnya ada dibawah ini :
       </p>
       <pre data-aos="fade-right"><code class="language-html">&lt;a href=&quot;https://flixdz.github.io/flixpseal&quot;&gt;Website&lt;/a&gt;</code></pre>
@@ -282,12 +326,12 @@ a:hover {
 }</code></pre>
     <br>Lalu kalian buat hyperlink-nya<pre data-aos="fade-right"><code class="language-html">&lt;a href=&quot;index.html&quot;&gt;Website&lt;/a&gt;</code></pre>
     hasilnya?
-    <div class="bg-code text-white rounded-2 p-2">
+    <div class="bg-code rounded-2 p-2">
         <a href="index.html" id="hypercontoh">Website</a>
       </div>
       <p>Sekarang coba kalian arahkan mouse atau jika kalian di hp tahan teks tersebut tapi jangan di tekan, dan kalian bisa melihat perbedaanya, jadi lebih keren bukan?😎
       </p>
-      Oiya ada satu lagi hyperlink lagi nihh, yaitu adalah <i>anchor hyperlink</i>, yang berfungsi mengarahkan kalian ke bawah / ke atas sesuai dengan perintah dengan memanfaatkan fungsi <code class="language-html">id</code> dan tanda <code class="language-html">#</code> jika kita gabung akan menjadi seperti ini 
+      Oiya ada satu lagi hyperlink lagi nihh, yaitu adalah <i>Linking same page</i>, yang berfungsi mengarahkan kalian ke halaman itu sendiri sesuai dengan perintah ingin mengarahkan ke atas / bawah halaman dengan memanfaatkan fungsi <code class="language-html">id</code> dan tanda <code class="language-html">#</code> jika kita gabung akan menjadi seperti ini 
       <br><code class="language-html">&lt;a href=&quot;#contoh&quot;&gt;</code>
       <br>Contohnya seperti ini ya :
       <pre><code class="language-html">&lt;a href=&quot;#buatlist&quot;&gt;Website&lt;/a&gt;</code></pre>

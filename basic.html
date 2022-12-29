@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto text-center">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Beranda</a>
+            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -72,9 +72,10 @@
       </div>
     </nav>
     
-    <div class="container text-end" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
           <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
           <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch"><iconify-icon id="darkmode"></iconify-icon></label>
+          <font id="tema"></font>
         </div>
     
    <div class="container p-3 mb-2">
@@ -95,7 +96,7 @@
     
     <div class="container" data-aos="zoom-in">
       <div class="container">
-        <p><font class="h4">Isi halaman web</font>
+        <p><iconify-icon inline icon="line-md:align-right"></iconify-icon> <font class="h4">Isi halaman web</font>
           <br><a href="#basik" id="daftard">Basic HTML</a>
           <br><a href="#taghtml" id="daftard">Tag HTML</a>
           <br><a href="#buatpara" id="daftard">Membuat Paragraf</a>
@@ -108,12 +109,12 @@
     
     <div class="container" data-aos="zoom-in" id="basik">
       <hr>
-      <h3><i class='fa fa-question-circle'></i>Basic html</h3>
+      <h3><i class='fa fa-question-circle'></i> Basic HTML</h3>
       <p>
         Pertama siapin dulu nih alat buat ngoding kalian, seperti Komputer, Laptop, ataupun Smartphone yang kalian punya.
         <br>Aku saranin kalo kalian punya laptop dan komputer kalian bisa pakai aplikasi <a href="https://code.visualstudio.com/download">Visual Studio Code</a> untuk Windows dan MacOS.
         <br>
-        <br>"Pakai hp bisa ga?" Bisa!, <font class="text-danger">Inget ya kalo pakai hp lebih ribet daripada PC, jadi tergantung niat dari kalian.</font> Jika memang ingin di hp kalian saya sarankan memakai sebuah aplikasi bernama "Acode" atau bisa cari semacamnya.
+        <br>"Pakai hp bisa ga?" Bisa!, <font class="text-danger">Inget ya kalo pakai hp lebih ribet daripada PC, jadi tergantung niat dari kalian.</font> Jika memang ingin di hp, saya sarankan memakai sebuah aplikasi bernama <a href="https://play.google.com/store/apps/details?id=com.foxdebug.acodefree" class="text-success">Acode</a> atau bisa cari semacamnya.
         <br>Oke kalo udah di install dan siap untuk digunakan, ayo kita lanjut ke tahap berikutnya.
       </p>
     </div>
@@ -148,7 +149,6 @@
         <p>Didalam HTML kalian bisa membuat tulisan dengan banyak perintah, seperti membuat heading bisa menggunakan tag <code>&lt;h1&gt;</code> sampai <code>&lt;h6&gt;</code>, membuat paragraf kalian bisa menggunakan tag <code>&lt;p&gt;</code>, membuat baris baru menggunakan <code>&lt;br&gt;</code>.
         <br>Disini saya akan membuat Teks Hello World! dengan heading dan juga paragraf disertai break rule atau garis baru.
         </p>
-        </div>
 
         <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 <br>&lt;html lang=&quot;en&quot;&gt;
@@ -171,15 +171,36 @@
 <br>&lt;/html&gt;
 </code></pre>
         
-    <div class="bg-code text-white p-2 rounded-2" data-aos="fade-right">Hasil :
+    <div class="bg-code p-2 rounded-2" data-aos="fade-right">Hasil :
         <h1>Ini heading 1</h1>
         <h6>Ini heading 6</h6>
         <p>Ini Paragraf
           <br>Dan ini break rule atau garis baru.
         </p>
      </div>
-        
-
+    
+    <p>Untuk membuat paragraf seperti dibawah ini yaa :</p>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+<br>&lt;html lang=&quot;en&quot;&gt;
+     <br>&lt;head&gt;
+         <br>&lt;meta charset=&quot;UTF-8&quot; /&gt;
+         <br>&lt;meta http-equiv=&quot;X-UA-Compatible&quot;
+          content=&quot;IE=edge&quot; /&gt;
+         <br>&lt;meta name=&quot;viewport&quot; 
+          content=&quot;width=device-width, 
+          initial-scale=1&quot; /&gt;
+         <br>&lt;title&gt;Document&lt;/title&gt;
+     <br>&lt;/head&gt;
+     <br>&lt;body&gt;
+          &lt;p&gt;Lorem Ipsum &lt;!-- Ini adalah Kepala paragraf --&gt;
+          &lt;!-- br dibawah adalah isi atau lanjutan paragraf --&gt;
+            <br>&lt;br&gt;Cupidatat nulla commodo est dolore esse velit ad magna amet sit aliquip duis. Ullamco culpa quis exercitation occaecat pariatur eu amet enim velit magna esse ipsum. In nisi proident eu cillum ex.
+          <br>&lt;/p&gt;
+     <br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</code></pre>
+Kalian bisa mencobanya melalui software / website manapun seperti VS Code, Sublime Text, Notepad++ atau jika ingin online kalian bisa mencari website favorit kalian.
+    </div>
       <div class="container" data-aos="fade-up" id="masukgambar">
       <hr>
       <h3>Memasukkan Gambar</h3>
@@ -193,7 +214,7 @@
       </code>
       <br>Kode diatas adalah untuk mengatur panjang dan lebar dari gambar, karena saya atur width 130, maka gambar yang muncul akan seperti ini.
       <pre><code class="language-html">&lt;img src=&quot;flixdz.png&quot; width=&quot;130&quot;&gt;</code></pre>
-     <div class="bg-code text-white p-2 rounded-2" data-aos="fade-right">
+     <div class="bg-code p-2 rounded-2" data-aos="fade-right">
       Hasil :
       <br><img src="image/flixdz.png" width="130">
       </div>
@@ -202,7 +223,7 @@
      <br>Kode :
       <pre><code class="language-html">&lt;img src=&quot;flixdz.png&quot; width=&quot;130&quot; alt=&quot;Gambar tidak akan muncul&quot;&gt;</code></pre>
       Output :
-      <div class="bg-code text-white p-2 mt-2 mb-2 rounded-2" data-aos="fade-right"><img src="flixdz.png" width="130" alt="Gambar tidak akan muncul">
+      <div class="bg-code p-2 mt-2 mb-2 rounded-2" data-aos="fade-right"><img src="flixdz.png" width="130" alt="Gambar tidak akan muncul">
       </div>
    </div>
    
@@ -210,7 +231,7 @@
       <div class="container" data-aos="fade-up" id="aturfont">
       <hr>
       <h3>Mengatur Font</h3>
-      <p>Pertama siapkan dulu teks mana yang ingin kalian atur seusai selera kalian.
+      <p>Pertama siapkan dulu teks mana yang ingin kalian atur sesuai selera kalian.
       <br>disini saya akan menggunakan <code class="language-html">&lt;p&gt;</code> yaitu untuk membuat paragraf.
       <br>oke langsung ke caranya
       <br>
@@ -227,6 +248,16 @@
       <div class="bg-code text-white p-2 mt-2 mb-2 rounded-2" data-aos="fade-right"><font style="font-family: 'Times New Roman', sans-serif; font-size: 24px; color: lightblue;">Halo</font>
       </div>
       <br>Kalian juga bisa menggantinya dengan font sesuai dengan keinginan kalian, jika kalian ingin mengganti/memilih font silahkan menuju ke <a href="https://fonts.google.com">Google Fonts</a> atau website lain yang menyediakan font.
+      <br>
+      <br>Tapi jika kalian ingin mengganti font yang sudah kalian download caranya seperti dibawah ini yaa.
+<pre><code class="language-css">@font-face {
+  font-family: Relaxing Sans ; /* Kalian bebas memilih nama fontnya */
+  src: url('relaxingfont-regular.ttf'); /* yang terpenting ini yaa, ini adalah font yang ingin kalian gunakan */
+}
+body {
+  font-family: 'Relaxing Sans', sans-serif;
+}</code></pre>
+
    </div>
 </div>
 

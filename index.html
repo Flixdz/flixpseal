@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Beranda</title>
+    <meta name="description" content="Website Muhammad Fachri Al Husein, dibuat menggunakan GitHub Pages" />
+    <title>Flixdz Homepage</title>
     <link rel="icon" type="image/png" href="image/flixdz_top.png" />
     <!-- CSS only -->
     <link
@@ -28,7 +29,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="css/dark-mode.css">
-
+    <style>
+    .carousel-item img {
+      width: 360px !important;
+    }
+    @media(max-width:1440px) {
+    .carousel-item img {
+      width: 340px !important;
+    }
+    }
+    @media(max-width:1080px) {
+    .carousel-item img {
+      width: 280px !important;
+    }
+    }
+    @media(max-width:850px) {
+    .carousel-item img {
+      width: 120px !important;
+    }
+    }
+    </style>
   </head>
   
   <body>
@@ -78,21 +98,19 @@
       </div>
     </nav>
     
-    <div class="container">
+    <div class="container" id="coltop">
      <div class="row text-center" data-aos="fade-up" data-aos-duration="3000">
-       <div class="col-md-3" data-aos="zoom-in" data-aos-duration="2000">
+       <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
           <div id="tampil"></div>
         </div>
-       <div class="col-md-3" data-aos="zoom-in" data-aos-duration="3000">
+       <div class="col-md-4" data-aos="zoom-in" data-aos-duration="3000">
           <div id="lblGreetings"></div>
         </div>
-        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="4000">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="3000">
           <div id="waktu"></div>
-       </div>
-        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="5000">
-          <div class="container" data-aos="fade-up">
+               <div class="container text-center">
           <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
-          <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch"><iconify-icon id="darkmode">d</iconify-icon></label>
+          <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch" data-aos-duration="2000"  data-aos="fade-up"><iconify-icon id="darkmode">d</iconify-icon></label>
         </div>
        </div>
       </div>
@@ -103,31 +121,31 @@
       <div id="carouselgmbr" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="image/carousel/carousel(1).png" width="120">
+      <img src="image/animation.gif">
     </div>
     <div class="carousel-item">
-      <img src="image/carousel/carousel(2).png" width="120">
+      <img src="image/carousel/carousel(2).png">
     </div>
     <div class="carousel-item">
-      <img src="image/carousel/carousel(3).png" width="120">
+      <img src="image/carousel/carousel(3).png" >
     </div>
     <div class="carousel-item">
-      <img src="image/carousel/carousel(4).png" width="120">
+      <img src="image/carousel/carousel(4).png" >
     </div>
     <div class="carousel-item">
-      <img src="image/carousel/carousel(4).png" width="120">
+      <img src="image/carousel/carousel(4).png" >
     </div>
     <div class="carousel-item">
-      <img src="image/carousel/carousel(5).png" width="120">
+      <img src="image/carousel/carousel(5).png" >
     </div>
     <div class="carousel-item">
-      <img src="image/carousel/carousel(6).png" width="120">
+      <img src="image/carousel/carousel(6).png" >
     </div>
     <div class="carousel-item">
-      <img src="image/carousel/carousel(7).png" width="120">
+      <img src="image/carousel/carousel(7).png" >
     </div>
   </div>
-    <small class="user-select-none"><a href="https://www.github.com/flixdz" class="link-none" onclick="return confirm('Website ini dibuat dengan GitHub Repositories, ingin mengunjungi Halaman web GitHub saya?')">GitHub Page <i class="fa fa-github"></i></a></small>
+    <small class="user-select-none"><a href="https://www.github.com/flixdz" class="link-none" onclick="return confirm('Website ini dibuat dengan GitHub Repositories, ingin mengunjungi Halaman web GitHub saya?')">GitHub Page <iconify-icon inline icon="line-md:github-loop"></iconify-icon></a></small>
 </div>
     </center>
    
@@ -156,7 +174,7 @@
       <div class="row">
         <div class="container col-md-6" data-aos="fade-up">
           <hr>
-          <h3><i class='fa fa-info-circle'></i> Biodata</h3>
+          <h3><iconify-icon inline icon="line-md:edit"></iconify-icon> Biodata</h3>
           <p>
             Saya lahir di Bekasi pada tanggal 12 Juli 2007, dan dibesarkan di Jakarta serta menempuh pendidikan di Jakarta. Saya sangat senang dengan Mengoprasikan Perangkat Lunak, dan juga berfikir bagaimana perangkat lunak tersebut bekerja. Kalian masih bisa mengeksplor <a class="btn btn-outline-primary btn-sm rounded-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">Website</a> ini, banyak fitur menarik didalamnya!
           </p>
@@ -230,11 +248,11 @@
     <div class="container text-center" data-aos="zoom-in">
       <button class="btn btn-primary rounded-5 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abut" aria-expanded="false" aria-controls="abut">Selengkapnya</button>
     <div class="collapse" id="abut">
-        <div class="text-center container" style="font-family: manrope, sans-serif;">
+        <div class="text-center container">
           <small>Website ini terinspirasi dari "Material You Design" Google.
           <br>Website Ini menggunakan elemen dari HTML, CSS, dan JavaScript.
           <br>Dibuat sepenuh hati untuk kalian yang berkunjung pada website ini, terimakasih untuk waktunya! Maaf ya jika website saya masih berantakan, karena saya juga masih belajar hal baru :)
-          <br>Terakhir diperbarui pada 27 Desember 2022 Pukul 12.59</small>
+          <br>Terakhir diperbarui pada 29 Desember 2022 Pukul 20.00</small>
         </div>
     </div>
    </div>
@@ -244,14 +262,14 @@
     <p class="text-center">Flixdz ft @flixpseal
       <br> Copyright <b class="fa fa-copyright"></b> 2023
       <br>Theme by <a href="https://instagram.com/flixpseal" onclick="return confirm('Mau ngunjungin instagram?')"><img src="image/flixdz.png" width="60px"></a>
-      <br>Made with ♥️ for you
+      <br>Made with <iconify-icon inline icon="line-md:heart-filled" style="color: red;"></iconify-icon> for you
     </p>
+    <!-- Footer End -->
     
     </div>
        <!-- Tombol ke atas -->
-        <button type="button" class="btn btn-outline-primary btn-floating rounded-5 btn-lg" id="btn-back-to-top"><iconify-icon inline icon="grommet-icons:up"></iconify-icon>
+        <button type="button" class="btn btn-outline-primary btn-floating rounded-5 btn-lg" id="btn-back-to-top"><iconify-icon inline icon="line-md:chevron-up"></iconify-icon>
         </button>
-    <!-- Footer End -->
     <!-- End Of Body HTML -->
     </body>
    <!-- JavaScript for functional features this cool website-->
@@ -336,7 +354,6 @@ var tampilTanggal = hari + ", " + tanggal + " " + bulan + " " + tahun;
   <script>
     AOS.init();
   </script>
-
   <script src="js/button_top.js"></script>
   <script src="js/dark-mode-switch.js"></script>
   <!-- End Script -->
