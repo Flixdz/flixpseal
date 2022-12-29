@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Manrope&display=swap');
+@font-face {
+  font-family: Google Sans Text;
+  src: url('font/GoogleSansText-Regular.ttf');
+}
+@font-face {
+  font-family: Google Sans;
+  src: url('font/GoogleSans-Regular.ttf');
+}
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Google Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, small, #coltop {
+  font-family: 'Google Sans Text', Sans-Serif;
 }
 h3 {
   text-align: center;
@@ -19,7 +30,8 @@ hr {
   margin: 0 auto;
 }
 .bg-code {
-  background-color: #272822;
+  color: #fff;
+  background: #272822;
 }
 #sosmed img {
   width: 45px;
@@ -123,6 +135,7 @@ display: none;
   h3 {
     text-align: left;
   }
+
   h5 {
     text-align: left;
   }
