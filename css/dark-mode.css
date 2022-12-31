@@ -99,3 +99,19 @@ label {
 [data-theme="dark"] table {
   color: #fff;
 }
+#footer {
+  background: rgb(246,246,246);
+  transition: background 1s;
+}
+[data-theme="dark"] #footer {
+  background: #1f2226;
+  color: #fff;
+}
+#copy {
+  background: rgba(0, 0, 0, 0.05);
+  transition: background 1s;
+}
+[data-theme="dark"] #copy {
+  background: #1f2226;
+  color: #fff;
+}
