@@ -14,3 +14,6 @@ Social Media:
 > [TikTok](https://tiktok.com/@flixpseal)
 
 > [Twitter](https://twitter.com/flixpseal)
+
+Framework :
+[Bootstrap](https://getbootstrap.com), [Iconify](https://Iconify.design), [Font Awesome](https://fontawesome.com)
