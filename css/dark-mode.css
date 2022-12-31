@@ -112,6 +112,15 @@ label {
   transition: background 1s;
 }
 [data-theme="dark"] #copy {
-  background: #1f2226;
+  background: #171b1c;
   color: #fff;
+}
+[data-theme="dark"] .btn-outline-dark {
+  border-color: white!important;
+  color: #fff !important;
+}
+[data-theme="dark"] .btn-outline-dark:hover {
+  border-color: white !important;
+  background: white !important;
+  color: #212529 !important;
 }
