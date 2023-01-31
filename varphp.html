@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Variabel PHP</title>
+  <link rel="icon" type="image/png" href="image/flixdz_top.png">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!-- Prism JS -->
+  <link rel="stylesheet" href="css/prism.css">
+  <script src="js/prism.js"></script>
+  <!-- Dark Mode -->
+  <link rel="stylesheet" href="css/dark-mode.css">
+  <!-- AOS PLUGIN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/nav.css" rel="stylesheet">
+  <link href="css/multilevel.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="NavBar">
+    <div class="container-fluid">
+      <a href="#"><img class="navbar-brand" src="image/flixdz.png" width="80"></a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" id="navbarDropdownMenuLink">
+              Belajar Web
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu text-center">
+                <a class="dropdown-item dropdown-toggle" href="#"><iconify-icon inline
+                    icon="icomoon-free:html-five"></iconify-icon> HTML 5</a>
+                <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-item" href="basic.html">Basic HTML</a></li>
+                  <li><a class="dropdown-item" href="format-text.html">Format Text</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a class="dropdown-item dropdown-toggle active" href="#"><iconify-icon inline
+                    icon="mdi:language-php"></iconify-icon> PHP</a>
+                <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-item" href="basic.html">Basic PHP</a></li>
+                  <li><a class="dropdown-item active" href="#">Variabel</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projek
+            </a>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item" href="https://nurispedia.relaxstand.repl.co">Nurispedia</a></li>
+              <li><a class="dropdown-item" href="project/index.html">Project Review</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dokumen
+            </a>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item" href="access.html">Teman</a></li>
+              <li><a class="dropdown-item" href="https://bit.ly/3GlSOJO">Sistem Operasi</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" data-aos="fade-up">
+    <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
+    <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch"><iconify-icon id="darkmode"></iconify-icon></label>
+    <font id="tema"></font>
+  </div>
+
+  <div class="container p-3 mb-2">
+    <center data-aos="fade-up">
+      <img src="image/php.png" width="100">
+      <br><small>Variabel PHP</small>
+    </center>
+
+    <div class="container" data-aos="zoom-in">
+      <hr>
+      <h3><i class='fa fa-mortar-board'></i> Pendahuluan</h3>
+      <p>
+        Kalian mau <i>Ngoding</i> tapi masih ngga ngerti konsepnya?
+        <br>Tenang aja! kali ini aku bakal ajarin kalian cara ngoding sebuah bahasa pemograman yang bernama PHP.
+      </p>
+    </div>
+
+
+    <div class="container" data-aos="zoom-in">
+      <div class="container">
+        <p><iconify-icon inline icon="line-md:align-right"></iconify-icon>
+          <font class="h4">Isi halaman web</font>
+          <br><a href="#pengertian" id="daftard">Pengertian Variabel</a>
+          <br><a href="#buka" id="daftard">Membuka Sever</a>
+          <br><a href="#taghtml" id="daftard">Deklarasi PHP</a>
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="container" data-aos="zoom-in" id="pengertian">
+      <hr>
+      <h3><i class='fa fa-question-circle'></i> Pengertian Variabel</h3>
+      <p>
+        Dalam pemrograman, variabel adalah suatu lokasi penyimpanan (di dalam memori komputer) yang berisikan nilai atau
+        informasi yang nilainya tidak diketahui maupun telah diketahui
+        <br>
+        <br>Dalam definisi bebasnya, variabel adalah kode program yang digunakan untuk menampung nilai tertentu. Nilai
+        yang disimpan di dalam variabel selanjutnya dapat dipindahkan ke dalam database, atau ditampilkan kembali ke
+        pengguna.
+      </p>
+    </div>
+
+    <div class="container" data-aos="zoom-in" id="buka">
+      <hr>
+      <h3><i class="fa-solid fa-server"></i> Mendeklarasikan Variabel PHP</h3>
+      <p>
+        Variabel di dalam PHP harus diawali dengan dollar sign atau tanda dollar ($).
+        <br>
+        <br>Setelah tanda $, sebuah variabel PHP harus diikuti dengan karakter pertama berupa huruf atau underscore (_),
+        kemudian untuk karakter kedua dan seterusnya bisa menggunakan huruf, angka atau underscore (_). Dengan aturan
+        tersebut, variabel di dalam PHP tidak bisa diawali dengan angka.
+        <br>
+        <br>Minimal panjang variabel adalah 1 karakter setelah tanda $.
+      </p>
+      <p>Contoh menyimpan Variabel dalam PHP</p>
+      <pre><code class="language-php line-numbers">&lt;?php
+$nama = &quot;Muhammad Fachri&quot;;
+$alamat = &quot;DKI Jakarta&quot;;
+?&gt;</code></pre>
+      <p>Itu adalah syntax untuk menyimpan variabelnya, dan bagaimana cara mem-print variabel tersebut?
+        <br>Caranya adalah dengan menambahkan tag / command <code class="language-php">echo</code> saja dan nanti akan
+        langsung ter-print.
+        <br>Cara nya adalah seperti dibawah ini yaa
+      </p>
+      <pre><code class="language-php line-numbers">&lt;?php
+$nama = &quot;Muhammad Fachri&quot;;
+$alamat = &quot;DKI Jakarta&quot;;
+echo $nama;
+echo &quot;&lt;br/&gt;&quot;;
+echo $alamat;
+echo &quot;&lt;br/&gt;&quot;;
+echo &quot;Hai, perkenalkan nama saya &quot;.$nama.&quot; dan saya tinggal di &quot;.$alamat;
+?&gt;</code></pre>
+
+      <pre class="bg-code p-2 rounded-1"><code>Hai, perkenalkan nama saya Muhammad Fachri dan saya tinggal di DKI Jakarta
+</code></pre>
+      <p>Source <a href="https://www.malasngoding.com" class="link-none"><u>Malas Ngoding</u></a></p>
+
+    </div>
+    <div class="container" data-aos="fade-up" id="taghtml">
+      <hr>
+      <h3>Deklarasi PHP</h3>
+      <p>Syntax ini mungkin sama dengan HTML biasa, tetapi ada bahasa php didalamnya. Kalian bisa melihat atau mengikuti
+        cara dibawah ini.
+      </p>
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+      &lt;head&gt;
+          &lt;title&gt;Belajar PHP&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+          &lt;p&gt;Kalimat Ini digunakan menggunakan HTML&lt;/p&gt;
+          &lt;?php
+            echo "&lt;p&gt;Kalimat Ini dibuat menggunakan PHP&lt;/p&gt;";
+          ?&gt;
+      &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+
+      <h3>Output
+        <br><img src="image/bukaserver.png" alt="Output" width="100%">
+      </h3>
+      <p>Btw kalian bisa copy contoh diatas kok.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer Start -->
+  <footer class="p-2 mt-2" id="footer">
+    <div class="container mb-2 text-center">
+      <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
+        role="button"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
+        role="button"><i class="fa-brands fa-github"></i></a>
+      <a href="https://twitter.com/flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
+        role="button"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://discordapp.com/users/899644068697620491" id="footer-icon"
+        class="btn btn-outline-dark rounded-5 btn-floating m-1" role="button"><iconify-icon inline
+          icon="ic:baseline-discord"></iconify-icon></a>
+    </div>
+    <div class="container small text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <font class="h5 fw-bold">Projects</font>
+          <br><a href="https://nurispedia.relaxstand.repl.co" class="link-none">Nurispedia</a>
+          <br><a href="project/index.html" class="link-none">Project Review</a>
+          <br><a href="https://github.com/flixdz/flixpseal" class="link-none">Portofolio Website</a>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="text-muted mt-3" style="font-family: poppins"><iconify-icon
+              icon="mingcute:quote-left-fill"></iconify-icon>If you believe in yourself, with a tiny pinch of magic all
+            your dreams can come true<iconify-icon icon="mingcute:quote-right-fill"></iconify-icon></blockquote>
+        </div>
+        <div class="col-md-4">
+          <font class="h5 fw-bold">Framework</font>
+          <br>Iconify
+          <br>Font Awesome
+          <br>Bootstrap 5
+          <br><a href="https://github.com/flixdz/flixpseal" class="text-muted link-none">More...</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="text-center small p-3" id="copy">Flixdz @flixpseal, Copyright <i class="fa-regular fa-copyright"></i> 2023
+    <br>Theme by <img src="image/animation.gif" width="30">, Made with <i class="fa fa-heart" style="color: red"></i>
+    for you
+  </div>
+  <!-- Footer End -->
+
+
+  <!-- Tombol ke atas -->
+  <button type="button" class="btn btn-primary btn-floating rounded-5" id="btn-back-to-top"><iconify-icon inline
+      icon="grommet-icons:up"></iconify-icon></button>
+  <!--JAVA SCRIPT FOR AOS-->
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="js/multilevel.js"></script>
+  <script src="js/button_top.js"></script>
+  <script src="js/dark-mode-switch.js"></script>
+</body>
+
+</html>

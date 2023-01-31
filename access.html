@@ -1,93 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Teman</title>
-    <link rel="icon" type="image/png" href="image/flixdz_top.png" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-        <!-- AOS PLUGIN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/prism.js"></script>
-    <link href="css/prism.css" rel="stylesheet">
-    <link href="css/dark-mode.css" rel="stylesheet">
-    <!-- CUSTOM CSS -->
-    <style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teman</title>
+  <link rel="icon" type="image/png" href="image/flixdz_top.png" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!-- AOS PLUGIN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/prism.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <link href="css/prism.css" rel="stylesheet">
+  <link href="css/dark-mode.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
     body {
       font-family: Poppins, sans-serif;
     }
+
     h3 {
-    text-align: center;
+      text-align: center;
     }
+
     h5 {
       text-align: center;
     }
+
     p {
       text-align: center;
     }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script>
+  </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
     // fungsi zerome adalah membuat angka 0 menjadi 00
     var zerome = n => {
-  				return ('0' + n).slice(-2);
-  			}
-  			
+      return ('0' + n).slice(-2);
+    }
+
     setInterval(() => {
-    var date = new Date();
-    var jam = zerome(date.getHours());
-    var menit = zerome(date.getMinutes());
-    var detik = zerome(date.getSeconds());
-    var tampilWaktu = jam + ":" + menit + ":" + detik;
-   
-    document.getElementById("clock").innerHTML = tampilWaktu;
+      var date = new Date();
+      var jam = zerome(date.getHours());
+      var menit = zerome(date.getMinutes());
+      var detik = zerome(date.getSeconds());
+      var tampilWaktu = jam + ":" + menit + ":" + detik;
+
+      document.getElementById("clock").innerHTML = tampilWaktu;
     }, 1000);
-    </script>
-        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-  </head>
-  
-  <body>
-   <nav class="navbar navbar-expand-lg" id="NavBar">
-      <div class="container-fluid">
-        <a href="index.html"><img class="navbar-brand" src="image/flixdz.png" width="80"></a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar top-bar"></span>
-          <span class="icon-bar middle-bar"></span>
-          <span class="icon-bar bottom-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto text-center">
+  </script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="NavBar">
+    <div class="container-fluid">
+      <a href="#"><img class="navbar-brand" src="image/flixdz.png" width="80"></a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav text-center">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Belajar HTML
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" id="navbarDropdownMenuLink">
+              Belajar Web
             </a>
-            <ul class="dropdown-menu text-center">
-              <li><a class="dropdown-item" href="basic.html">Basic HTML</a></li>
-              <li><a class="dropdown-item" href="format-text.html">Format Text</a></li>
-              <li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu text-center">
+                <a class="dropdown-item dropdown-toggle" href="#"><iconify-icon inline
+                    icon="icomoon-free:html-five"></iconify-icon> HTML 5</a>
+                <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-item" href="basic.html">Basic HTML</a></li>
+                  <li><a class="dropdown-item" href="format-text.html">Format Text</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a class="dropdown-item dropdown-toggle" href="#"><iconify-icon inline
+                    icon="mdi:language-php"></iconify-icon> PHP</a>
+                <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-item" href="basicphp.html">Basic PHP</a></li>
+                  <li><a class="dropdown-item" href="varphp.html">Variabel</a></li>
+                </ul>
+              </li>
             </ul>
+          </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Projek
@@ -96,64 +113,106 @@
               <li><a class="dropdown-item" href="https://nurispedia.relaxstand.repl.co">Nurispedia</a></li>
               <li><a class="dropdown-item" href="project/index.html">Project Review</a></li>
             </ul>
-            </li>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dokumen
             </a>
             <ul class="dropdown-menu text-center">
-              <li><a class="dropdown-item" href="#">Teman</a></li>
+              <li><a class="dropdown-item active" href="#">Teman</a></li>
               <li><a class="dropdown-item" href="https://bit.ly/3GlSOJO">Sistem Operasi</a></li>
             </ul>
-            </li>
-          </ul>
-        </div>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
 
- <div class="container p-3 mb-2 text-center">
-     
- <div data-aos="fade-up">
-    <center>
-    <img src="image/flixdz.png" width="120">
-    <br><small class="user-select-none">Dokumen <i class="fa fa-github"></i></small>
-    </center>
-  </div>
-    
+  <div class="container p-3 mb-2 text-center">
+
+    <div data-aos="fade-up">
+      <center>
+        <img src="image/flixdz.png" width="120">
+        <br><small class="user-select-none">Dokumen <iconify-icon inline icon="line-md:github-loop"></iconify-icon></small>
+      </center>
+    </div>
+
     <p class="container col-12 col-md-12" data-aos="zoom-out">
-      Daftar teman <a class="btn btn-secondary rounded-5" onclick="alert('Data saat ini belum tersedia!')" href="#">SMK</a> dan <a class="btn btn-primary rounded-5" href="https://drive.google.com/file/d/1215xFEFSjfXyZK7l8PtWgsYx6_mk_oMi/view?usp=drivesdk">SMP</a>
+      Daftar teman <a class="btn btn-secondary rounded-5" onclick="alert('Data saat ini belum tersedia!')"
+        href="#">SMK</a> dan <a class="btn btn-primary rounded-5"
+        href="https://drive.google.com/file/d/1215xFEFSjfXyZK7l8PtWgsYx6_mk_oMi/view?usp=drivesdk">SMP</a>
     </p>
     <p class="container col-12 col-md-12" data-aos="zoom-out">
-      File tersebut <mark>diakses</mark> untuk menjaga privasi mereka. Jika anda ingin melihatnya, kirim melalui email saya dan sebutkan nama anda.
+      File tersebut <mark>diakses</mark> untuk menjaga privasi mereka. Jika anda ingin melihatnya, kirim melalui email
+      saya dan sebutkan nama anda.
     </p>
     <p class="container col-12 col-md-12" data-aos="fade-right">
-      Saya selaku temannya berusaha untuk menjaga privasi kalian dengan baik, karena keamanan data adalah prioritas terpenting.
+      Saya selaku temannya berusaha untuk menjaga privasi kalian dengan baik, karena keamanan data adalah prioritas
+      terpenting.
     </p>
-        <div class="text-white bg-dark rounded-3" style="width: 130px; margin: 0 auto;"
-       >Waktu Saat Ini
-<br><code id="clock" class="text-white" style="font-size: 23px"></code>
-        </div>
+    <div class="text-white bg-dark rounded-3" style="width: 130px; margin: 0 auto;">Waktu Saat Ini
+      <br><code id="clock" class="text-white" style="font-size: 23px"></code>
     </div>
-    
-    <div class="container text-center" data-aos="fade-up">
-          <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
-          <label class="btn btn-outline-dark btn-sm rounded-5" for="darkSwitch">Ganti Tema</label>
-          <label class="btn btn-dark btn-sm rounded-5 text-center" for="darkSwitch"> <iconify-icon id="darkmode"></iconify-icon></label>
-        </div>
-    
-    <footer class="p-3 mt-2">
-    <p>Flixdz ft @flixpseal
-      <br> Copyright <b class="fa fa-copyright"></b> 2023
-      <br>Theme by <a href="index.html"><img src="image/flixdz.png" width="60px"></a>
-      <br><b style="font-family: Raleway, sans-serif">Your Privacy is our Priority</b>
-    </p>
-  </footer>
-   <!--JAVA SCRIPT FOR AOS-->
+  </div>
 
-   <script>
+  <div class="container text-center" data-aos="fade-up">
+    <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
+    <label class="btn btn-outline-dark btn-sm rounded-5" for="darkSwitch">Ganti Tema</label>
+    <label class="btn btn-dark btn-sm rounded-5 text-center" for="darkSwitch"> <iconify-icon
+        id="darkmode"></iconify-icon></label>
+  </div>
+
+ <!-- Footer Start -->
+ <footer class="p-2 mt-2" id="footer">
+  <div class="container mb-2 text-center">
+    <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
+      role="button"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
+      role="button"><i class="fa-brands fa-github"></i></a>
+    <a href="https://twitter.com/flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
+      role="button"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://discordapp.com/users/899644068697620491" id="footer-icon"
+      class="btn btn-outline-dark rounded-5 btn-floating m-1" role="button"><iconify-icon inline
+        icon="ic:baseline-discord"></iconify-icon></a>
+  </div>
+  <div class="container small text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <font class="h5 fw-bold">Projects</font>
+        <br><a href="https://nurispedia.relaxstand.repl.co" class="link-none">Nurispedia</a>
+        <br><a href="project/index.html" class="link-none">Project Review</a>
+        <br><a href="https://github.com/flixdz/flixpseal" class="link-none">Portofolio Website</a>
+      </div>
+      <div class="col-md-4">
+        <blockquote class="text-muted mt-3" style="font-family: poppins"><iconify-icon
+            icon="mingcute:quote-left-fill"></iconify-icon>Make It Higher!<iconify-icon icon="mingcute:quote-right-fill"></iconify-icon></blockquote>
+      </div>
+      <div class="col-md-4">
+        <font class="h5 fw-bold">Framework</font>
+        <br>Iconify
+        <br>Font Awesome
+        <br>Bootstrap 5
+        <br><a href="https://github.com/flixdz/flixpseal" class="text-muted link-none">More...</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="text-center small p-3" id="copy">Flixdz @flixpseal, Copyright <i class="fa-regular fa-copyright"></i> 2023
+  <br>Theme by <img src="image/animation.gif" width="30">, Made with <i class="fa fa-heart" style="color: red"></i>
+  for you
+</div>
+<!-- Footer End -->
+  <!--JAVA SCRIPT FOR AOS-->
+
+  <script>
     AOS.init();
   </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="js/multilevel.js"></script>
   <script src="js/dark-mode-switch.js"></script>
-  </body>
+</body>
+
 </html>

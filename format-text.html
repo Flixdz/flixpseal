@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Format Text</title>
-    <link rel="icon" type="image/png" href="image/flixdz_top.png" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-        <!-- AOS PLUGIN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/prism.js"></script>
-    <link href="css/prism.css" rel="stylesheet">
-    <!-- CUSTOM CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/nav.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
-    <link rel="stylesheet" href="css/dark-mode.css">
-    <style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Format Text</title>
+  <link rel="icon" type="image/png" href="image/flixdz_top.png" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!-- AOS PLUGIN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/prism.js"></script>
+  <link href="css/prism.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/nav.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="css/dark-mode.css">
+  <link rel="stylesheet" href="css/multilevel.css">
+  <style>
     #hypercontoh {
       text-decoration: none;
       color: green;
@@ -40,39 +36,57 @@
       border-radius: 8px;
       transition: color 2s, background 2s, border-radius 3s, padding 3s;
     }
+
     #hypercontoh:hover {
       color: white;
       padding: 7px;
       background: green;
       border-radius: 15px;
     }
-    </style>
-  </head>
-  
-  <body>
-    <nav class="navbar navbar-expand-lg" id="NavBar">
-      <div class="container-fluid">
-        <a href="index.html"><img class="navbar-brand" src="image/flixdz.png" width="80"></a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar top-bar"></span>
-          <span class="icon-bar middle-bar"></span>
-          <span class="icon-bar bottom-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto text-center">
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="NavBar">
+    <div class="container-fluid">
+      <a href="#"><img class="navbar-brand" src="image/flixdz.png" width="80"></a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav text-center">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Belajar HTML
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" id="navbarDropdownMenuLink">
+              Belajar Web
             </a>
-            <ul class="dropdown-menu text-center">
-              <li><a class="dropdown-item" href="basic.html">Basic HTML</a></li>
-              <li><a class="dropdown-item active" href="#">Format Text</a></li>
-              <li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu text-center">
+                <a class="dropdown-item dropdown-toggle active" href="#"><iconify-icon inline
+                    icon="icomoon-free:html-five"></iconify-icon> HTML 5</a>
+                <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-item" href="basic.html">Basic HTML</a></li>
+                  <li><a class="dropdown-item active" href="#">Format Text</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu text-center">
+                <a class="dropdown-item dropdown-toggle" href="#"><iconify-icon inline
+                    icon="mdi:language-php"></iconify-icon> PHP</a>
+                <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-item" href="basicphp.html">Basic PHP</a></li>
+                  <li><a class="dropdown-item" href="varphp.html">Variabel</a></li>
+                </ul>
+              </li>
             </ul>
+          </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Projek
@@ -81,7 +95,7 @@
               <li><a class="dropdown-item" href="https://nurispedia.relaxstand.repl.co">Nurispedia</a></li>
               <li><a class="dropdown-item" href="project/index.html">Project Review</a></li>
             </ul>
-            </li>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dokumen
@@ -90,43 +104,45 @@
               <li><a class="dropdown-item" href="access.html">Teman</a></li>
               <li><a class="dropdown-item" href="https://bit.ly/3GlSOJO">Sistem Operasi</a></li>
             </ul>
-            </li>
-          </ul>
-        </div>
+          </li>
+        </ul>
       </div>
-    </nav>
-    
-    <div class="container" data-aos="fade-up">
-          <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
-          <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch"><iconify-icon id="darkmode"></iconify-icon></label>
-          <font id="tema"></font>
-        </div>
-    
-   <div class="container p-3 mb-2">
+    </div>
+  </nav>
+
+  <div class="container" data-aos="fade-up">
+    <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
+    <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch"><iconify-icon id="darkmode"></iconify-icon></label>
+    <font id="tema"></font>
+  </div>
+
+  <div class="container p-3 mb-2">
     <center data-aos="fade-up">
-    <img src="image/html5.png" width="100">
-    <br><small>Belajar HTML5</small>
+      <img src="image/html5.png" width="100">
+      <br><small>Belajar HTML5</small>
     </center>
-    
+
     <div class="container col-12 col-md-12" data-aos="zoom-in">
       <hr>
       <h3><i class='fa fa-mortar-board'></i> Pendahuluan</h3>
       <p>
-        Kalian mau format text didalam html tapi masih ga ngerti sama tag-nya? Oke oke tenang, kali ini aku bakal buat tutorialnya.
+        Kalian mau format text didalam html tapi masih ga ngerti sama tag-nya? Oke oke tenang, kali ini aku bakal buat
+        tutorialnya.
         <br>Ayo Langsung ke tutorialnya!
       </p>
     </div>
-    
+
     <div class="container" data-aos="zoom-in">
       <div class="container">
-        <p><iconify-icon inline icon="line-md:align-right"></iconify-icon> <font class="h4">Isi halaman web</font>
+        <p><iconify-icon inline icon="line-md:align-right"></iconify-icon>
+          <font class="h4">Isi halaman web</font>
           <br><a href="#format" id="daftard">Format Text</a>
           <br><a href="#buatlist" id="daftard">Membuat List</a>
           <br><a href="#hypeabis" id="daftard">Membuat Hyperlink</a>
         </p>
       </div>
     </div>
-    
+
     <div class="container col-12 col-md-12" data-aos="zoom-in">
       <hr>
       <h3><i class='fa fa-question-circle'></i> Basic Format</h3>
@@ -134,9 +150,9 @@
         Kalian Mau format text kayak gimana?, mau memformat bold, italic, underline, dan masih banyak lagi!
       </p>
     </div>
-    
-    
-      <div class="container" data-aos="fade-up" id="format">
+
+
+    <div class="container" data-aos="fade-up" id="format">
       <hr>
       <h3><iconify-icon inline icon="line-md:text-box-to-text-box-multiple-transition"></iconify-icon> Format Text</h3>
       <p>Pertama yang harus kalian lakuin itu adalah mengingat tag di dibawah ini ya!</p>
@@ -145,57 +161,57 @@
           <tr>
             <th scope="col">Tag</th>
             <th scope="col">Fungsi</th>
-         </tr>
-      </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><code>&lt;b&gt;</code></th>
-      <td>Untuk memberikan efek <b>bold</b> atau menebalkan teks.</td>
-    </tr>
-    <tr>
-      <th><code>&lt;i&gt;</code></th>
-      <td>Untuk memberikan efek <i>italic</i> atau memiringkan teks.</td>
-    </tr>
-    <tr>
-      <th><code>&lt;del&gt;</code></th>
-      <td>Untuk untuk menunjukkan konten yang telah dihapus / <del>(delete)</del> dari dokumen.</td>
-    </tr>
-    <tr>
-      <th><code>&lt;u&gt;</code></th>
-      <td>Untuk untuk memberikan efek <u>underline</u> atau garis miring.</td>
-    </tr>
-    <tr>
-      <th><code>&lt;mark&gt;</code></th>
-      <td>Untuk untuk memberikan efek <mark>highlight</mark> atau tanda pada teks.</td>
-    </tr>
-    <tr>
-      <th><code>&lt;strong&gt;</code></th>
-      <td>Untuk untuk memberikan efek <strong>bold</strong> yang menyatakan hal penting.</td>
-    </tr>
-    <tr>
-      <th><code>&lt;em&gt;</code></th>
-      <td>Untuk menandai teks yang memiliki stress emphasis atau <i>Italic</i> seperti tadi</td>
-    </tr>
-    <tr>
-      <th><code>&lt;ins&gt;</code></th>
-      <td>untuk menandai suatu <ins>Text</ins> disisipkan pada suatu kalimat</td>
-    </tr>
-    <tr>
-      <th><code>&lt;small&gt;</code></th>
-      <td>untuk membuat teks kalian menjadi <small>small</small> atau kecil</td>
-    </tr>
-    <tr>
-      <th><code>&lt;sup&gt;</code></th>
-      <td>Untuk membuat teks menjadi kecil dan berada <sup>diatas</sup></td>
-    </tr>
-    <tr>
-      <th><code>&lt;sub&gt;</code></th>
-      <td>Untuk membuat teks menjadi kecil dan berada <sub>dibawah</sub></td>
-    </tr>
-   </tbody>
-</table>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><code>&lt;b&gt;</code></th>
+            <td>Untuk memberikan efek <b>bold</b> atau menebalkan teks.</td>
+          </tr>
+          <tr>
+            <th><code>&lt;i&gt;</code></th>
+            <td>Untuk memberikan efek <i>italic</i> atau memiringkan teks.</td>
+          </tr>
+          <tr>
+            <th><code>&lt;del&gt;</code></th>
+            <td>Untuk untuk menunjukkan konten yang telah dihapus / <del>(delete)</del> dari dokumen.</td>
+          </tr>
+          <tr>
+            <th><code>&lt;u&gt;</code></th>
+            <td>Untuk untuk memberikan efek <u>underline</u> atau garis miring.</td>
+          </tr>
+          <tr>
+            <th><code>&lt;mark&gt;</code></th>
+            <td>Untuk untuk memberikan efek <mark>highlight</mark> atau tanda pada teks.</td>
+          </tr>
+          <tr>
+            <th><code>&lt;strong&gt;</code></th>
+            <td>Untuk untuk memberikan efek <strong>bold</strong> yang menyatakan hal penting.</td>
+          </tr>
+          <tr>
+            <th><code>&lt;em&gt;</code></th>
+            <td>Untuk menandai teks yang memiliki stress emphasis atau <i>Italic</i> seperti tadi</td>
+          </tr>
+          <tr>
+            <th><code>&lt;ins&gt;</code></th>
+            <td>untuk menandai suatu <ins>Text</ins> disisipkan pada suatu kalimat</td>
+          </tr>
+          <tr>
+            <th><code>&lt;small&gt;</code></th>
+            <td>untuk membuat teks kalian menjadi <small>small</small> atau kecil</td>
+          </tr>
+          <tr>
+            <th><code>&lt;sup&gt;</code></th>
+            <td>Untuk membuat teks menjadi kecil dan berada <sup>diatas</sup></td>
+          </tr>
+          <tr>
+            <th><code>&lt;sub&gt;</code></th>
+            <td>Untuk membuat teks menjadi kecil dan berada <sub>dibawah</sub></td>
+          </tr>
+        </tbody>
+      </table>
 
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
     <br>&lt;html lang=&quot;en&quot;&gt;
         <br>&lt;head&gt;
           <br>&lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -221,34 +237,37 @@
           <br>&lt;/p&gt;
         <br>&lt;/body&gt;
     <br>&lt;/html&gt;</code></pre>
-    
-    <div class="bg-code p-2 mt-2 mb-2 rounded-2" data-aos="fade-right">Hasil :
-         <p>
-            <br>Ini adalah <b>teks Bold</b>
-            <br>Ini adalah <i>teks Italic</i>
-            <br>Ini adalah <u>teks underline</u>
-            <br>Ini adalah <mark>teks mark</mark>
-            <br>Ini adalah <strong>teks strong</strong>
-            <br>Ini adalah <em>teks em</em>
-            <br>Ini adalah <ins>teks ins</ins>
-            <br>Ini adalah <small>teks small</small>
-            <br>Ini adalah <sup>teks sup</sup>
-            <br>Ini adalah <sub>teks sub</sub>
-          </p>
+
+      <div class="bg-code p-2 mt-2 mb-2 rounded-2" data-aos="fade-right">Hasil :
+        <p>
+          <br>Ini adalah <b>teks Bold</b>
+          <br>Ini adalah <i>teks Italic</i>
+          <br>Ini adalah <u>teks underline</u>
+          <br>Ini adalah <mark>teks mark</mark>
+          <br>Ini adalah <strong>teks strong</strong>
+          <br>Ini adalah <em>teks em</em>
+          <br>Ini adalah <ins>teks ins</ins>
+          <br>Ini adalah <small>teks small</small>
+          <br>Ini adalah <sup>teks sup</sup>
+          <br>Ini adalah <sub>teks sub</sub>
+        </p>
+      </div>
     </div>
-    </div>
-    
+
     <!-- Buat List -->
     <div class="container" data-aos="fade-up" id="buatlist">
       <hr>
       <h3>Membuat List</h3>
-      <p>Membuat List Pada HTML bisa menggunakan tag <code>&lt;ul&gt;</code> atau unordered list yang fungsinya mengurutkan daftar dengan menggunakan simbol tertentu pada HTML. Sedangkan  <code>&lt;ol&gt;</code> fungsinya adalah mengurutkan dengan menggunakan huruf, angka, angka romawi, dan lainnya.
-      <br>
-      <br>Jangan lupa untuk menambahkan  <code>&lt;li&gt;</code> atau list item untuk menambahkan list pada tag  <code>&lt;ul&gt;</code> maupun  <code>&lt;ol&gt;</code>
-      <br>
-      <br>Contoh cara kerja ol dan ul ada pada command dibawah ini:
-      
-     <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+      <p>Membuat List Pada HTML bisa menggunakan tag <code>&lt;ul&gt;</code> atau unordered list yang fungsinya
+        mengurutkan daftar dengan menggunakan simbol tertentu pada HTML. Sedangkan <code>&lt;ol&gt;</code> fungsinya
+        adalah mengurutkan dengan menggunakan huruf, angka, angka romawi, dan lainnya.
+        <br>
+        <br>Jangan lupa untuk menambahkan <code>&lt;li&gt;</code> atau list item untuk menambahkan list pada tag
+        <code>&lt;ul&gt;</code> maupun <code>&lt;ol&gt;</code>
+        <br>
+        <br>Contoh cara kerja ol dan ul ada pada command dibawah ini:
+
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
     &lt;html lang=&quot;en&quot;&gt;
         &lt;head&gt;
           &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -270,47 +289,52 @@
           &lt;/ol&gt;
         &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-    
-    Hasil yang didapat adalah :
 
-    <div class="rounded-2 bg-code p-2" data-aos="fade-right">
-          <ul>
-            <li>ini adalah list item dari ul</li>
-            <li>ini adalah list item dari ul</li>
-          </ul>
-          <ol>
-            <li>ini adalah list item dari ol </li>
-            <li>ini adalah list item dari ol </li>
-          </ol>
+      Hasil yang didapat adalah :
+
+      <div class="rounded-2 bg-code p-2" data-aos="fade-right">
+        <ul>
+          <li>ini adalah list item dari ul</li>
+          <li>ini adalah list item dari ul</li>
+        </ul>
+        <ol>
+          <li>ini adalah list item dari ol </li>
+          <li>ini adalah list item dari ol </li>
+        </ol>
       </div>
     </div>
     <!-- Buat List Berakhir -->
-    
+
     <!-- Anchor Text -->
     <div class="container pt-2" data-aos="fade-up" id="hypeabis">
       <hr>
       <h3>Membuat Anchor<i> (Hyperlink)</i></h3>
       <p>Hyperlink? Apa itu hyperlink?
-      <br>Pernahkah kalian menekan sebuah tulisan dan tulisan itu mengarah ke browser?, ya! itu adalah hyperlink!
-      <br>Hyperlink adalah suatu cara untuk menghubungkan suatu bagian tertentu di dalam slide, file dokumen, program, atau halaman website.
-      <br>Contohnya?
-      <br>Coba tekan tombol dibawah ini:
-      <br><a href="https://www.instagram.com/flixpseal" class="btn btn-primary btn-sm rounded-5" onclick="return confirm('Ingin mengunjungi Instagram?')">Kesini</a>
-      <br>Contohnya ada dibawah ini :
+        <br>Pernahkah kalian menekan sebuah tulisan dan tulisan itu mengarah ke browser?, ya! itu adalah hyperlink!
+        <br>Hyperlink adalah suatu cara untuk menghubungkan suatu bagian tertentu di dalam slide, file dokumen, program,
+        atau halaman website.
+        <br>Contohnya?
+        <br>Coba tekan tombol dibawah ini:
+        <br><a href="https://www.instagram.com/flixpseal" class="btn btn-primary btn-sm rounded-5"
+          onclick="return confirm('Ingin mengunjungi Instagram?')">Kesini</a>
+        <br>Contohnya ada dibawah ini :
       </p>
-      <pre data-aos="fade-right"><code class="language-html">&lt;a href=&quot;https://flixdz.github.io/flixpseal&quot;&gt;Website&lt;/a&gt;</code></pre>
+      <pre
+        data-aos="fade-right"><code class="language-html">&lt;a href=&quot;https://flixdz.github.io/flixpseal&quot;&gt;Website&lt;/a&gt;</code></pre>
       <div class="bg-code text-white rounded-2 p-2">
         <a href="https://flixdz.github.io/flixpseal">Website</a>
       </div>
-        <p>Link diatas mengarahkan kamu ke website ini halaman beranda tetapi memakai url bukan document seperti :
-        </p>
-      <pre data-aos="fade-right"><code class="language-html">&lt;a href=&quot;index.html&quot;&gt;Website&lt;/a&gt;</code></pre>
+      <p>Link diatas mengarahkan kamu ke website ini halaman beranda tetapi memakai url bukan document seperti :
+      </p>
+      <pre
+        data-aos="fade-right"><code class="language-html">&lt;a href=&quot;index.html&quot;&gt;Website&lt;/a&gt;</code></pre>
       <div class="bg-code text-white rounded-2 p-2">
         <a href="index.html">Website</a>
       </div>
-      <p> Sekilas si sama saja ya? tetapi ini berbeda, satu memakai url (https) dan satu lagi menggunakan <code>.html</code>
-      <br>oh iya!, tulisannya juga bisa kalian sesuaikan dengan keinginan kalian, tapi memakai css ya!
-      <br>nih aku kasih contohnya!
+      <p> Sekilas si sama saja ya? tetapi ini berbeda, satu memakai url (https) dan satu lagi menggunakan
+        <code>.html</code>
+        <br>oh iya!, tulisannya juga bisa kalian sesuaikan dengan keinginan kalian, tapi memakai css ya!
+        <br>nih aku kasih contohnya!
       </p>
       <br>Pertama kalian buat dulu CSS nya
       <pre><code class="language-css">/* contohnya yaa */
@@ -328,73 +352,93 @@ a:hover {
   background: green;
   border-radius: 15px;
 }</code></pre>
-    <br>Lalu kalian buat hyperlink-nya<pre data-aos="fade-right"><code class="language-html">&lt;a href=&quot;index.html&quot;&gt;Website&lt;/a&gt;</code></pre>
-    hasilnya?
-    <div class="bg-code rounded-2 p-2">
+      <br>Lalu kalian buat hyperlink-nya
+      <pre
+        data-aos="fade-right"><code class="language-html">&lt;a href=&quot;index.html&quot;&gt;Website&lt;/a&gt;</code></pre>
+      hasilnya?
+      <div class="bg-code rounded-2 p-2">
         <a href="index.html" id="hypercontoh">Website</a>
       </div>
-      <p>Sekarang coba kalian arahkan mouse atau jika kalian di hp tahan teks tersebut tapi jangan di tekan, dan kalian bisa melihat perbedaanya, jadi lebih keren bukan?😎
+      <p>Sekarang coba kalian arahkan mouse atau jika kalian di hp tahan teks tersebut tapi jangan di tekan, dan kalian
+        bisa melihat perbedaanya, jadi lebih keren bukan?😎
       </p>
-      Oiya ada satu lagi hyperlink lagi nihh, yaitu adalah <i>Linking same page</i>, yang berfungsi mengarahkan kalian ke halaman itu sendiri sesuai dengan perintah ingin mengarahkan ke atas / bawah halaman dengan memanfaatkan fungsi <code class="language-html">id</code> dan tanda <code class="language-html">#</code> jika kita gabung akan menjadi seperti ini 
+      Oiya ada satu lagi hyperlink lagi nihh, yaitu adalah <i>Linking same page</i>, yang berfungsi mengarahkan kalian
+      ke halaman itu sendiri sesuai dengan perintah ingin mengarahkan ke atas / bawah halaman dengan memanfaatkan fungsi
+      <code class="language-html">id</code> dan tanda <code class="language-html">#</code> jika kita gabung akan menjadi
+      seperti ini
       <br><code class="language-html">&lt;a href=&quot;#contoh&quot;&gt;</code>
       <br>Contohnya seperti ini ya :
       <pre><code class="language-html">&lt;a href=&quot;#buatlist&quot;&gt;Website&lt;/a&gt;</code></pre>
-    <div class="bg-code text-white rounded-2 p-2">
+      <div class="bg-code text-white rounded-2 p-2">
         <a href="#buatlist">Kembali</a>
       </div>
       Tag diatas akan membawa kalian kembali ke atas yaitu bagian "Membuat List"
-      </div>
-   </div>
-   <!-- Anchor End -->
+    </div>
+  </div>
+  <!-- Anchor End -->
 
-    <!-- Footer Start -->
-    <footer class="p-2 mt-2" id="footer">
-      <div class="container mb-2 text-center">
-        <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1" role="button"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1" role="button"><i class="fa-brands fa-github"></i></a>
-        <a href="https://twitter.com/flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1" role="button"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://discordapp.com/users/899644068697620491" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1" role="button"><iconify-icon inline icon="ic:baseline-discord"></iconify-icon></a>
-      </div>
-      <div class="container small text-center">
-        <div class="row">
-          <div class="col-md-4">
-            <font class="h5 fw-bold">Projects</font>
-            <br><a href="https://nurispedia.relaxstand.repl.co" class="link-none">Nurispedia</a>
-            <br><a href="project/index.html" class="link-none">Project Review</a>
-            <br><a href="https://github.com/flixdz/flixpseal" class="link-none">Portofolio Website</a>
-          </div>
-          <div class="col-md-4">
-            <br>
-            <blockquote class="h5 text-muted" style="font-family: poppins"><iconify-icon icon="mingcute:quote-left-fill"></iconify-icon>To infinity and beyond<iconify-icon icon="mingcute:quote-right-fill"></iconify-icon></blockquote>
-            <br>
-          </div>
-          <div class="col-md-4">
-            <font class="h5 fw-bold">Framework</font>
-            <br>Iconify
-            <br>Font Awesome
-            <br>Bootstrap 5
-            <br><a href="https://github.com/flixdz/flixpseal" class="text-muted link-none">More...</a>
-          </div>
-          </div>
+  <!-- Footer Start -->
+  <footer class="p-2 mt-2" id="footer">
+    <div class="container mb-2 text-center">
+      <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
+        role="button"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
+        role="button"><i class="fa-brands fa-github"></i></a>
+      <a href="https://twitter.com/flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
+        role="button"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://discordapp.com/users/899644068697620491" id="footer-icon"
+        class="btn btn-outline-dark rounded-5 btn-floating m-1" role="button"><iconify-icon inline
+          icon="ic:baseline-discord"></iconify-icon></a>
+    </div>
+    <div class="container small text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <font class="h5 fw-bold">Projects</font>
+          <br><a href="https://nurispedia.relaxstand.repl.co" class="link-none">Nurispedia</a>
+          <br><a href="project/index.html" class="link-none">Project Review</a>
+          <br><a href="https://github.com/flixdz/flixpseal" class="link-none">Portofolio Website</a>
         </div>
-    </footer>
-    <div class="text-center small p-3" id="copy">Flixdz @flixpseal, Copyright <i class="fa-regular fa-copyright"></i> 2023
-            <br>Theme by <img src="image/animation.gif" width="30">, Made with <i class="fa fa-heart" style="color: red"></i> for you
-            </div>
-    <!-- Footer End -->
-    
-    
-  
- <!-- Tombol ke atas -->
-  <button type="button" class="btn btn-primary btn-floating rounded-5" id="btn-back-to-top"><iconify-icon inline icon="grommet-icons:up"></iconify-icon></button>
+        <div class="col-md-4">
+          <br>
+          <blockquote class="h5 text-muted" style="font-family: poppins"><iconify-icon
+              icon="mingcute:quote-left-fill"></iconify-icon>To infinity and beyond<iconify-icon
+              icon="mingcute:quote-right-fill"></iconify-icon></blockquote>
+          <br>
+        </div>
+        <div class="col-md-4">
+          <font class="h5 fw-bold">Framework</font>
+          <br>Iconify
+          <br>Font Awesome
+          <br>Bootstrap 5
+          <br><a href="https://github.com/flixdz/flixpseal" class="text-muted link-none">More...</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="text-center small p-3" id="copy">Flixdz @flixpseal, Copyright <i class="fa-regular fa-copyright"></i> 2023
+    <br>Theme by <img src="image/animation.gif" width="30">, Made with <i class="fa fa-heart" style="color: red"></i>
+    for you
+  </div>
+  <!-- Footer End -->
+
+
+
+  <!-- Tombol ke atas -->
+  <button type="button" class="btn btn-primary btn-floating rounded-5" id="btn-back-to-top"><iconify-icon inline
+      icon="grommet-icons:up"></iconify-icon></button>
   <!-- End of HTML -->
-  
-   <!--JAVA SCRIPT FOR AOS-->
-   <script>
+
+  <!--JAVA SCRIPT FOR AOS-->
+  <script>
     AOS.init();
   </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="js/multilevel.js"></script>
   <script src="js/button_top.js"></script>
   <script src="js/date-time.js"></script>
   <script src="js/dark-mode-switch.min.js"></script>
-  </body>
+</body>
+
 </html>
