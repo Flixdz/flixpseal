@@ -121,8 +121,12 @@
         <p><iconify-icon inline icon="line-md:align-right"></iconify-icon>
           <font class="h4">Isi halaman web</font>
           <br><a href="#pengertian" id="daftard">Pengertian Variabel</a>
-          <br><a href="#buka" id="daftard">Membuka Sever</a>
-          <br><a href="#taghtml" id="daftard">Deklarasi PHP</a>
+          <br><a href="#deklarasi" id="daftard">Membuka Sever</a>
+          <br><a href="#globalvar" id="daftard">Deklarasi PHP</a>
+          <br><a href="#varstat" id="daftard">Variabel</a>
+          <br><a href="#singqot" id="daftard">String Singel Quoted</a>
+          <br><a href="#douqot" id="daftard">String Double Quoted</a>
+          <br><a href="#douqot" id="daftard">Bilangan Integer</a>
         </p>
       </div>
     </div>
@@ -142,7 +146,7 @@
       </p>
     </div>
 
-    <div class="container" data-aos="zoom-in" id="buka">
+    <div class="container" data-aos="zoom-in" id="deklarasi">
       <hr>
       <h3><i class="fa-solid fa-server"></i> Mendeklarasikan Variabel PHP</h3>
       <p>
@@ -155,6 +159,9 @@
         <br>Minimal panjang variabel adalah 1 karakter setelah tanda $.
       </p>
       <p>Contoh menyimpan Variabel dalam PHP</p>
+
+
+      
       <pre><code class="language-php line-numbers">&lt;?php
 $nama = &quot;Muhammad Fachri&quot;;
 $alamat = &quot;DKI Jakarta&quot;;
@@ -179,33 +186,134 @@ echo &quot;Hai, perkenalkan nama saya &quot;.$nama.&quot; dan saya tinggal di &q
       <p>Source <a href="https://www.malasngoding.com" class="link-none"><u>Malas Ngoding</u></a></p>
 
     </div>
-    <div class="container" data-aos="fade-up" id="taghtml">
+    <div class="container" data-aos="fade-up" id="varstat">
       <hr>
-      <h3>Deklarasi PHP</h3>
-      <p>Syntax ini mungkin sama dengan HTML biasa, tetapi ada bahasa php didalamnya. Kalian bisa melihat atau mengikuti
-        cara dibawah ini.
-      </p>
-      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-  &lt;html lang="en"&gt;
-      &lt;head&gt;
-          &lt;title&gt;Belajar PHP&lt;/title&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-          &lt;p&gt;Kalimat Ini digunakan menggunakan HTML&lt;/p&gt;
-          &lt;?php
-            echo "&lt;p&gt;Kalimat Ini dibuat menggunakan PHP&lt;/p&gt;";
-          ?&gt;
-      &lt;/body&gt;
-  &lt;/html&gt;</code></pre>
+      <h3><i class="fa-solid fa-bars-staggered"></i> Variabel Statik</h3>
+      <p>Lingkup Variabel Statik adalah sebagai berikut</p>
+      <pre><code class="language-php line-numbers">&lt;?php
+      function mytest(){
+      static $x = 0;
+      echo $x;
+      $x++;
+      }
+      mytest();
+      mytest();
+      mytest();
+      mytest();
+      mytest();
+      mytest();
+?&gt;</code></pre>
 
-      <h3>Output
-        <br><img src="image/bukaserver.png" alt="Output" width="100%">
-      </h3>
-      <p>Btw kalian bisa copy contoh diatas kok.
+<p>Outputnya adalah sebagai berikut :</p>
+<pre><code class="language-php">012345</code></pre>
+<p>Kalian bisa melihatnya variabel <code>$x</code> dimulai dengan angka 0, kemudian kita print menjadi <code>mytest</code> dan akan menjadi urutan angka dimulai dari huruf 0 sampai 5 (kenapa 5? karena kita membuat function ada 6 perintah)</p>
+
+    </div>
+
+    <div class="container" data-aos="fade-right" id="singqot">
+      <hr>
+      <h3>Tipe Data Singel Quoted '</h3>
+      <p>Materi ini penting untuk kalian yang ingin menambahkan <code>'</code> tanda kutip satu, apabila jika kalian ketikkan akan mengakhiri variabel tersebut. Mengerti tidak? jika masih tidak mengerti saya akan berikan contohnya</p>
+      <pre><code class="language-php line-numbers keep-markup">&lt;?php
+        $judul1 = 'String Single Quoted';
+        $judul2 = 'don\'t';
+        
+        $linkurl = 'http://flixdz.github.io/flixpseal';
+        $direktori = 'C:\\xampp\\htdocs\\folderproject';
+        
+        $topik = 'Materi Ini merupakan $judul1 dan apakah bahasa inggrisnya adalah $judul2';
+        
+        echo $judul1;
+        echo "&lt;br&gt;";
+        echo "&lt;br&gt;";
+        echo $judul2;
+        echo "&lt;br&gt;";
+        echo $linkurl;
+        echo "&lt;br&gt;";
+        echo "&lt;br&gt;";
+        echo $direktori;
+?&gt;</code></pre>
+<p>Output yang akan dikeluarkan :</p>
+    <pre class="bg-code p-2 rounded-1"><code>String Single Quoted
+don't
+
+http://flixdz.github.io/flixpseal
+C:\xampp\htdocs\folderproject
+
+Materi Ini merupakan $judul1 dan apakah bahasa inggrisnya adalah $judul2</code></pre>
+    </div>
+
+
+    <div class="container" data-aos="fade-right" id="douqot">
+      <hr>
+      <h3>Tipe Data Double Quoted "</h3>
+      <p>Saat kalian membutuhkan tanda kutip dua <code>"</code> untuk menampilkan string adalah menggunakan garis miring dengan titik dua
+      <pre><code class="language-php line-numbers">&lt;?php
+        $judul1 = "String Double Quoted";
+        $judul2 = "you\"ll be fine";
+        $linkurl = "http://flixdz.github.io/flixpseal";
+        $direktori = "C:\\xampp\\htdocs\\folderproject";
+        
+        $topik = "Materi Ini merupakan $judul1 dan bahasa inggris kamu baik baik saja adalah $judul2";
+        
+        echo $judul1;
+        echo "&lt;br&gt;";
+        echo $judul2;
+        echo "&lt;br&gt;";
+        echo $topik;
+        echo "&lt;br&gt;";
+        echo $linkurl;
+        echo "&lt;br&gt;"; 
+        echo $direktori;
+?&gt;</code></pre>
+<p>Output yang akan dikeluarkan :</p>
+    <pre class="bg-code p-2 rounded-1"><code>String Double Quoted
+you"ll be fine
+
+http://flixdz.github.io/flixpseal
+C:\xampp\htdocs\folderproject
+
+Materi Ini merupakan Double Quoted dan bahasa inggris kamu baik baik saja adalah you"ll be fine</code></pre>
+    </div>
+
+    <div class="container" data-aos="fade-right" id="inte">
+      <hr>
+      <h3>Bilangan Integer</h3>
+      <p>Fungsi ini menampilkan informasi terstruktur tentang satu atau beberapa ekspresi yang menyertakan jenis dan nilainya. Array dan objek dieksplorasi secara rekursif dengan nilai yang diindentasi untuk menunjukkan struktur.
+        <br>Aturan-aturan pada integer adalah sebagai berikut :
+        <br>1. Integer harus memiliki sedikitnya satu digit.
+        <br>2. Integer tidak boleh memiliki koma
+        <br>3. Integer bisa positif maupun negatif
       </p>
+      <p>Contoh Bilangan Integer :</p>
+      <pre><code class="language-php line-numbers">$a = 32;
+echo var_dump($a) . "&lt;br&gt;";
+        
+$b = "Hello world!";
+echo var_dump($b) . "&lt;br&gt;";
+        
+$c = 32.5;
+echo var_dump($c) . "&lt;br&gt;";
+        
+$d = array("red", "green", "blue");
+echo var_dump($d) . "&lt;br&gt;";
+        
+$e = array(32, "Hello world!", 32.5, array("red", "green", "blue"));
+echo var_dump($e) . "&lt;br&gt;";
+        
+// Dump two variables
+echo var_dump($a, $b) . "&lt;br&gt;";
+</code></pre>
+
+<p>Output yang akan dikeluarkan :</p>
+    <pre class="bg-code p-2 rounded-1"><code>int(32)
+string(12) "Hello world!"
+float(32.5)
+array(3) { [0]=> string(3) "red" [1]=> string(5) "green" [2]=> string(4) "blue" }
+array(4) { [0]=> int(32) [1]=> string(12) "Hello world!" [2]=> float(32.5) [3]=> array(3) { [0]=> string(3) "red" [1]=> string(5) "green" [2]=> string(4) "blue" } }
+int(32) string(12) "Hello world!"</code></pre>
     </div>
   </div>
-
   <!-- Footer Start -->
   <footer class="p-2 mt-2" id="footer">
     <div class="container mb-2 text-center">
@@ -250,7 +358,7 @@ echo &quot;Hai, perkenalkan nama saya &quot;.$nama.&quot; dan saya tinggal di &q
 
 
   <!-- Tombol ke atas -->
-  <button type="button" class="btn btn-primary btn-floating rounded-5" id="btn-back-to-top"><iconify-icon inline
+  <button type="button" class="btn btn-dark btn-floating rounded-5" id="btn-back-to-top"><iconify-icon inline
       icon="grommet-icons:up"></iconify-icon></button>
   <!--JAVA SCRIPT FOR AOS-->
   <script>
