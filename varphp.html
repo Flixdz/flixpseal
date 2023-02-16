@@ -126,7 +126,8 @@
           <br><a href="#varstat" id="daftard">Variabel</a>
           <br><a href="#singqot" id="daftard">String Singel Quoted</a>
           <br><a href="#douqot" id="daftard">String Double Quoted</a>
-          <br><a href="#douqot" id="daftard">Bilangan Integer</a>
+          <br><a href="#inte" id="daftard">Bilangan Integer</a>
+          <br><a href="#float" id="daftard">Bilangan Float</a>
         </p>
       </div>
     </div>
@@ -314,14 +315,36 @@ array(4) { [0]=> int(32) [1]=> string(12) "Hello world!" [2]=> float(32.5) [3]=>
 int(32) string(12) "Hello world!"</code></pre>
     </div>
   </div>
+
+  <div class="container" data-aos="fade-right" id="float">
+    <hr>
+    <h3>Tipe data Float</h3>
+    <p>Tipe data float atau di sebut juga tipe data double adalah tipe data yang berisi bilangan desimal. 
+      cara penulisannya hampir sama dengan tipe data integer karena tidak memerlukan tanda petik di 
+      awal dan di akhir isi variabel float. berikut ini adalah contoh penulisan variabel yang bertipe 
+      data Float pada PHP.
+    <br>Contoh float pada penjumlahan membeli barang :
+    </p>
+    
+    <pre class="language-php"><code>&lt;?php
+//Kimo membeli barang dipasar
+$kuenas = 37.550;
+$tempat = 15.750;
+$hasil = $kuenas + $tempat;
+
+echo "Kimo membeli kue nastar dan tempatnya seharga $hasil"
+?&gt;</code></pre>
+<p>Output yang akan dikeluarkan :</p>
+    <pre class="bg-code p-2 rounded-1"><code>Kimo membeli kue nastar dan tempatnya seharga 53.3</code></pre>
+  </div>
   <!-- Footer Start -->
   <footer class="p-2 mt-2" id="footer">
     <div class="container mb-2 text-center">
-      <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
+      <a href="https://instagram.com/flixpseal" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
         role="button"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
         role="button"><i class="fa-brands fa-github"></i></a>
-      <a href="https://twitter.com/flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
+      <a href="https://twitter.com/flixpseal" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
         role="button"><i class="fa-brands fa-twitter"></i></a>
       <a href="https://discordapp.com/users/899644068697620491" id="footer-icon"
         class="btn btn-outline-dark rounded-5 btn-floating m-1" role="button"><iconify-icon inline
