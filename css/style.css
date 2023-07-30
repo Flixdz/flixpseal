@@ -16,6 +16,16 @@ body {
 h1, h2, h3, h4, h5, h6, small, #coltop, .h1, .h2, .h3, .h4, .h5, .small, .fw-bold {
   font-family: 'Google Sans Text', Sans-Serif;
 }
+.btn-m3youpurple {
+  background: #B9C3FF !important;
+  color: black !important;
+  border-color: #B9C3FF;
+}
+.btn-m3youpurple:hover, .btn-m3youpurple:focus {
+  background: lightblue !important;
+  color: black !important;
+  border-color: #B9C3FF;
+}
 h3 {
   text-align: center;
 }
