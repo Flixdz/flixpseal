@@ -18,6 +18,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/prism.js"></script>
+  <script src="js/webver.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   <link href="css/prism.css" rel="stylesheet">
   <link href="css/dark-mode.css" rel="stylesheet">
@@ -198,13 +199,21 @@
     </div>
   </div>
 </footer>
-<div class="text-center small p-3" id="copy">Flixdz @flixpseal, Copyright <i class="fa-regular fa-copyright"></i> 2023
-  <br>Theme by <img src="image/animation.gif" width="30">, Made with <i class="fa fa-heart" style="color: red"></i>
-  for you
-</div>
+  <div class="text-center small p-3" id="copy"><span id="version"></span>
+  <br><span id="lastupt"></span>
+    <br>Theme by <img src="image/animation.gif" width="30">, Made with <i class="fa fa-heart" style="color: red"></i>
+    for you
+  </div>
 <!-- Footer End -->
-  <!--JAVA SCRIPT FOR AOS-->
 
+<!-- Script Untuk Versi Dinamis Websiye di footer -->
+<script>
+  document.getElementById("version").textContent = websiteVersion ;
+  document.getElementById("lastupt").textContent = websiteDate ;
+</script>
+  <!--JAVA SCRIPT FOR AOS-->
+  
+  
   <script>
     AOS.init();
   </script>
