@@ -9,7 +9,10 @@
   font-family: Google Sans;
   src: url('font/GoogleSans-Regular.ttf');
 }
-
+@font-face {
+  font-family: Nothing;
+  src: url('font/nothing2.ttf');
+}
 body {
   font-family: 'Google Sans', sans-serif;
 }
@@ -164,4 +167,35 @@ footer {
     text-align: left;
     margin-top: 20px !important;
   }
+}
+.typing-container {
+  position: relative;
+  height: 3em; /* Sesuaikan dengan kebutuhan Anda */
+  overflow: hidden;
+}
+
+#typing-effect {
+  font-family: Nothing;
+  white-space: nowrap;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  overflow: hidden;
+  width: auto;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 15em; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+.hastag {
+  opacity: 0%;
+}
+.hastag:hover, .hastag:focus {
+  opacity: 100%;
 }

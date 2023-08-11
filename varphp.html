@@ -19,6 +19,7 @@
   <script src="js/prism.js"></script>
   <!-- Dark Mode -->
   <link rel="stylesheet" href="css/dark-mode.css">
+  <script src="js/webver.js"></script>
   <!-- AOS PLUGIN -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -64,7 +65,7 @@
                 <a class="dropdown-item dropdown-toggle active" href="#"><iconify-icon inline
                     icon="mdi:language-php"></iconify-icon> PHP</a>
                 <ul class="dropdown-menu text-center">
-                  <li><a class="dropdown-item" href="basic.html">Basic PHP</a></li>
+                  <li><a class="dropdown-item" href="basicphp.html">Basic PHP</a></li>
                   <li><a class="dropdown-item active" href="#">Variabel</a></li>
                 </ul>
               </li>
@@ -373,7 +374,8 @@ echo "Kimo membeli kue nastar dan tempatnya seharga $hasil"
       </div>
     </div>
   </footer>
-  <div class="text-center small p-3" id="copy">Flixdz @flixpseal, Copyright <i class="fa-regular fa-copyright"></i> 2023
+  <div class="text-center small p-3" id="copy"><span id="version"></span>
+  <br><span id="lastupt"></span>
     <br>Theme by <img src="image/animation.gif" width="30">, Made with <i class="fa fa-heart" style="color: red"></i>
     for you
   </div>
@@ -383,6 +385,11 @@ echo "Kimo membeli kue nastar dan tempatnya seharga $hasil"
   <!-- Tombol ke atas -->
   <button type="button" class="btn btn-dark btn-floating rounded-5" id="btn-back-to-top"><iconify-icon inline
       icon="grommet-icons:up"></iconify-icon></button>
+      
+      <script>
+  document.getElementById("version").textContent = websiteVersion ;
+  document.getElementById("lastupt").textContent = websiteDate ;
+</script>
   <!--JAVA SCRIPT FOR AOS-->
   <script>
     AOS.init();

@@ -62,6 +62,14 @@ body {
 [data-theme="dark"] .dropdown-item {
   color: #eee !important;
 }
+.dropdown-item:hover, .dropdown-item:focus {
+  color: white !important;
+  background: #4C74FF !important;
+}
+[data-theme="dark"] .dropdown-item:hover, .dropdown-item:focus {
+  color: black !important;
+  background: #B9C3FF !important;
+}
 [data-theme="dark"] .dropdown-item:hover {
   color: #212529 !important;
 }
@@ -170,19 +178,25 @@ label {
 
 .btn-outline-m3youpurple {
   color: #4C74FF !important;
-  border-color: #4C74FF;
+  border-color: #4C74FF !important;
 }
-.btn-outline-m3youpurple:hover, .btn-outline-m3youpurple:focus {
-  color: #B9C3FF !important;
-  border-color: #B9C3FF;
+.btn-outline-m3youpurple:hover {
+  color: white !important;
+  border-color: #4C74FF !important;
+  background: #4C74FF !important;
+  transition: outline 0.15s;
+}
+.btn-outline-m3youpurple:focus {
+  outline: 3px solid white !important;
 }
 [data-theme="dark"] .btn-outline-m3youpurple {
   color: #B9C3FF !important;
-  border-color: #B9C3FF;
+  border-color: #B9C3FF !important;
 }
 [data-theme="dark"] .btn-outline-m3youpurple:hover, .btn-outline-m3youpurple:focus {
-  color: #4C74FF !important;
-  border-color: #4C74FF;
+  color: black !important;
+  border-color: #B9C3FF !important;
+  background-color: #B9C3FF !important;
 }
 
 #share {
