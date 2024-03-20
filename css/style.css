@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Manrope&display=swap');
 @font-face {
   font-family: Google Sans Text;
   src: url('font/GoogleSansText-Regular.ttf');
@@ -14,10 +15,16 @@
   src: url('font/nothing2.ttf');
 }
 body {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans Text', sans-serif;
+}
+.manrope {
+  font-family: 'Manrope', sans-serif !important;
+}
+.fira-code {
+  font-family: 'Fira Code', Monospace !important;
 }
 h1, h2, h3, h4, h5, h6, small, #coltop, .h1, .h2, .h3, .h4, .h5, .small, .fw-bold {
-  font-family: 'Google Sans Text', Sans-Serif;
+  font-family: 'Google Sans', Sans-Serif;
 }
 .btn-m3youpurple {
   background: #B9C3FF !important;
@@ -150,9 +157,6 @@ footer {
 
 @media (max-width: 950px){
   p {
-    text-align: left;
-  }
-  h3 {
     text-align: left;
   }
 

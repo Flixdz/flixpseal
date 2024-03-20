@@ -24,7 +24,7 @@ body {
 }
 
 [data-theme="dark"] .bg-light {
-  background-color: #222 !important;
+  background-color: #1C1B20 !important;
 }
 
 [data-theme="dark"] .bg-white {
