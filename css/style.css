@@ -62,16 +62,16 @@ img {
 #share {
 	 transition: background-color 1s, color 1s;
 	 color: white; 
-	 background: #0d6efd;
+	 background: #84AFE0;
 	 font-size: 25px; 
 }
 #share:hover {
-	 color: #0d6efd;
+	 color: #84AFE0;
 	 background-color: #e8e8e8;
 }
 #daftard {
       transition: color 1s, background-color 1s;
-      color: #0d6efd;
+      color: #84AFE0;
       text-decoration: none;
       padding: 1.5px ;
       font-weight: bold;
@@ -79,7 +79,7 @@ img {
  }
 #daftard:hover {
       color: white;
-      background-color: #0d6efd;
+      background-color: #84AFE0;
 }
 .card-img-top {
   background: white;
