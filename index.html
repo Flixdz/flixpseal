@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -94,13 +93,8 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dokumen
-            </a>
-            <ul class="dropdown-menu text-center">
-              <li><a class="dropdown-item" href="access.html">Teman</a></li>
-              <li><a class="dropdown-item" href="https://bit.ly/3GlSOJO">Sistem Operasi</a></li>
-            </ul>
+        <div id="tampil" class="nav-link"></div>
+      </div>
           </li>
         </ul>
       </div>
@@ -110,16 +104,19 @@
 
   <div class="container" id="coltop">
     <div class="row text-center" data-aos="fade-in" data-aos-duration="3000">
-      <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
-        <div id="tampil"></div>
-      </div>
       <div class="col-md-4" data-aos="zoom-in" data-aos-duration="3000">
         <div id="lblGreetings"></div>
       </div>
       <div class="col-md-4" data-aos="zoom-in" data-aos-duration="3000">
         <div id="waktu"></div>
       </div>
-        <div class="container text-center">
+      <div class="col-md-4" data-aos="zoom-in" data-aos-duration="3000">
+      <div id="weather">
+        <i id="weather-icon" class=""></i> <!-- Ikon cuaca -->
+        <span id="weather-info">Cerah, 26°C</span> <!-- Informasi cuaca -->
+</div>
+      </div>
+        <div class="container text-center mt-3">
           <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
           <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch" data-aos-duration="2000"
             data-aos="fade-in"><iconify-icon id="darkmode"></iconify-icon></label>
@@ -162,24 +159,24 @@
       <div class="container text-center">
         <div class="container" data-aos="zoom-in">
           <h1 class="text-center"><a class="link-none fw-bolder clickable" href="#perkenalan" id="perkenalan">Muhammad Fachri Al Husein</a></h1>
-        <h3 class="fw-bold manrope">know as @flixpseal or muhfhri._</h3>
+        <h3 class="fw-bold manrope">know as @flixpseal or @muhfhri._</h3>
         <h3 class="fw-bold manrope">begginer and not a real dev</h3>
         <small class="fw-bold fira-code text-danger">*cuz being a dev is really hard af</small>
         
         <div class="text-center mt-2" data-aos="fade-in">
           <a href="https://instagram.com/flixpseal"
-            class="btn btn-outline-m3youpurple rounded-5"><i
+            class="btn btn-outline-m3-you-color rounded-5"><i
               class="fa-brands fa-instagram"></i></a>
           <a href="https://www.facebook.com/profile.php?id=100044505125193"
-            class="btn btn-outline-m3youpurple rounded-5"><i
+            class="btn btn-outline-m3-you-color rounded-5"><i
               class="fa-brands fa-facebook"></i></a>
-          <a href="https://github.com/Flixdz" class="btn btn-outline-m3youpurple rounded-5"><i
+          <a href="https://github.com/Flixdz" class="btn btn-outline-m3-you-color rounded-5"><i
               class="fa-brands fa-github"></i></a>
-          <a href="https://www.tiktok.com/@flixpseal" class="btn btn-outline-m3youpurple rounded-5"><i class="fa-brands fa-tiktok" style="font-size: 22px;"></i></a>
+          <a href="https://www.tiktok.com/@flixpseal" class="btn btn-outline-m3-you-color rounded-5"><i class="fa-brands fa-tiktok" style="font-size: 22px;"></i></a>
           <a href="https://youtube.com/channel/UCzU0mlmLis0p2XOvRL1r0-Q"
-            class="btn btn-outline-m3youpurple rounded-5"><i class="fa-brands fa-youtube"
+            class="btn btn-outline-m3-you-color rounded-5"><i class="fa-brands fa-youtube"
               style="font-size: 20px"></i></a>
-          <a href="https://twitter.com/flixpseal" class="btn btn-outline-m3youpurple rounded-5"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://twitter.com/flixpseal" class="btn btn-outline-m3-you-color rounded-5"><i class="fa-brands fa-twitter"></i></a>
         </div>
 
         </div>
@@ -187,7 +184,7 @@
         <div class="container mt-5" data-aos="fade-in">
           <h1><a class="fw-bold link-none clickable" href="#pendidikan" id="pendidikan">Who am i?</a></h1>
           <h3 class="fw-bold">I love programing like a android and website</h3>
-        <small class="fw-bold fira-code text-danger">*so fcking hard exm. Laravel 9 & PHP</small>
+        <sup><small class="fw-bold fira-code text-danger">*not really</small></sup>
         </div>
       </div>
       </div>
@@ -195,10 +192,10 @@
       <div class="container mt-5" data-aos="fade-in"><h1 class="manrope text-center fw-bold"><a class="fw-bold link-none clickable" href="#pendidikan" id="pendidikan">Framework Used</a></h1>
       <div class="container text-center">
       <small class="manrope fw-bold">All framework are Open-Source and free to use</small>
-      <h4 class="mt-3">Bootstrap 5 <sup class="manrope rounded-2 btn-outline-m3youpurple">&nbsp;<iconify-icon inline icon="carbon:fork"></iconify-icon>main&nbsp;</sup> <a href="https://getbootstrap.com" class="btn btn-sm btn-outline-m3youpurple rounded-5"><iconify-icon inline icon="ri:bootstrap-fill"></iconify-icon></a></h4>
-      <h4>Iconify <sup class="manrope rounded-2 bg-warning">&nbsp;HTML | CSS&nbsp;</sup> <a href="https://iconify.com" class="btn btn-sm btn-outline-m3youpurple rounded-5"><iconify-icon inline icon="line-md:iconify1"></iconify-icon></a></h4>
-      <h4>AOS Library <sup class="manrope rounded-2 bg-primary">&nbsp;CSS&nbsp;</sup> <a href="https://michalsnik.github.io/aos/" class="btn btn-sm btn-outline-m3youpurple rounded-5"><iconify-icon inline icon="pajamas:scroll-down"></iconify-icon></a></h4>
-      <h4 >Acode FOSS <sup class="manrope rounded-2 bg-success">&nbsp;editor text&nbsp;</sup> <a href="https://play.google.com/store/apps/details?id=com.foxdebug.acode" class="btn btn-sm btn-outline-m3youpurple rounded-5"><iconify-icon inline icon="streamline:play-store"></iconify-icon></a></h4>
+      <h4 class="mt-3">Bootstrap 5 <sup class="manrope rounded-2 btn-outline-m3-you-color">&nbsp;<iconify-icon inline icon="carbon:fork"></iconify-icon>main&nbsp;</sup> <a href="https://getbootstrap.com" class="btn btn-sm btn-outline-m3-you-color rounded-5"><iconify-icon inline icon="ri:bootstrap-fill"></iconify-icon></a></h4>
+      <h4>Iconify <sup class="manrope rounded-2 bg-warning">&nbsp;HTML | CSS&nbsp;</sup> <a href="https://iconify.com" class="btn btn-sm btn-outline-m3-you-color rounded-5"><iconify-icon inline icon="line-md:iconify1"></iconify-icon></a></h4>
+      <h4>AOS Library <sup class="manrope rounded-2 bg-primary">&nbsp;CSS&nbsp;</sup> <a href="https://michalsnik.github.io/aos/" class="btn btn-sm btn-outline-m3-you-color rounded-5"><iconify-icon inline icon="pajamas:scroll-down"></iconify-icon></a></h4>
+      <h4 >Acode FOSS <sup class="manrope rounded-2 bg-success">&nbsp;editor text&nbsp;</sup> <a href="https://play.google.com/store/apps/details?id=com.foxdebug.acode" class="btn btn-sm btn-outline-m3-you-color rounded-5"><iconify-icon inline icon="streamline:play-store"></iconify-icon></a></h4>
       </div>
       </div>
     <!-- New Container karena gamuat :v -->
@@ -246,27 +243,28 @@
       </div>
 
   <div class="container mt-5" data-aos="fade-up">
-    <h1 class="manrope fw-bold text-center">Project Completed</h1>
+    <h1 class="fw-bold text-center"><b id="dot-animation">Updates</b>
+  <script src="script.js"></script></h1>
     <div class="container">
       <div class="row text-center">
         <div class="col-md-6 mt-3">
           <div class="card rounded-5">
-            <a href="https://nurispedia.relaxstand.repl.co" class="link-none">
-            <img src="image/nurispedia.png" class="card-img-top rounded-5" alt="...">
+            <a href="#" class="link-none" onclick="alert('Pengingat saja, untuk lebih lengkapnya silahkan kunjungi website Osis SMK Nurul Islam Jakarta @osis.smknuriis')">
+            <img src="image/update1.png" class="card-img-top rounded-5" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Nurispedia</h5>
-              <p class="card-text">Nurispedia adalah platfrom pembelajaran online credits. Alfian Ferdiansyah</p>
+              <h5 class="card-title fw-bold text-center">Pesantren Kilat</h5>
+              <p class="card-text">Sanlat tanggal 1 & 2 April mendatang.</p></a>
             </div>
             </a>
           </div>
         </div>
         <div class="col-md-6 mt-3">
           <div class="card rounded-5">
-            <a href="project/index.html" class="link-none">
-            <img src="image/githubio.png" class="card-img-top rounded-5" alt="...">
+            <a href="#" class="link-none" onclick="alert('Pengingat saja, untuk lebih lengkapnya silahkan kunjungi website Osis SMK Nurul Islam Jakarta @osis.smknuriis')">
+            <img src="image/" class="card-img-top rounded-5" >
             <div class="card-body">
-              <h5 class="card-title">Project Review</h5>
-              <p class="card-text">Website SMK Nurul Islam dibuat menggunakan Bootstrap 5</p>
+              <h5 class="card-title fw-bold text-center">Kosong</h5>
+              <p class="card-text">belum ada kegiatan lagi nih...</p>
             </div>
             </a>
           </div>
@@ -283,7 +281,7 @@
       <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
         role="button"><i class="fa-brands fa-github"></i></a>
       <a href="https://twitter.com/flixpseal" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
-        role="button"><i class="fa-brands fa-twitter"></i></a>
+        role="button"><i class="fa-brands fa-x"></i></a>
       <a href="https://discordapp.com/users/899644068697620491" id="footer-icon"
         class="btn btn-outline-dark rounded-5 btn-floating m-1" role="button"><iconify-icon inline
           icon="ic:baseline-discord"></iconify-icon></a>
@@ -303,10 +301,12 @@
 
 var r_text = new Array ();
 r_text[0] = "who is the first? yess its youu >.<";
-r_text[1] = "Jangan menjadi dewasa jika sifatmu tidak pernah dirubah?";
-r_text[2] = "Sesuatu Di Jogja ♪";
-r_text[3] = "Using Material 3 You design";;
-var i = Math.floor(4*Math.random())
+r_text[1] = "Flixdz To The Top!";
+r_text[2] = "I'll depend on you...";
+r_text[3] = "Using Material 3 You design";
+r_text[4] = "Google Sans";
+r_text[5] = "Planet Bekasi";;
+var i = Math.floor(6*Math.random())
 
 document.write(r_text[i]);
 
@@ -333,12 +333,25 @@ document.write(r_text[i]);
   <!-- Footer End -->
 
   <!-- Tombol ke atas -->
-  <button type="button" class="btn btn-m3youpurple btn-floating rounded-4 shadow btn-lg" id="btn-back-to-top"><iconify-icon
+  <button type="button" class="btn btn-m3-you-color btn-floating rounded-4 shadow btn-lg" id="btn-back-to-top"><iconify-icon
       inline icon="line-md:chevron-up"></iconify-icon>
   </button>
   <!-- End Of Body HTML -->
   
   <!-- JavaScript for functional features this cool website-->
+  
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const dotAnimation = document.getElementById("dot-animation");
+  let dots = 0;
+  
+  setInterval(function() {
+    dots = (dots + 1) % 4;
+    dotAnimation.textContent = "Updates" + ".".repeat(dots);
+  }, 1000);
+});
+
+</script>
 <script>
   setInterval(() => {
     var date = new Date();
@@ -376,6 +389,43 @@ document.write(r_text[i]);
 
     document.getElementById("tampil").innerHTML = tampilTanggal;
   }, 1000);
+</script>
+
+<script>
+// Ganti 'YOUR_API_KEY' dengan kunci API Anda dari OpenWeatherMap
+const apiKey = '962322a87800402e0b9d7052cb5e8f16';
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Jakarta&units=metric&APPID=' + apiKey ;
+
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    const weatherDescription = data.weather[0].description.toLowerCase();
+    const temperature = data.main.temp;
+    // Update ikon cuaca berdasarkan kondisi cuaca
+    const weatherIcon = document.getElementById('weather-icon');
+    if (weatherDescription.includes('hujan')) {
+      weatherIcon.className = 'fas fa-cloud-showers-heavy'; // Ikutin kondisi hujan
+    } else if (weatherDescription.includes('berawan')) {
+      weatherIcon.className = 'fas fa-cloud'; // Ikutin kondisi mendung
+    } else {
+      weatherIcon.className = 'fas fa-sun'; // Ikutin kondisi cerah
+    }
+    // Konversi deskripsi cuaca ke dalam bahasa Indonesia
+    let weatherInfo = '';
+    if (weatherDescription.includes('hujan')) {
+      weatherInfo = 'Hujan';
+    } else if (weatherDescription.includes('berawan')) {
+      weatherInfo = 'Berawan';
+    } else {
+      weatherInfo = 'Cerah';
+    }
+    // Update informasi cuaca dengan deskripsi cuaca dan suhu
+    document.getElementById('weather-info').textContent = `${weatherInfo} | ${temperature}°C di Jakarta`;
+  })
+  .catch(error => {
+    console.error('Error fetching weather data:', error);
+    document.getElementById('weather').textContent = 'Tidak dapat mengambil data cuaca.';
+  });
 </script>
 
 <script>
@@ -430,13 +480,13 @@ document.write(r_text[i]);
   "@muhfhri._",
   "Front End Developer",
   "UI & UX Design",
-  "Database Manager",
-  "Software Engineering",
-  "Website Developer",
+  "@nnayas06 ^•^",
+  "To The Top!",
+  "Junior Website Developer",
 ];
 
 const typingSpeed = 100; // Kecepatan typing dalam milidetik
-const delay = 1000; // Waktu jeda sebelum looping ulang dalam milidetik
+const delay = 1500; // Waktu jeda sebelum looping ulang dalam milidetik
 
 const typingElement = document.getElementById("typing-effect");
 
