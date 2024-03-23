@@ -120,6 +120,15 @@ label {
   content: url('image/logo_dark.png');
   display: block;
 }
+
+#light {
+  content: url('image/light.gif');
+  transition: content 0.5s;
+}
+[data-theme="dark"] #light {
+  content: url('image/dark.gif');
+}
+
 #footer {
   background: rgb(246,246,246);
   transition: background 1s;
