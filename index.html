@@ -9,6 +9,10 @@
   <link rel="icon" type="image/png" href="image/flixdz_top.png">
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <!-- AOS PLUGIN -->
@@ -101,6 +105,28 @@
     </div>
   </nav>
   
+ <div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content bg-light rounded-4">
+
+      <div class="modal-header">
+        <h4 class="modal-title bg-light ">Buat username..</h4>
+      </div>
+
+      <div class="modal-body">
+        <input type="text" id="name" class="form-control">
+      </div>
+
+      <div class="modal-footer">
+        <p>Tenang! Username kamu ga bakal dipake buat apa apa kok.
+        <br><small>tekan area kosong untuk membatalkan</small></p>
+        <button type="button" class="btn rounded-5 btn-m3-you-color" onclick="saveName()">Lanjut..</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
   <div class="container" id="coltop">
     <div class="row text-center" data-aos="fade-in" data-aos-duration="3000">
@@ -305,8 +331,9 @@ r_text[1] = "Flixdz To The Top!";
 r_text[2] = "I'll depend on you...";
 r_text[3] = "Using Material 3 You design";
 r_text[4] = "Google Sans";
-r_text[5] = "Planet Bekasi";;
-var i = Math.floor(6*Math.random())
+r_text[5] = "It's not living (If it's not with you)";
+r_text[6] = "Planet Bekasi";;
+var i = Math.floor(7*Math.random())
 
 document.write(r_text[i]);
 
@@ -333,7 +360,7 @@ document.write(r_text[i]);
   <!-- Footer End -->
 
   <!-- Tombol ke atas -->
-  <button type="button" class="btn btn-m3-you-color btn-floating rounded-4 shadow btn-lg" id="btn-back-to-top"><iconify-icon
+  <button type="button" class="btn btn-m3-you-color bg-material btn-floating rounded-4 shadow btn-lg" id="btn-back-to-top"><iconify-icon
       inline icon="line-md:chevron-up"></iconify-icon>
   </button>
   <!-- End Of Body HTML -->
@@ -429,7 +456,16 @@ fetch(apiUrl)
 </script>
 
 <script>
-  setInterval(() => {
+  $(document).ready(function(){
+    var savedName = localStorage.getItem("userName");
+    if (savedName) {
+      greetUser(savedName);
+    } else {
+      $("#myModal").modal('show');
+    }
+  });
+
+  function greetUser(name) {
     var myDate = new Date();
     var hrs = myDate.getHours();
 
@@ -446,9 +482,25 @@ fetch(apiUrl)
     else if (hrs >= 20 && hrs <= 24)
       greet = 'Selamat Malam';
 
+    if (name.toLowerCase().includes("aina") || name.toLowerCase().includes("ida") || name.toLowerCase().includes("embul") || name.toLowerCase().includes("yasa")) {
+      name = "Sayanggg ^•^ ";
+    }
+
     document.getElementById('lblGreetings').innerHTML =
-      greet;
-  }, 1000);
+      greet + ' ' + name + '!<button class="btn btn-sm btn-link" onclick="changeName()"><small><sup><i class="fa-regular fa-pen-to-square"></i></sup></small></button>';
+  }
+
+  function saveName() {
+    var name = document.getElementById("name").value;
+    localStorage.setItem("userName", name);
+    $("#myModal").modal('hide');
+    greetUser(name);
+  }
+
+  function changeName() {
+    localStorage.removeItem("userName");
+    $("#myModal").modal('show');
+  }
 </script>
 
 <script>
@@ -479,10 +531,10 @@ fetch(apiUrl)
   "Flixdz",
   "@muhfhri._",
   "Front End Developer",
-  "UI & UX Design",
-  "@nnayas_06 ^•^♡",
+  "UI Design",
+  "♡ @nnayas_06 ^•^",
   "To The Top!",
-  "Junior Website Developer",
+  "Junior Web Developer",
 ];
 
 const typingSpeed = 100; // Kecepatan typing dalam milidetik
