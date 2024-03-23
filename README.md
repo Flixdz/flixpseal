@@ -17,3 +17,6 @@ Social Media:
 
 Framework :
 [Bootstrap](https://getbootstrap.com), [Iconify](https://Iconify.design), [Font Awesome](https://fontawesome.com)
+
+v3.3 rev-2
+by Muhammad Fachri Al Husein
