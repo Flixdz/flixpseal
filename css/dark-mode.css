@@ -15,7 +15,7 @@ body {
 }
 
 [data-theme="dark"] {
-  background-color: #1A1C1E !important;
+  background-color: #0E1419 !important;
   color: #eee;
   transition: background-color 0.5s;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 [data-theme="dark"] .bg-light {
-  background-color: #1A1C1E !important;
+  background-color: #0E1419 !important;
 }
 
 [data-theme="dark"] .bg-white {
@@ -235,3 +235,4 @@ label {
 	 color: white;
 	 background-color: #84AFE0;
 }
+
