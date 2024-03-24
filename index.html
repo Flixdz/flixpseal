@@ -118,8 +118,8 @@
       </div>
 
       <div class="modal-footer">
-        <p>ⓘ Tenang! Username kamu ga bakal dipake buat apa apa kok.
-        <br><small>tekan area kosong untuk membatalkan</small></p>
+        <p class="text-success">ⓘ Tenang! Username kamu ga bakal dipake buat apa apa kok. Karena website ini masih bersifat statis
+        <br><small class="text-muted"><b>|</b> tekan area kosong untuk membatalkan</small></p>
         <button type="button" class="btn rounded-5 btn-m3-you-color" onclick="saveName()">Lanjut..</button>
       </div>
 
@@ -182,11 +182,11 @@
     </center>
    </div>
     <div class="container mt-3">
-      <div class="container text-center" data-aos="zoom-in">
+      <div class="text-center" data-aos="zoom-in">
           <h3 class="text-center"><a class="link-none fw-bolder clickable" href="#perkenalan" id="perkenalan">Muhammad Fachri Al Husein</a></h3>
-        <div class="container" data-aos="zoom-in">
-        <h3 class="fw-bold manrope">know as @flixpseal or @muhfhri._</h3>
-        <h3 class="fw-bold manrope">begginer and not a real dev</h3>
+        <div data-aos="zoom-in">
+        <h5 class="fw-bold manrope text-center">know as @flixpseal or @muhfhri._</h5>
+        <h5 class="fw-bold manrope text-center">begginer and not a real dev</h5>
         <small class="fw-bold fira-code text-danger">*cuz being a dev is really hard af</small>
         
         <div class="text-center mt-2" data-aos="fade-in">
@@ -206,16 +206,18 @@
         </div>
 
         </div>
-        
-        <div class="container mt-5" data-aos="fade-in">
-          <h1><a class="fw-bold link-none clickable" href="#pendidikan" id="pendidikan">Who am i?</a></h1>
-          <h3 class="fw-bold">I love programing like a android and website</h3>
+       </div>
+      </div>
+      
+        <div class="container mt-5 text-center" data-aos="fade-in">
+          <h3><a class="fw-bold link-none clickable" href="#pendidikan" id="pendidikan">Who am i?</a></h3>
+          <h4 class="fw-bold">I love programing like a android and website</h4>
         <sup><small class="fw-bold fira-code text-danger">*not really</small></sup>
         </div>
       </div>
       </div>
       
-      <div class="container mt-5" data-aos="fade-in"><h1 class="manrope text-center fw-bold"><a class="fw-bold link-none clickable" href="#pendidikan" id="pendidikan">Framework Used</a></h1>
+      <div class="container mt-5" data-aos="fade-in"><h3 class="manrope text-center fw-bold"><a class="fw-bold link-none clickable" href="#pendidikan" id="pendidikan">Framework Used</a></h3>
       <div class="container text-center">
       <small class="manrope fw-bold">All framework are Open-Source and free to use</small>
       <h4 class="mt-3">Bootstrap 5 <sup class="manrope rounded-2 btn-outline-m3-you-color">&nbsp;<iconify-icon inline icon="carbon:fork"></iconify-icon>main&nbsp;</sup> <a href="https://getbootstrap.com" class="btn btn-sm btn-outline-m3-you-color rounded-5"><iconify-icon inline icon="ri:bootstrap-fill"></iconify-icon></a></h4>
@@ -226,7 +228,7 @@
       </div>
     <!-- New Container karena gamuat :v -->
     <div class="container mt-5" data-aos="fade-in">
-    <h1 class="text-center"><a class="link-none clickable fw-bold " href="#biodata" id="biodata">More About Me</a></h1>
+    <h3 class="text-center"><a class="link-none clickable fw-bold " href="#biodata" id="biodata">More About Me</a></h3>
       <div class="row mt-3">
         <div class="container col-md-6">
           <h3 class="fw-bold text-center">A little bit..</h3>
@@ -236,7 +238,6 @@
         </div>
 
         <div class="container col-md-6" data-aos="fade-in">
-
           <h3><a class="link-none clickable fw-bolder" href="#cita" id="cita">Goals</a></h3>
           <ol>
             <li>Software Engineer/Programmer</li>
@@ -250,7 +251,7 @@
     </div>
 
   <div class="container mt-5">
-    <h1 class="fw-bold text-center" ><a href="#cool" id="cool" class="link-none clickable">Cool Stuff</a></h1>
+    <h2 class="fw-bold text-center" ><a href="#cool" id="cool" class="link-none clickable">Cool Stuff</a></h2>
     <center><img src="image/animatelogo.gif" alt="animasi logo" width="200px"></center>
     <div class="typing-container">
     <center><h2 id="typing-effect"></h2></center>
@@ -258,7 +259,7 @@
   </div>
   
       <div class="container mt-5">
-        <h1 class="text-center fw-bold" data-aos="fade-in"> Want some collaboration?</h1>
+        <h2 class="text-center fw-bold" data-aos="fade-in"> <a href="#collab" id="collab" class="link-none clickable">Want some collaboration?</a></h2>
         <p class="text-center" data-aos="fade-right">Jika kalian ingin mengembangkan website ini atau berkolaborasi
           dengan projek lain, silahkan kirim pesan melalui sosial media saya atau bisa kirim email ke :
           <br><i class="fa fa-envelope" style="color: #0077be;"></i> <small><a href="mailto:frezzcraft109@gmail.com"
@@ -269,8 +270,8 @@
       </div>
 
   <div class="container mt-5" data-aos="fade-up">
-    <h1 class="fw-bold text-center"><b id="dot-animation">Updates</b>
-  <script src="script.js"></script></h1>
+    <h2 class="fw-bold text-center"><b id="dot-animation">Updates</b>
+  <script src="script.js"></script></h2>
     <div class="container">
       <div class="row text-center">
         <div class="col-md-6 mt-3">
@@ -419,9 +420,9 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <script>
-// Ganti 'YOUR_API_KEY' dengan kunci API Anda dari OpenWeatherMap
 const apiKey = '962322a87800402e0b9d7052cb5e8f16';
-const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Jakarta&units=metric&APPID=' + apiKey ;
+const city = 'Jakarta'; // Ubah kota sesuai yang Anda inginkan
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=id&appid=${apiKey}`;
 
 fetch(apiUrl)
   .then(response => response.json())
@@ -432,22 +433,24 @@ fetch(apiUrl)
     const weatherIcon = document.getElementById('weather-icon');
     if (weatherDescription.includes('hujan')) {
       weatherIcon.className = 'fas fa-cloud-showers-heavy'; // Ikutin kondisi hujan
-    } else if (weatherDescription.includes('berawan')) {
-      weatherIcon.className = 'fas fa-cloud'; // Ikutin kondisi mendung
-    } else {
+    } else if (weatherDescription.includes('awan') || weatherDescription.includes('halimun')) {
+      weatherIcon.className = 'fas fa-cloud'; // Ikutin kondisi mendung/berawan
+    } else if (weatherDescription.includes('petir')) {
+      weatherIcon.className = 'fas fa-thunderstorm'; // Ikutin kondisi petir
+    }
+    else if (weatherDescription.includes('badai')) {
+      weatherIcon.className = 'fa-solid fa-tornado'; // Ikutin badai
+    }
+    else if (weatherDescription.includes('kabut')) {
+      weatherIcon.className = 'fa-solid fa-wind'; // Ikutin badai
+    }
+    else {
       weatherIcon.className = 'fas fa-sun'; // Ikutin kondisi cerah
     }
-    // Konversi deskripsi cuaca ke dalam bahasa Indonesia
-    let weatherInfo = '';
-    if (weatherDescription.includes('hujan')) {
-      weatherInfo = 'Hujan';
-    } else if (weatherDescription.includes('berawan')) {
-      weatherInfo = 'Berawan';
-    } else {
-      weatherInfo = 'Cerah';
-    }
-    // Update informasi cuaca dengan deskripsi cuaca dan suhu
-    document.getElementById('weather-info').textContent = `${weatherInfo} | ${temperature}°C di Jakarta`;
+    // Konversi deskripsi cuaca ke dalam huruf kapital
+    const capitalizedWeatherDescription = weatherDescription.charAt(0).toUpperCase() + weatherDescription.slice(1);
+    // Update informasi cuaca dengan deskripsi cuaca, suhu, dan nama kota
+    document.getElementById('weather-info').textContent = `${capitalizedWeatherDescription} | ${city} | ${temperature}°C`;
   })
   .catch(error => {
     console.error('Error fetching weather data:', error);
