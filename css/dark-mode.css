@@ -244,4 +244,23 @@ label {
 	 color: white;
 	 background-color: #84AFE0;
 }
-
+.animasi {
+  transition: background-color 0.9s, color 1s, font-size 1s;
+  padding: 7px ;
+}
+.animasi:hover {
+  background-color:  #0E1419;
+  color: white;
+ font-size: 18px;
+  background-color: dark;
+}
+[data-theme="dark"] .animasi {
+  transition: background-color 0.9s, color 1s, font-size 1s;
+  padding: 7px ;
+}
+[data-theme="dark"] .animasi:hover {
+  background-color:  #fafafa;
+  color: #0E1419 !important;
+ font-size: 18px;
+  background-color: dark;
+}
