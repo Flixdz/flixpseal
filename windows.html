@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,20 @@
   <meta name="description" content="Website Muhammad Fachri Al Husein, dibuat menggunakan GitHub Pages">
   <title>Windows Tools</title>
   <link rel="icon" type="image/png" href="image/flixdz_top.png">
+  <!-- Prism JS -->
+  <link rel="stylesheet" href="css/prism.css">
+  <script src="js/prism.js"></script>
   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
   <!-- AOS PLUGIN -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -48,11 +55,14 @@
         width: 260px !important;
       }
     }
+
     #windows {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/e/e6/Windows_11_logo.svg') center/50% no-repeat, rgba(0, 0, 0, 0.5);
-    background-size: 50%; /* Mengatur ukuran gambar menjadi 50% dari ukuran aslinya */
-    background-position: center; /* Pusatkan gambar */
-  }
+      background: url('https://upload.wikimedia.org/wikipedia/commons/e/e6/Windows_11_logo.svg') center/50% no-repeat, rgba(0, 0, 0, 0.5);
+      background-size: 50%;
+      /* Mengatur ukuran gambar menjadi 50% dari ukuran aslinya */
+      background-position: center;
+      /* Pusatkan gambar */
+    }
   </style>
 </head>
 
@@ -73,25 +83,28 @@
             <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbarDropdownMenuLink">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              id="navbarDropdownMenuLink">
               Belajar Web
             </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li class="dropdown-submenu text-center">
-                        <a class="dropdown-item dropdown-toggle" href="#"><iconify-icon inline icon="icomoon-free:html-five"></iconify-icon> HTML 5</a>
-                        <ul class="dropdown-menu text-center">
-                        <li><a class="dropdown-item" href="basic.html">Basic HTML</a></li>
-                        <li><a class="dropdown-item" href="format-text.html">Format Text</a></li>
-                        </ul>
-                        
-                    <li class="dropdown-submenu text-center">
-                        <a class="dropdown-item dropdown-toggle" href="#"><iconify-icon inline icon="mdi:language-php"></iconify-icon> PHP</a>
-                        <ul class="dropdown-menu text-center">
-                        <li><a class="dropdown-item" href="basicphp.html">Basic PHP</a></li>
-                        <li><a class="dropdown-item" href="varphp.html">Variabel</a></li>
-                        </ul>
-                        </ul>
-                            </li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu text-center">
+                <a class="dropdown-item dropdown-toggle" href="#"><iconify-icon inline
+                    icon="icomoon-free:html-five"></iconify-icon> HTML 5</a>
+                <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-item" href="basic.html">Basic HTML</a></li>
+                  <li><a class="dropdown-item" href="format-text.html">Format Text</a></li>
+                </ul>
+
+              <li class="dropdown-submenu text-center">
+                <a class="dropdown-item dropdown-toggle" href="#"><iconify-icon inline
+                    icon="mdi:language-php"></iconify-icon> PHP</a>
+                <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-item" href="basicphp.html">Basic PHP</a></li>
+                  <li><a class="dropdown-item" href="varphp.html">Variabel</a></li>
+                </ul>
+            </ul>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Projek
@@ -102,35 +115,37 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-        <div id="tampil" class="nav-link"></div>
+            <div id="tampil" class="nav-link"></div>
       </div>
-          </li>
-        </ul>
-      </div>
+      </li>
+      </ul>
+    </div>
     </div>
   </nav>
-  
- <div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content bg-light rounded-4">
 
-      <div class="modal-header">
-        <h4 class="modal-title bg-light ">Buat username..</h4>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content bg-light rounded-4">
+
+        <div class="modal-header">
+          <h4 class="modal-title bg-light ">Buat username..</h4>
+        </div>
+
+        <div class="modal-body">
+          <input type="text" id="name" class="form-control">
+        </div>
+
+        <div class="modal-footer">
+          <p class="text-success">ⓘ Tenang! Username kamu ga bakal dipake buat apa apa kok. Karena website ini masih
+            bersifat statis
+            <br><small class="text-muted"><b>|</b> tekan area kosong untuk membatalkan</small>
+          </p>
+          <button type="button" class="btn rounded-5 btn-m3-you-color" onclick="saveName()">Lanjut..</button>
+        </div>
+
       </div>
-
-      <div class="modal-body">
-        <input type="text" id="name" class="form-control">
-      </div>
-
-      <div class="modal-footer">
-        <p class="text-success">ⓘ Tenang! Username kamu ga bakal dipake buat apa apa kok. Karena website ini masih bersifat statis
-        <br><small class="text-muted"><b>|</b> tekan area kosong untuk membatalkan</small></p>
-        <button type="button" class="btn rounded-5 btn-m3-you-color" onclick="saveName()">Lanjut..</button>
-      </div>
-
     </div>
   </div>
-</div>
 
 
   <div class="container" id="coltop">
@@ -142,33 +157,43 @@
         <div id="waktu"></div>
       </div>
       <div class="col-md-4" data-aos="zoom-in" data-aos-duration="3000">
-      <div id="weather">
-        <i id="weather-icon" class=""></i> <!-- Ikon cuaca -->
-        <span id="weather-info">Cerah, 26°C</span> <!-- Informasi cuaca -->
-</div>
-      </div>
-        <div class="container text-center mt-3">
-          <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
-          <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch" data-aos-duration="2000"
-            data-aos="fade-in"><iconify-icon id="darkmode"></iconify-icon></label>
+        <div id="weather">
+          <i id="weather-icon" class=""></i> <!-- Ikon cuaca -->
+          <span id="weather-info">Cerah, 26°C</span> <!-- Informasi cuaca -->
         </div>
+      </div>
+      <div class="container text-center mt-3">
+        <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
+        <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch" data-aos-duration="2000"
+          data-aos="fade-in"><iconify-icon id="darkmode"></iconify-icon></label>
+      </div>
     </div>
   </div>
 
   <div>
     <div class="container mt-5">
-    <h2 class="fw-bold text-center">Windows Tools</h2>
-  </div>
-  <div class="container text-center">
-    <h5 class="fw-bold">Media Creation Tools (MCT)</h5>
-    <sup class="text-success">*for installation Windows 10 or 11</sup>
-    <br><code class="fira-code">Original Windows</code>
-    <h5 ><a class="link-none text-primary" href="https://github.com/AveYo/MediaCreationTool.bat">Windows 11 (NO TPM i guess)</a></h5>
-    <h5 ><a class="link-none text-primary" href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10</a></h5>
-    <br><code class="fira-code">Lite Version</code>
-    <h5>Ghost Spectre</h5>
-    <h5><a href="https://pixeldrain.com/u/hKktymeC" class="link-none text-primary fw-bold">Windows 11 AIO</h5>
+      <h2 class="fw-bold text-center">Windows Tools</h2>
     </div>
+    <div class="container text-center">
+      <h4 class="fw-bold">Media Creation Tools (MCT)</h4>
+      <sup class="text-success">*for installation Windows 10 or 11</sup>
+      <br><code class="fira-code">Original Microsoft</code>
+      <h5 class="mt-3"><a class="link-none animasi rounded-5"
+          href="https://github.com/AveYo/MediaCreationTool.bat">Windows 11 (NO TPM i guess)</a></h5>
+      <h5><a class="link-none animasi rounded-5"
+          href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10</a></h5>
+      <br><code class="fira-code">Lite Version</code>
+      <h4>Ghost Spectre</h4>
+      <h5><a href="https://pixeldrain.com/u/hKktymeC" class="link-none rounded-5 animasi">Windows 11 AIO</a></h5>
+      <h5><a href="https://atlasos.net" class="link-none rounded-5 animasi">Atlas OS AIO</a></h5>
+      <br><code class="fira-code">Office 365, 2021, 2019, & 2016</code>
+      <h4>Microsoft Office</h4>
+      <h5><a href="https://gravesoft.dev/office_c2r_links" class="link-none rounded-5 animasi">C2R Installer</a></h5>
+      <code class="fira-code">*Copy and paste on powershell as admin</code>
+      <pre class="text-center"><code class="language-shell">irm https://get.activated.win | iex
+</code></pre>
+    </div>
+
   </div>
 
   <!-- Footer Start -->
@@ -178,8 +203,8 @@
         role="button"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://github.com/Flixdz" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
         role="button"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.tiktok.com/@flixpseal" id="footer-icon" class="btn btn-outline-dark rounded-5 btn-floating m-1"
-        role="button"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.tiktok.com/@flixpseal" id="footer-icon"
+        class="btn btn-outline-dark rounded-5 btn-floating m-1" role="button"><i class="fa-brands fa-tiktok"></i></a>
       <a href="https://discordapp.com/users/899644068697620491" id="footer-icon"
         class="btn btn-outline-dark rounded-5 btn-floating m-1" role="button"><iconify-icon inline
           icon="ic:baseline-discord"></iconify-icon></a>
@@ -195,23 +220,24 @@
         <div class="col-md-4">
           <br><br>
           <blockquote class="h5 text-muted" style="font-family: poppins"><iconify-icon
-              icon="mingcute:quote-left-fill"></iconify-icon><script language="JavaScript">
+              icon="mingcute:quote-left-fill"></iconify-icon>
+            <script language="JavaScript">
 
-var r_text = new Array ();
-r_text[0] = "who is the first? yess its youu >.<";
-r_text[1] = "Flixdz To The Top!";
-r_text[2] = "I'll depend on you...";
-r_text[3] = "Using Material 3 You design";
-r_text[4] = "Google Sans";
-r_text[5] = "It's not living (If it's not with you)";
-r_text[6] = "Planet Bekasi";;
-var i = Math.floor(7*Math.random())
+              var r_text = new Array();
+              r_text[0] = "who is the first? yess its youu >.<";
+              r_text[1] = "Flixdz To The Top!";
+              r_text[2] = "I'll depend on you...";
+              r_text[3] = "Using Material 3 You design";
+              r_text[4] = "Google Sans";
+              r_text[5] = "It's not living (If it's not with you)";
+              r_text[6] = "Planet Bekasi";;
+              var i = Math.floor(7 * Math.random())
 
-document.write(r_text[i]);
+              document.write(r_text[i]);
 
-//-->
-</script><iconify-icon
-              icon="mingcute:quote-right-fill"></iconify-icon></blockquote>
+              //-->
+            </script><iconify-icon icon="mingcute:quote-right-fill"></iconify-icon>
+          </blockquote>
           <br><br>
         </div>
         <div class="col-md-4">
@@ -225,252 +251,255 @@ document.write(r_text[i]);
     </div>
   </footer>
   <div class="text-center small p-3" id="copy"><span id="version"></span>
-  <br><span id="lastupt"></span>
+    <br><span id="lastupt"></span>
     <br>Theme by <img src="image/animation.gif" width="30">, Made with <i class="fa fa-heart" style="color: red"></i>
     for you
   </div>
   <!-- Footer End -->
 
   <!-- Tombol ke atas -->
-  <button type="button" class="btn btn-m3-you-color bg-material btn-floating rounded-4 shadow btn-lg" id="btn-back-to-top"><iconify-icon
-      inline icon="line-md:chevron-up"></iconify-icon>
+  <button type="button" class="btn btn-m3-you-color bg-material btn-floating rounded-4 shadow btn-lg"
+    id="btn-back-to-top"><iconify-icon inline icon="line-md:chevron-up"></iconify-icon>
   </button>
   <!-- End Of Body HTML -->
-  
+
   <!-- JavaScript for functional features this cool website-->
-  
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const dotAnimation = document.getElementById("dot-animation");
-  let dots = 0;
-  
-  setInterval(function() {
-    dots = (dots + 1) % 4;
-    dotAnimation.textContent = "Updates" + ".".repeat(dots);
-  }, 1000);
-});
 
-</script>
-<script>
-  setInterval(() => {
-    var date = new Date();
-    var tahun = date.getFullYear();
-    var bulan = date.getMonth();
-    var tanggal = date.getDate();
-    var hari = date.getDay();
-    var jam = date.getHours();
-    var menit = date.getMinutes();
-    var detik = date.getSeconds();
-    switch (hari) {
-      case 0: hari = "Minggu"; break;
-      case 1: hari = "Senin"; break;
-      case 2: hari = "Selasa"; break;
-      case 3: hari = "Rabu"; break;
-      case 4: hari = "Kamis"; break;
-      case 5: hari = "Jum'at"; break;
-      case 6: hari = "Sabtu"; break;
-    }
-    switch (bulan) {
-      case 0: bulan = "Januari"; break;
-      case 1: bulan = "Februari"; break;
-      case 2: bulan = "Maret"; break;
-      case 3: bulan = "April"; break;
-      case 4: bulan = "Mei"; break;
-      case 5: bulan = "Juni"; break;
-      case 6: bulan = "Juli"; break;
-      case 7: bulan = "Agustus"; break;
-      case 8: bulan = "September"; break;
-      case 9: bulan = "Oktober"; break;
-      case 10: bulan = "November"; break;
-      case 11: bulan = "Desember"; break;
-    }
-    var tampilTanggal = hari + ", " + tanggal + " " + bulan + " " + tahun;
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dotAnimation = document.getElementById("dot-animation");
+      let dots = 0;
 
-    document.getElementById("tampil").innerHTML = tampilTanggal;
-  }, 1000);
-</script>
+      setInterval(function () {
+        dots = (dots + 1) % 4;
+        dotAnimation.textContent = "Updates" + ".".repeat(dots);
+      }, 1000);
+    });
 
-<script>
-const apiKey = '962322a87800402e0b9d7052cb5e8f16';
-const city = 'Jakarta'; // Ubah kota sesuai yang Anda inginkan
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=id&appid=${apiKey}`;
+  </script>
+  <script>
+    setInterval(() => {
+      var date = new Date();
+      var tahun = date.getFullYear();
+      var bulan = date.getMonth();
+      var tanggal = date.getDate();
+      var hari = date.getDay();
+      var jam = date.getHours();
+      var menit = date.getMinutes();
+      var detik = date.getSeconds();
+      switch (hari) {
+        case 0: hari = "Minggu"; break;
+        case 1: hari = "Senin"; break;
+        case 2: hari = "Selasa"; break;
+        case 3: hari = "Rabu"; break;
+        case 4: hari = "Kamis"; break;
+        case 5: hari = "Jum'at"; break;
+        case 6: hari = "Sabtu"; break;
+      }
+      switch (bulan) {
+        case 0: bulan = "Januari"; break;
+        case 1: bulan = "Februari"; break;
+        case 2: bulan = "Maret"; break;
+        case 3: bulan = "April"; break;
+        case 4: bulan = "Mei"; break;
+        case 5: bulan = "Juni"; break;
+        case 6: bulan = "Juli"; break;
+        case 7: bulan = "Agustus"; break;
+        case 8: bulan = "September"; break;
+        case 9: bulan = "Oktober"; break;
+        case 10: bulan = "November"; break;
+        case 11: bulan = "Desember"; break;
+      }
+      var tampilTanggal = hari + ", " + tanggal + " " + bulan + " " + tahun;
 
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    const weatherDescription = data.weather[0].description.toLowerCase();
-    const temperature = data.main.temp;
-    // Update ikon cuaca berdasarkan kondisi cuaca
-    const weatherIcon = document.getElementById('weather-icon');
-    if (weatherDescription.includes('hujan')) {
-      weatherIcon.className = 'fas fa-cloud-showers-heavy'; // Ikutin kondisi hujan
-    } else if (weatherDescription.includes('awan') || weatherDescription.includes('halimun')) {
-      weatherIcon.className = 'fas fa-cloud'; // Ikutin kondisi mendung/berawan
-    } else if (weatherDescription.includes('petir')) {
-      weatherIcon.className = 'fas fa-thunderstorm'; // Ikutin kondisi petir
-    }
-    else if (weatherDescription.includes('badai')) {
-      weatherIcon.className = 'fa-solid fa-tornado'; // Ikutin badai
-    }
-    else if (weatherDescription.includes('kabut')) {
-      weatherIcon.className = 'fa-solid fa-wind'; // Ikutin badai
-    }
-    else {
-      weatherIcon.className = 'fas fa-sun'; // Ikutin kondisi cerah
-    }
-    // Konversi deskripsi cuaca ke dalam huruf kapital
-    const capitalizedWeatherDescription = weatherDescription.charAt(0).toUpperCase() + weatherDescription.slice(1);
-    // Update informasi cuaca dengan deskripsi cuaca, suhu, dan nama kota
-    document.getElementById('weather-info').textContent = `${capitalizedWeatherDescription} | ${city} | ${temperature}°C`;
-  })
-  .catch(error => {
-    console.error('Error fetching weather data:', error);
-    document.getElementById('weather').textContent = 'Tidak dapat mengambil data cuaca.';
-  });
-</script>
+      document.getElementById("tampil").innerHTML = tampilTanggal;
+    }, 1000);
+  </script>
 
-<script>
-  $(document).ready(function(){
-    var savedName = localStorage.getItem("userName");
-    if (savedName) {
-      greetUser(savedName);
-    } else {
+  <script>
+    const apiKey = '962322a87800402e0b9d7052cb5e8f16';
+    const city = 'Jakarta'; // Ubah kota sesuai yang Anda inginkan
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=id&appid=${apiKey}`;
+
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const weatherDescription = data.weather[0].description.toLowerCase();
+        const temperature = data.main.temp;
+        // Update ikon cuaca berdasarkan kondisi cuaca
+        const weatherIcon = document.getElementById('weather-icon');
+        if (weatherDescription.includes('hujan')) {
+          weatherIcon.className = 'fas fa-cloud-showers-heavy'; // Ikutin kondisi hujan
+        } else if (weatherDescription.includes('awan') || weatherDescription.includes('halimun')) {
+          weatherIcon.className = 'fas fa-cloud'; // Ikutin kondisi mendung/berawan
+        } else if (weatherDescription.includes('petir')) {
+          weatherIcon.className = 'fas fa-thunderstorm'; // Ikutin kondisi petir
+        }
+        else if (weatherDescription.includes('badai')) {
+          weatherIcon.className = 'fa-solid fa-tornado'; // Ikutin badai
+        }
+        else if (weatherDescription.includes('kabut')) {
+          weatherIcon.className = 'fa-solid fa-wind'; // Ikutin badai
+        }
+        else {
+          weatherIcon.className = 'fas fa-sun'; // Ikutin kondisi cerah
+        }
+        // Konversi deskripsi cuaca ke dalam huruf kapital
+        const capitalizedWeatherDescription = weatherDescription.charAt(0).toUpperCase() + weatherDescription.slice(1);
+        // Update informasi cuaca dengan deskripsi cuaca, suhu, dan nama kota
+        document.getElementById('weather-info').textContent = `${capitalizedWeatherDescription} | ${city} | ${temperature}°C`;
+      })
+      .catch(error => {
+        console.error('Error fetching weather data:', error);
+        document.getElementById('weather').textContent = 'Tidak dapat mengambil data cuaca.';
+      });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      var savedName = localStorage.getItem("userName");
+      if (savedName) {
+        greetUser(savedName);
+      } else {
+        $("#myModal").modal('show');
+      }
+    });
+
+    function greetUser(name) {
+      var myDate = new Date();
+      var hrs = myDate.getHours();
+
+      var greet;
+
+      if (hrs < 3)
+        greet = 'Selamat Malam';
+      else if (hrs >= 3 && hrs <= 10)
+        greet = 'Selamat Pagi';
+      else if (hrs >= 10 && hrs <= 15)
+        greet = 'Selamat Siang';
+      else if (hrs >= 15 && hrs <= 20)
+        greet = 'Selamat Sore';
+      else if (hrs >= 20 && hrs <= 24)
+        greet = 'Selamat Malam';
+
+      if (name.toLowerCase().includes("aina") || name.toLowerCase().includes("ida") || name.toLowerCase().includes("embul") || name.toLowerCase().includes("yasa")) {
+        name = "Sayanggg ^•^ ";
+      }
+
+      document.getElementById('lblGreetings').innerHTML =
+        greet + ' ' + name + '!<button class="btn btn-sm btn-link" onclick="changeName()"><small><sup><i class="fa-regular fa-pen-to-square"></i></sup></small></button>';
+    }
+
+    function saveName() {
+      var name = document.getElementById("name").value;
+      localStorage.setItem("userName", name);
+      $("#myModal").modal('hide');
+      greetUser(name);
+    }
+
+    function changeName() {
+      localStorage.removeItem("userName");
       $("#myModal").modal('show');
     }
-  });
-
-  function greetUser(name) {
-    var myDate = new Date();
-    var hrs = myDate.getHours();
-
-    var greet;
-
-    if (hrs < 3)
-      greet = 'Selamat Malam';
-    else if (hrs >= 3 && hrs <= 10)
-      greet = 'Selamat Pagi';
-    else if (hrs >= 10 && hrs <= 15)
-      greet = 'Selamat Siang';
-    else if (hrs >= 15 && hrs <= 20)
-      greet = 'Selamat Sore';
-    else if (hrs >= 20 && hrs <= 24)
-      greet = 'Selamat Malam';
-
-    if (name.toLowerCase().includes("aina") || name.toLowerCase().includes("ida") || name.toLowerCase().includes("embul") || name.toLowerCase().includes("yasa")) {
-      name = "Sayanggg ^•^ ";
-    }
-
-    document.getElementById('lblGreetings').innerHTML =
-      greet + ' ' + name + '!<button class="btn btn-sm btn-link" onclick="changeName()"><small><sup><i class="fa-regular fa-pen-to-square"></i></sup></small></button>';
-  }
-
-  function saveName() {
-    var name = document.getElementById("name").value;
-    localStorage.setItem("userName", name);
-    $("#myModal").modal('hide');
-    greetUser(name);
-  }
-
-  function changeName() {
-    localStorage.removeItem("userName");
-    $("#myModal").modal('show');
-  }
-</script>
-
-<script>
-  // fungsi satuaku adalah membuat angka 0 menjadi 00
-  var satuaku = n => {
-    return ('0' + n).slice(-2);
-  }
-
-  setInterval(() => {
-    var date = new Date();
-    var jam = satuaku(date.getHours());
-    var menit = satuaku(date.getMinutes());
-    var detik = satuaku(date.getSeconds());
-    var tampilWaktu = jam + ":" + menit + ":" + detik;
-
-    document.getElementById("waktu").innerHTML = tampilWaktu;
-  }, 1000);
-</script>
-
-<!-- Script Untuk Versi Dinamis Websiye di footer -->
-<script>
-  document.getElementById("version").textContent = websiteVersion ;
-  document.getElementById("lastupt").textContent = websiteDate ;
-</script>
-<script>
-    const texts = [
-  "Muhammad Fachri Al Husein",
-  "Flixdz",
-  "@muhfhri._",
-  "Front End Developer",
-  "UI Design",
-  "♡ @nnayas_06 ^•^",
-  "To The Top!",
-  "Junior Web Developer",
-];
-
-const typingSpeed = 100; // Kecepatan typing dalam milidetik
-const delay = 1500; // Waktu jeda sebelum looping ulang dalam milidetik
-
-const typingElement = document.getElementById("typing-effect");
-
-let textIndex = 0;
-let charIndex = 0;
-
-function typeText() {
-  if (charIndex < texts[textIndex].length) {
-    typingElement.innerHTML += texts[textIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(typeText, typingSpeed);
-  } else {
-    setTimeout(eraseText, delay);
-  }
-}
-
-function eraseText() {
-  if (charIndex > 0) {
-    typingElement.innerHTML = texts[textIndex].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(eraseText, typingSpeed / 2);
-  } else {
-    textIndex = (textIndex + 1) % texts.length;
-    setTimeout(typeText, typingSpeed / 2);
-  }
-}
-
-typeText();
   </script>
-  
+
   <script>
-  const clickableElements = document.querySelectorAll(".clickable");
-
-clickableElements.forEach(element => {
-  element.addEventListener("click", function() {
-    if (!element.textContent.endsWith(" #")) {
-      element.textContent += " #";
+    // fungsi satuaku adalah membuat angka 0 menjadi 00
+    var satuaku = n => {
+      return ('0' + n).slice(-2);
     }
-  });
 
-  document.addEventListener("click", function(event) {
-    if (!element.contains(event.target)) {
-      element.textContent = element.textContent.replace(" #", "");
+    setInterval(() => {
+      var date = new Date();
+      var jam = satuaku(date.getHours());
+      var menit = satuaku(date.getMinutes());
+      var detik = satuaku(date.getSeconds());
+      var tampilWaktu = jam + ":" + menit + ":" + detik;
+
+      document.getElementById("waktu").innerHTML = tampilWaktu;
+    }, 1000);
+  </script>
+
+  <!-- Script Untuk Versi Dinamis Websiye di footer -->
+  <script>
+    document.getElementById("version").textContent = websiteVersion;
+    document.getElementById("lastupt").textContent = websiteDate;
+  </script>
+  <script>
+    const texts = [
+      "Muhammad Fachri Al Husein",
+      "Flixdz",
+      "@muhfhri._",
+      "Front End Developer",
+      "UI Design",
+      "♡ @nnayas_06 ^•^",
+      "To The Top!",
+      "Junior Web Developer",
+    ];
+
+    const typingSpeed = 100; // Kecepatan typing dalam milidetik
+    const delay = 1500; // Waktu jeda sebelum looping ulang dalam milidetik
+
+    const typingElement = document.getElementById("typing-effect");
+
+    let textIndex = 0;
+    let charIndex = 0;
+
+    function typeText() {
+      if (charIndex < texts[textIndex].length) {
+        typingElement.innerHTML += texts[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeText, typingSpeed);
+      } else {
+        setTimeout(eraseText, delay);
+      }
     }
-  });
-});
-</script>
-<!-- Script Untuk AOS -->
-<script>
-  AOS.init({
-    once: false,
-  });
-</script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="js/button_top.js"></script>
-<script src="js/dark-mode-switch.js"></script>
-<script src="js/multilevel.js"></script>
-<!-- End Script -->
+
+    function eraseText() {
+      if (charIndex > 0) {
+        typingElement.innerHTML = texts[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(eraseText, typingSpeed / 2);
+      } else {
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(typeText, typingSpeed / 2);
+      }
+    }
+
+    typeText();
+  </script>
+
+  <script>
+    const clickableElements = document.querySelectorAll(".clickable");
+
+    clickableElements.forEach(element => {
+      element.addEventListener("click", function () {
+        if (!element.textContent.endsWith(" #")) {
+          element.textContent += " #";
+        }
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!element.contains(event.target)) {
+          element.textContent = element.textContent.replace(" #", "");
+        }
+      });
+    });
+  </script>
+  <!-- Script Untuk AOS -->
+  <script>
+    AOS.init({
+      once: false,
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="js/button_top.js"></script>
+  <script src="js/dark-mode-switch.js"></script>
+  <script src="js/multilevel.js"></script>
+  <!-- End Script -->
 
 </body>
+
 </html>

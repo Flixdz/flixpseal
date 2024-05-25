@@ -244,15 +244,19 @@ label {
 	 color: white;
 	 background-color: #84AFE0;
 }
+.link-none {
+  text-decoration: none !important;
+  color: black;
+}
 .animasi {
   transition: background-color 0.9s, color 1s, font-size 1s;
   padding: 7px ;
+  font-size: auto;
 }
 .animasi:hover {
-  background-color:  #0E1419;
+  background-color: #0E1419;
   color: white;
- font-size: 18px;
-  background-color: dark;
+ font-size: 1.2em;
 }
 [data-theme="dark"] .animasi {
   transition: background-color 0.9s, color 1s, font-size 1s;
@@ -261,6 +265,5 @@ label {
 [data-theme="dark"] .animasi:hover {
   background-color:  #fafafa;
   color: #0E1419 !important;
- font-size: 18px;
-  background-color: dark;
+ font-size: 1.2em;
 }
