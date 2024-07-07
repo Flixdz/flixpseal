@@ -1,14 +1,12 @@
-![Flixdz](image/flixdz.png)
+![Flixdz](css/image/dark.gif)
 # First Website
 Flixdz @flixpseal Portofolio Website using GitHub Pages
-
 Start Contributing to this website!
-
 Your contribution is very useful for me!
 
 > [`Main Website`](https://flixdz.github.io/flixpseal)
 
-Social Media:
+# Social Media:
 > [Instagram](https://www.instagram.com/flixpseal)
 
 > [TikTok](https://tiktok.com/@flixpseal)
@@ -18,5 +16,5 @@ Social Media:
 Framework :
 [Bootstrap](https://getbootstrap.com), [Iconify](https://Iconify.design), [Font Awesome](https://fontawesome.com)
 
-v3.3 rev-2
+v3.7
 by Muhammad Fachri Al Husein
