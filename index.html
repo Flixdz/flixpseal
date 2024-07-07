@@ -27,9 +27,14 @@
   <link rel="stylesheet" href="css/dark-mode.css">
   <link rel="stylesheet" href="css/multilevel.css">
   <style>
+    .ms-auto {
+      margin-left: auto; 
+  }
+
     .carousel-item img {
       width: 360px !important;
     }
+
 
     @media(max-width:1440px) {
       .carousel-item img {
@@ -77,9 +82,14 @@
             <a class="nav-link active" aria-current="page" href="others.html">Others</a>
           </li>
           <li class="nav-item dropdown">
-        <div id="tampil" class="nav-link"></div>
+        <div id="tampil" class="nav-link"></div> 
       </li>
     </ul>
+    <div class="ms-auto">
+      <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
+      <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch" data-aos-duration="2000"
+          data-aos="fade-in"><iconify-icon id="darkmode"></iconify-icon></label>
+  </div>
       </div>
       </div>
   </nav>
@@ -121,11 +131,7 @@
         <span id="weather-info">Cerah, 26°C</span> <!-- Informasi cuaca -->
 </div>
       </div>
-        <div class="container text-center mt-3">
-          <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
-          <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch" data-aos-duration="2000"
-            data-aos="fade-in"><iconify-icon id="darkmode"></iconify-icon></label>
-        </div>
+        
     </div>
   </div>
   <div class="container p-3 mb-1" data-aos="fade-in">
@@ -317,7 +323,6 @@ var i = Math.floor(7*Math.random())
 
 document.write(r_text[i]);
 
-//-->
 </script><iconify-icon
               icon="mingcute:quote-right-fill"></iconify-icon></blockquote>
           <br><br>

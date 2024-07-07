@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Manrope&display=swap');
+@font-face {
+  font-family: Google Sans Text;
+  src: url('font/GoogleSansText-Regular.ttf');
+}
+@font-face {
+  font-family: Google Sans;
+  src: url('font/GoogleSans-Regular.ttf');
+}
+@font-face {
+  font-family: Nothing;
+  src: url('font/nothing2.ttf');
+}
+body {
+  font-family: 'Google Sans Text', sans-serif;
+}
+.manrope {
+  font-family: 'Manrope', sans-serif !important;
+}
+.fira-code {
+  font-family: 'Fira Code', Monospace !important;
+}
+h1, h2, h3, h4, h5, h6, small, #coltop, .h1, .h2, .h3, .h4, .h5, .small, .fw-bold {
+  font-family: 'Google Sans', Sans-Serif;
+}
+code {
+  .fira-code {
+    font-family: 'Fira Code', Monospace !important;
+  }
+}
+h3 {
+  text-align: center;
+}
+h5 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+hr {
+  width: 200px;
+  margin: 0 auto;
+}
+.bg-code {
+  color: #fff;
+  background: #272822;
+}
+#sosmed img {
+  width: 45px;
+}
+.footer-index {
+  animation: animasiulang-index 25s ease infinite alternate;
+  text-align: center;
+}
+img {
+  pointer-events: none;
+}
+/* Functional Features added */
+.link-none {
+  text-decoration: none !important;
+  color: black !important;
+}
+#share {
+	 transition: background-color 1s, color 1s;
+	 color: white; 
+	 background: #84AFE0;
+	 font-size: 25px; 
+}
+#share:hover {
+	 color: #84AFE0;
+	 background-color: #e8e8e8;
+}
+#daftard {
+      transition: color 1s, background-color 1s;
+      color: #84AFE0;
+      text-decoration: none;
+      padding: 1.5px ;
+      font-weight: bold;
+      border-radius: 3px;
+ }
+#daftard:hover {
+      color: white;
+      background-color: #84AFE0;
+}
+.card-img-top {
+  background: white;
+}
+hr {
+  opacity: 0;
+}
+#btn-back-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: none;
+}
+footer {
+  margin-top: 600px;
+}
+/* BUAT ANIMASI */
+@keyframes animasiulang {
+	0% {
+		background-position: left;
+		color: black;
+	}
+	25% {
+	  color: black;
+	}
+	50% {
+	  color: black;
+	}
+	60% {
+	  color: white;
+	}
+	75% {
+	  color: white;
+	}
+	100% {
+		background-position: right;
+		color: white;
+	}
+}
+
+@keyframes animasiulang-index {
+	0% {
+		background-position: 0% 50%;
+		color: #00ace4;
+	}
+	50% {
+		background-position: 100% 50%;
+		color: red;
+	}
+	100% {
+		background-position: 0% 50%;
+		color: grey;
+	}
+}
+@keyframes animate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media (max-width: 950px){
+
+  hr {
+  width: 100%;
+  opacity: 30%;
+  }
+  footer {
+    text-align: left;
+    margin-top: 20px !important;
+  }
+}
+.typing-container {
+  position: relative;
+  height: 3em; /* Sesuaikan dengan kebutuhan Anda */
+  overflow: hidden;
+}
+
+#typing-effect {
+  font-family: Nothing;
+  white-space: nowrap;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  overflow: hidden;
+  width: auto;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 15em; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+.hastag {
+  opacity: 0%;
+}
+.hastag:hover, .hastag:focus {
+  opacity: 100%;
+}
